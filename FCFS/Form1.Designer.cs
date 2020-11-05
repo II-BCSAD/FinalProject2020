@@ -45,13 +45,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
             this.col_Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_AT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_BT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_WT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_TAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_CT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -96,7 +102,7 @@
             this.groupBox1.Controls.Add(this.lb_process);
             this.groupBox1.Location = new System.Drawing.Point(14, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(953, 80);
+            this.groupBox1.Size = new System.Drawing.Size(976, 80);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "INPUT";
@@ -143,10 +149,15 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Location = new System.Drawing.Point(13, 110);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(953, 256);
+            this.groupBox2.Size = new System.Drawing.Size(977, 256);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "TABLE";
@@ -165,17 +176,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(797, 212);
+            this.dataGridView1.Size = new System.Drawing.Size(810, 212);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(819, 206);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 30);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // col_Process
             // 
@@ -237,26 +239,87 @@
             this.col_CT.ReadOnly = true;
             this.col_CT.Width = 125;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(845, 24);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(115, 30);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "DELETE";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(16, 382);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(974, 196);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "GANTT CHART";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(845, 60);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 30);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "COMPUTE";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(832, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 43);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Average Waiting Time (AWT):";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(845, 139);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(115, 25);
+            this.textBox4.TabIndex = 1;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(845, 211);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(115, 25);
+            this.textBox5.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(832, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 41);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Average Turn-Around Time:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 603);
+            this.ClientSize = new System.Drawing.Size(1002, 603);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1000, 650);
+            this.MaximumSize = new System.Drawing.Size(1020, 650);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1000, 650);
+            this.MinimumSize = new System.Drawing.Size(1020, 650);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "First Come First Serve";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -282,6 +345,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn col_WT;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_TAT;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_CT;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 
