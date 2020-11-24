@@ -1,6 +1,6 @@
 ﻿namespace FCFS
 {
-    partial class Form1
+    partial class fcfsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,299 +28,392 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lb_process = new System.Windows.Forms.Label();
             this.lb_AT = new System.Windows.Forms.Label();
             this.lbBT = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.col_Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_AT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_BT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_WT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_TAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_CT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.inBT = new System.Windows.Forms.TextBox();
+            this.inAT = new System.Windows.Forms.TextBox();
+            this.inProcess = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lb_process
             // 
             this.lb_process.AutoSize = true;
-            this.lb_process.Location = new System.Drawing.Point(23, 33);
+            this.lb_process.Location = new System.Drawing.Point(55, 46);
             this.lb_process.Name = "lb_process";
-            this.lb_process.Size = new System.Drawing.Size(66, 19);
+            this.lb_process.Size = new System.Drawing.Size(70, 19);
             this.lb_process.TabIndex = 0;
             this.lb_process.Text = "PROCESS";
             // 
             // lb_AT
             // 
             this.lb_AT.AutoSize = true;
-            this.lb_AT.Location = new System.Drawing.Point(245, 33);
+            this.lb_AT.Location = new System.Drawing.Point(277, 46);
             this.lb_AT.Name = "lb_AT";
-            this.lb_AT.Size = new System.Drawing.Size(97, 19);
+            this.lb_AT.Size = new System.Drawing.Size(101, 19);
             this.lb_AT.TabIndex = 0;
             this.lb_AT.Text = "ARRIVAL TIME";
             // 
             // lbBT
             // 
             this.lbBT.AutoSize = true;
-            this.lbBT.Location = new System.Drawing.Point(509, 33);
+            this.lbBT.Location = new System.Drawing.Point(541, 46);
             this.lbBT.Name = "lbBT";
-            this.lbBT.Size = new System.Drawing.Size(84, 19);
+            this.lbBT.Size = new System.Drawing.Size(90, 19);
             this.lbBT.TabIndex = 0;
             this.lbBT.Text = "BURST TIME";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.lbBT);
-            this.groupBox1.Controls.Add(this.lb_AT);
-            this.groupBox1.Controls.Add(this.lb_process);
-            this.groupBox1.Location = new System.Drawing.Point(14, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(976, 80);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "INPUT";
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(814, 45);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(846, 60);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 29);
-            this.button2.TabIndex = 2;
+            this.button2.Size = new System.Drawing.Size(115, 31);
+            this.button2.TabIndex = 4;
             this.button2.Text = "CLEAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(814, 16);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(846, 23);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 29);
-            this.button1.TabIndex = 2;
+            this.button1.Size = new System.Drawing.Size(115, 31);
+            this.button1.TabIndex = 3;
             this.button1.Text = "ADD";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // inBT
             // 
-            this.textBox3.Location = new System.Drawing.Point(599, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 25);
-            this.textBox3.TabIndex = 1;
+            this.inBT.Location = new System.Drawing.Point(631, 42);
+            this.inBT.Name = "inBT";
+            this.inBT.Size = new System.Drawing.Size(100, 25);
+            this.inBT.TabIndex = 2;
             // 
-            // textBox2
+            // inAT
             // 
-            this.textBox2.Location = new System.Drawing.Point(348, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 25);
-            this.textBox2.TabIndex = 1;
+            this.inAT.Location = new System.Drawing.Point(380, 42);
+            this.inAT.Name = "inAT";
+            this.inAT.Size = new System.Drawing.Size(100, 25);
+            this.inAT.TabIndex = 1;
             // 
-            // textBox1
+            // inProcess
             // 
-            this.textBox1.Location = new System.Drawing.Point(95, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 1;
+            this.inProcess.Location = new System.Drawing.Point(127, 42);
+            this.inProcess.Name = "inProcess";
+            this.inProcess.Size = new System.Drawing.Size(100, 25);
+            this.inProcess.TabIndex = 0;
             // 
-            // groupBox2
+            // panel1
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Location = new System.Drawing.Point(13, 110);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(977, 256);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "TABLE";
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(1, 476);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1000, 253);
+            this.panel1.TabIndex = 3;
             // 
-            // dataGridView1
+            // textBox6
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.col_Process,
-            this.col_AT,
-            this.col_BT,
-            this.col_WT,
-            this.col_TAT,
-            this.col_CT});
-            this.dataGridView1.Location = new System.Drawing.Point(16, 24);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(810, 212);
-            this.dataGridView1.TabIndex = 0;
+            this.textBox6.Location = new System.Drawing.Point(855, 190);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(115, 25);
+            this.textBox6.TabIndex = 2;
             // 
-            // col_Process
+            // label3
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.col_Process.DefaultCellStyle = dataGridViewCellStyle1;
-            this.col_Process.HeaderText = "PROCESS";
-            this.col_Process.MinimumWidth = 6;
-            this.col_Process.Name = "col_Process";
-            this.col_Process.ReadOnly = true;
-            this.col_Process.Width = 125;
+            this.label3.Location = new System.Drawing.Point(842, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 46);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Average Waiting Time (AWT):";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // col_AT
+            // textBox7
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.col_AT.DefaultCellStyle = dataGridViewCellStyle2;
-            this.col_AT.HeaderText = "ARRIVAL TIME (AT)";
-            this.col_AT.MinimumWidth = 6;
-            this.col_AT.Name = "col_AT";
-            this.col_AT.ReadOnly = true;
-            this.col_AT.Width = 125;
+            this.textBox7.Location = new System.Drawing.Point(855, 267);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(115, 25);
+            this.textBox7.TabIndex = 3;
             // 
-            // col_BT
+            // label4
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.col_BT.DefaultCellStyle = dataGridViewCellStyle3;
-            this.col_BT.HeaderText = "BURST TIME (BT)";
-            this.col_BT.MinimumWidth = 6;
-            this.col_BT.Name = "col_BT";
-            this.col_BT.ReadOnly = true;
-            this.col_BT.Width = 125;
+            this.label4.Location = new System.Drawing.Point(842, 220);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 43);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Average Turn-Around Time:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // col_WT
+            // button5
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.col_WT.DefaultCellStyle = dataGridViewCellStyle4;
-            this.col_WT.HeaderText = "WAITING TIME";
-            this.col_WT.MinimumWidth = 6;
-            this.col_WT.Name = "col_WT";
-            this.col_WT.ReadOnly = true;
-            this.col_WT.Width = 125;
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(846, 54);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(115, 32);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "DELETE";
+            this.button5.UseVisualStyleBackColor = false;
             // 
-            // col_TAT
+            // button6
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.col_TAT.DefaultCellStyle = dataGridViewCellStyle5;
-            this.col_TAT.HeaderText = "TURN-AROUND TIME";
-            this.col_TAT.MinimumWidth = 6;
-            this.col_TAT.Name = "col_TAT";
-            this.col_TAT.ReadOnly = true;
-            this.col_TAT.Width = 125;
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(847, 92);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(115, 32);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "COMPUTE";
+            this.button6.UseVisualStyleBackColor = false;
             // 
-            // col_CT
+            // dataGridView2
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.col_CT.DefaultCellStyle = dataGridViewCellStyle6;
-            this.col_CT.HeaderText = "COMPLETION TIME";
-            this.col_CT.MinimumWidth = 6;
-            this.col_CT.Name = "col_CT";
-            this.col_CT.ReadOnly = true;
-            this.col_CT.Width = 125;
+            this.dataGridView2.AllowUserToResizeColumns = false;
+            this.dataGridView2.AllowUserToResizeRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.dataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(215)))), ((int)(((byte)(216)))));
+            this.dataGridView2.Location = new System.Drawing.Point(26, 54);
+            this.dataGridView2.MaximumSize = new System.Drawing.Size(795, 210);
+            this.dataGridView2.MinimumSize = new System.Drawing.Size(795, 210);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(795, 210);
+            this.dataGridView2.TabIndex = 0;
             // 
-            // button4
+            // dataGridViewTextBoxColumn1
             // 
-            this.button4.Location = new System.Drawing.Point(845, 24);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 30);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = true;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridViewTextBoxColumn1.HeaderText = "PROCESS";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 125;
             // 
-            // groupBox3
+            // dataGridViewTextBoxColumn2
             // 
-            this.groupBox3.Location = new System.Drawing.Point(16, 382);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(974, 196);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "GANTT CHART";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewTextBoxColumn2.HeaderText = "ARRIVAL TIME (AT)";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 125;
             // 
-            // button3
+            // dataGridViewTextBoxColumn3
             // 
-            this.button3.Location = new System.Drawing.Point(845, 60);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 30);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "COMPUTE";
-            this.button3.UseVisualStyleBackColor = true;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGridViewTextBoxColumn3.HeaderText = "BURST TIME (BT)";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridViewTextBoxColumn4.HeaderText = "WAITING TIME";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridViewTextBoxColumn5.HeaderText = "TURN-AROUND TIME";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridViewTextBoxColumn6.HeaderText = "COMPLETION TIME";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.dataGridView2);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(1, 151);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1000, 327);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.inAT);
+            this.panel3.Controls.Add(this.inProcess);
+            this.panel3.Controls.Add(this.lbBT);
+            this.panel3.Controls.Add(this.lb_process);
+            this.panel3.Controls.Add(this.lb_AT);
+            this.panel3.Controls.Add(this.inBT);
+            this.panel3.Location = new System.Drawing.Point(1, 46);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1000, 110);
+            this.panel3.TabIndex = 5;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Location = new System.Drawing.Point(1, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1000, 46);
+            this.panel4.TabIndex = 6;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(832, 93);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(375, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 43);
+            this.label1.Size = new System.Drawing.Size(226, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Average Waiting Time (AWT):";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Text = "First Come First Serve";
             // 
-            // textBox4
+            // button3
             // 
-            this.textBox4.Location = new System.Drawing.Point(845, 139);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(115, 25);
-            this.textBox4.TabIndex = 1;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(845, 211);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(115, 25);
-            this.textBox5.TabIndex = 1;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(55)))), ((int)(((byte)(80)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Montserrat SemiBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(934, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(66, 46);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "X";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(832, 167);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
+            this.label2.Location = new System.Drawing.Point(26, 30);
+            this.label2.MaximumSize = new System.Drawing.Size(795, 30);
+            this.label2.MinimumSize = new System.Drawing.Size(795, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 41);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Average Turn-Around Time:";
+            this.label2.Size = new System.Drawing.Size(795, 30);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "TABLE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // fcfsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 603);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClientSize = new System.Drawing.Size(1000, 730);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1020, 650);
+            this.MaximumSize = new System.Drawing.Size(1000, 730);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1020, 650);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(1000, 730);
+            this.Name = "fcfsForm";
             this.ShowIcon = false;
             this.Text = "First Come First Serve";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -330,27 +423,31 @@
         private System.Windows.Forms.Label lb_process;
         private System.Windows.Forms.Label lb_AT;
         private System.Windows.Forms.Label lbBT;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_Process;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_AT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_BT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_WT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_TAT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn col_CT;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox inBT;
+        private System.Windows.Forms.TextBox inAT;
+        private System.Windows.Forms.TextBox inProcess;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
     }
 }
 
