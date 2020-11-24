@@ -50,13 +50,33 @@ namespace FCFS
                 dataGridView1.Rows[num].Cells[1].Value = Drow["ARRIVAL TIME (AT)"].ToString();
                 dataGridView1.Rows[num].Cells[2].Value = Drow["BURST TIME (BT)"].ToString();
             }
+            clearTxts();
         }
-
+        private void clearTxts()
+        {
+            inProcess.Text = "";
+            inAT.Text = "";
+            inBT.Text = "";
+        }
         private void btnCLEAR_Click(object sender, EventArgs e)
         {
             inProcess.Clear();
             inAT.Clear();
             inBT.Clear();
+        }
+
+        private void delete()
+        {
+            if(MessageBox.Show("Are you sure you want to delete this row?", "DELETE",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning)==DialogResult.OK)
+            {
+                int index = dataGridView1.SelectedRows[0].Index;
+                dataGridView1.Rows.RemoveAt(index);
+                
+            }
+        }
+        private void btnDELETE_Click(object sender, EventArgs e)
+        {
+            delete();
         }
     }
 }
