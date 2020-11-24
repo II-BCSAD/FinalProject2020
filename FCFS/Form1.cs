@@ -38,9 +38,10 @@ namespace FCFS
             ss.Columns.Add("COMPLETION TIME");
 
             DataRow row = ss.NewRow();
-            if (inProcess.Text == "" && inAT.Text == "" && inBT.Text == "")
+            if (inProcess.Text == "" || inAT.Text == "" || inBT.Text == "")
             {
                 MessageBox.Show("Invalid Input. Please Try Again", "INPUT", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                clearTxts();
                 row.Delete();
             }
             else {
@@ -81,13 +82,20 @@ namespace FCFS
             if(MessageBox.Show("Are you sure you want to delete this row?", "DELETE",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning)==DialogResult.OK)
             {
                 int index = dataGridView1.SelectedRows[0].Index;
-                dataGridView1.Rows.RemoveAt(index);
-                
+                dataGridView1.Rows.RemoveAt(index);              
+            }
+            
+            if (dataGridView1.Rows.Count == 0)
+            {
+                grpQueue.Enabled = true;
+                rbSingle.Checked = false;
+                rbMultiple.Checked = false;
             }
         }
         private void btnDELETE_Click(object sender, EventArgs e)
         {
             delete();
+            
         }
 
     }
