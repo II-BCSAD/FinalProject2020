@@ -38,31 +38,42 @@ namespace FCFS
             ss.Columns.Add("COMPLETION TIME");
 
             DataRow row = ss.NewRow();
-            row["PROCESS"] = inProcess.Text;
-            row["ARRIVAL TIME (AT)"] = inAT.Text;
-            row["BURST TIME (BT)"] = inBT.Text;
-
-            ss.Rows.Add(row);
-            foreach (DataRow Drow in ss.Rows)
+            if (inProcess.Text == "" && inAT.Text == "" && inBT.Text == "")
             {
-                int num = dataGridView1.Rows.Add();
-                dataGridView1.Rows[num].Cells[0].Value = Drow["PROCESS"].ToString();
-                dataGridView1.Rows[num].Cells[1].Value = Drow["ARRIVAL TIME (AT)"].ToString();
-                dataGridView1.Rows[num].Cells[2].Value = Drow["BURST TIME (BT)"].ToString();
+                MessageBox.Show("Invalid Input. Please Try Again", "INPUT", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                row.Delete();
             }
-            clearTxts();
+            else {
+                row["PROCESS"] = inProcess.Text;
+                row["ARRIVAL TIME (AT)"] = inAT.Text;
+                row["BURST TIME (BT)"] = inBT.Text;
+                grpQueue.Enabled = false;
+
+                ss.Rows.Add(row);
+                foreach (DataRow Drow in ss.Rows)
+                {
+                    int num = dataGridView1.Rows.Add();
+                    dataGridView1.Rows[num].Cells[0].Value = Drow["PROCESS"].ToString();
+                    dataGridView1.Rows[num].Cells[1].Value = Drow["ARRIVAL TIME (AT)"].ToString();
+                    dataGridView1.Rows[num].Cells[2].Value = Drow["BURST TIME (BT)"].ToString();
+                }
+                clearTxts();
+            }
+                 
         }
         private void clearTxts()
         {
             inProcess.Text = "";
             inAT.Text = "";
             inBT.Text = "";
+            
         }
         private void btnCLEAR_Click(object sender, EventArgs e)
         {
             inProcess.Clear();
             inAT.Clear();
             inBT.Clear();
+            
         }
 
         private void delete()
@@ -78,5 +89,6 @@ namespace FCFS
         {
             delete();
         }
+
     }
 }
