@@ -51,5 +51,12 @@ namespace FCFS
                 dataGridView1.Rows[num].Cells[2].Value = Drow["BURST TIME (BT)"].ToString();
             }
         }
+
+        private void btnCLEAR_Click(object sender, EventArgs e)
+        {
+            inProcess.Clear();
+            inAT.Clear();
+            inBT.Clear();
+        }
     }
 }
