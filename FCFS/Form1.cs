@@ -26,5 +26,30 @@ namespace FCFS
         {
             this.Close();
         }
+
+        private void btnADD_Click(object sender, EventArgs e)
+        {
+            DataTable ss = new DataTable();
+            ss.Columns.Add("PROCESS");
+            ss.Columns.Add("ARRIVAL TIME (AT)");
+            ss.Columns.Add("BURST TIME (BT)");
+            ss.Columns.Add("WAITING TIME (WT)");
+            ss.Columns.Add("TURN-AROUND TIME");
+            ss.Columns.Add("COMPLETION TIME");
+
+            DataRow row = ss.NewRow();
+            row["PROCESS"] = inProcess.Text;
+            row["ARRIVAL TIME (AT)"] = inAT.Text;
+            row["BURST TIME (BT)"] = inBT.Text;
+
+            ss.Rows.Add(row);
+            foreach (DataRow Drow in ss.Rows)
+            {
+                int num = dataGridView1.Rows.Add();
+                dataGridView1.Rows[num].Cells[0].Value = Drow["PROCESS"].ToString();
+                dataGridView1.Rows[num].Cells[1].Value = Drow["ARRIVAL TIME (AT)"].ToString();
+                dataGridView1.Rows[num].Cells[2].Value = Drow["BURST TIME (BT)"].ToString();
+            }
+        }
     }
 }
