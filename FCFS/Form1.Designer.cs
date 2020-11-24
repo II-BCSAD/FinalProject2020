@@ -73,27 +73,30 @@
             // lb_process
             // 
             this.lb_process.AutoSize = true;
+            this.lb_process.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_process.Location = new System.Drawing.Point(55, 46);
             this.lb_process.Name = "lb_process";
-            this.lb_process.Size = new System.Drawing.Size(70, 19);
+            this.lb_process.Size = new System.Drawing.Size(71, 18);
             this.lb_process.TabIndex = 0;
             this.lb_process.Text = "PROCESS";
             // 
             // lb_AT
             // 
             this.lb_AT.AutoSize = true;
+            this.lb_AT.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_AT.Location = new System.Drawing.Point(277, 46);
             this.lb_AT.Name = "lb_AT";
-            this.lb_AT.Size = new System.Drawing.Size(101, 19);
+            this.lb_AT.Size = new System.Drawing.Size(100, 18);
             this.lb_AT.TabIndex = 0;
             this.lb_AT.Text = "ARRIVAL TIME";
             // 
             // lbBT
             // 
             this.lbBT.AutoSize = true;
+            this.lbBT.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBT.Location = new System.Drawing.Point(541, 46);
             this.lbBT.Name = "lbBT";
-            this.lbBT.Size = new System.Drawing.Size(90, 19);
+            this.lbBT.Size = new System.Drawing.Size(87, 18);
             this.lbBT.TabIndex = 0;
             this.lbBT.Text = "BURST TIME";
             // 
@@ -127,6 +130,7 @@
             // 
             // inBT
             // 
+            this.inBT.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.inBT.Location = new System.Drawing.Point(631, 42);
             this.inBT.Name = "inBT";
             this.inBT.Size = new System.Drawing.Size(100, 25);
@@ -134,6 +138,7 @@
             // 
             // inAT
             // 
+            this.inAT.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.inAT.Location = new System.Drawing.Point(380, 42);
             this.inAT.Name = "inAT";
             this.inAT.Size = new System.Drawing.Size(100, 25);
@@ -141,6 +146,7 @@
             // 
             // inProcess
             // 
+            this.inProcess.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.inProcess.Location = new System.Drawing.Point(127, 42);
             this.inProcess.Name = "inProcess";
             this.inProcess.Size = new System.Drawing.Size(100, 25);
@@ -149,21 +155,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(1, 476);
+            this.panel1.Location = new System.Drawing.Point(1, 439);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 253);
+            this.panel1.Size = new System.Drawing.Size(1000, 199);
             this.panel1.TabIndex = 3;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(855, 190);
+            this.textBox6.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox6.Location = new System.Drawing.Point(855, 159);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(115, 25);
             this.textBox6.TabIndex = 2;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(842, 142);
+            this.label3.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(842, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(139, 46);
             this.label3.TabIndex = 0;
@@ -172,14 +180,16 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(855, 267);
+            this.textBox7.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox7.Location = new System.Drawing.Point(855, 236);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(115, 25);
             this.textBox7.TabIndex = 3;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(842, 220);
+            this.label4.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(842, 189);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 43);
             this.label4.TabIndex = 0;
@@ -193,7 +203,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(846, 54);
+            this.button5.Location = new System.Drawing.Point(846, 23);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(115, 32);
             this.button5.TabIndex = 0;
@@ -207,7 +217,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(847, 92);
+            this.button6.Location = new System.Drawing.Point(847, 61);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(115, 32);
             this.button6.TabIndex = 1;
@@ -219,13 +229,15 @@
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle10.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
@@ -320,7 +332,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(1, 151);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1000, 327);
+            this.panel2.Size = new System.Drawing.Size(1000, 293);
             this.panel2.TabIndex = 4;
             // 
             // panel3
@@ -379,20 +391,22 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
-            this.label2.Location = new System.Drawing.Point(26, 30);
-            this.label2.MaximumSize = new System.Drawing.Size(795, 30);
-            this.label2.MinimumSize = new System.Drawing.Size(795, 30);
+            this.label2.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(26, 20);
+            this.label2.MaximumSize = new System.Drawing.Size(795, 35);
+            this.label2.MinimumSize = new System.Drawing.Size(795, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(795, 30);
+            this.label2.Size = new System.Drawing.Size(795, 35);
             this.label2.TabIndex = 3;
-            this.label2.Text = "TABLE";
+            this.label2.Text = "T A B L E";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fcfsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 730);
+            this.ClientSize = new System.Drawing.Size(1000, 640);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -401,9 +415,9 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1000, 730);
+            this.MaximumSize = new System.Drawing.Size(1000, 640);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(1000, 730);
+            this.MinimumSize = new System.Drawing.Size(1000, 640);
             this.Name = "fcfsForm";
             this.ShowIcon = false;
             this.Text = "First Come First Serve";
