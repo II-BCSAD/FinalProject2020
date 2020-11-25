@@ -12,6 +12,7 @@ namespace FCFS
 {
     public partial class fcfsForm : Form
     {
+        public static int at, bt;
         public fcfsForm()
         {
             InitializeComponent();
@@ -38,9 +39,36 @@ namespace FCFS
             ss.Columns.Add("COMPLETION TIME");
 
             DataRow row = ss.NewRow();
-            if (inProcess.Text == "" || inAT.Text == "" || inBT.Text == "")
+
+            //input validation
+            int count = 0;
+            if(!int.TryParse(inAT.Text, out at))
             {
-                MessageBox.Show("Invalid Input. Please Try Again", "INPUT", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                count = 1;              
+            }
+            if (!int.TryParse(inBT.Text, out bt))
+            {
+                if (count == 0)
+                {
+                    count = 3;
+                }
+                else { count += 1; }
+            }
+            if (count == 2)
+            {
+                MessageBox.Show("Invalid Input for Arrival Time and Burst Time. Please Try Again", "Input Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                clearTxts();
+                row.Delete();
+            }
+            else if (count == 1)
+            {
+                MessageBox.Show("Invalid Input for Arrival Time. Please Try Again", "Input Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                clearTxts();
+                row.Delete();
+            }
+            else if (count == 3)
+            {
+                MessageBox.Show("Invalid Input for Burst Time. Please Try Again", "Input Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 clearTxts();
                 row.Delete();
             }
