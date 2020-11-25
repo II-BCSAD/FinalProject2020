@@ -12,7 +12,7 @@ namespace FCFS
 {
     public partial class fcfsForm : Form
     {
-        public static int at, bt;
+        public static int at, bt,nRow = 0;
         public fcfsForm()
         {
             InitializeComponent();
@@ -87,6 +87,15 @@ namespace FCFS
                     dataGridView1.Rows[num].Cells[2].Value = Drow["BURST TIME (BT)"].ToString();
                 }
                 clearTxts();
+                nRow += 1;
+            }
+
+            if (nRow == 0)
+            {
+                grpQueue.Enabled = true;
+                rbSingle.Checked = false;
+                rbMultiple.Checked = false;
+                nRow = 0;
             }
                  
         }
@@ -110,15 +119,17 @@ namespace FCFS
             if(MessageBox.Show("Are you sure you want to delete this row?", "DELETE",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning)==DialogResult.OK)
             {
                 int index = dataGridView1.SelectedRows[0].Index;
-                dataGridView1.Rows.RemoveAt(index);              
+                dataGridView1.Rows.RemoveAt(index);
+                if (dataGridView1.Rows.Count == 1)
+                {
+                    grpQueue.Enabled = true;
+                    rbSingle.Checked = false;
+                    rbMultiple.Checked = false;
+                    nRow = 0;
+                }
             }
             
-            if (dataGridView1.Rows.Count == 0)
-            {
-                grpQueue.Enabled = true;
-                rbSingle.Checked = false;
-                rbMultiple.Checked = false;
-            }
+            
         }
         private void btnDELETE_Click(object sender, EventArgs e)
         {
