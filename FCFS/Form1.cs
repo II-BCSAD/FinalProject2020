@@ -58,15 +58,6 @@ namespace FCFS
             int count = 0;
             string msg = "", btmsg="", atmsg="";
 
-            if (!String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
-            {
-                count = 5;
-            }
-            else if(String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
-            {
-                count = 6;
-            }
-
             if (!int.TryParse(inAT.Text, out at))
             {
                 count = 1;
@@ -91,10 +82,14 @@ namespace FCFS
                 count = 3;
                 msg = "• The Process field is required.\n";
             }
-            if (!String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
+            if (rbcount == 2)
             {
-                count = 4;
+                if (!String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
+                {
+                    count = 4;
+                }
             }
+            
             if (count == 2)
             {
                 checkRB();
