@@ -50,9 +50,7 @@ namespace FCFS
             ss.Columns.Add("PROCESS");
             ss.Columns.Add("ARRIVAL TIME (AT)");
             ss.Columns.Add("BURST TIME (BT)");
-            ss.Columns.Add("WAITING TIME (WT)");
-            ss.Columns.Add("TURN-AROUND TIME");
-            ss.Columns.Add("COMPLETION TIME");
+            
 
             DataRow row = ss.NewRow();
 
