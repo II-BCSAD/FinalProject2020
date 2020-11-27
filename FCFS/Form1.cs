@@ -15,6 +15,10 @@ namespace FCFS
         public static int at, bt,nRow = 0;
         public static int rbcount = 0;
         public static string rbm;
+        public static int[] btArr = new int[5];
+        public static int[] atArr = new int[5];
+        public static string[] pArr = new string[5];
+
         public fcfsForm()
         {
             InitializeComponent();
@@ -50,7 +54,10 @@ namespace FCFS
             ss.Columns.Add("PROCESS");
             ss.Columns.Add("ARRIVAL TIME (AT)");
             ss.Columns.Add("BURST TIME (BT)");
-            
+            ss.Columns.Add("WAITING TIME");
+            ss.Columns.Add("TURN-AROUND TIME");
+            ss.Columns.Add("COMPLETION TIME");
+
 
             DataRow row = ss.NewRow();
 
@@ -135,6 +142,7 @@ namespace FCFS
                 clearTxts();
                 nRow += 1;
                 checkRows();
+
             }
 
             if (nRow == 0)
@@ -146,7 +154,7 @@ namespace FCFS
             }
                  
         }
-
+        
         private void checkRows()
         {
             if (nRow == 5)
@@ -172,6 +180,41 @@ namespace FCFS
             inBT.Clear();
             
         }
+
+        private void btnSTART_Click(object sender, EventArgs e)
+        {
+            string[] pArray = dataGridView1.Rows
+               .Cast<DataGridViewRow>()
+               .Where(r => !r.IsNewRow)
+               .Select(r =>(r.Cells[0].Value.ToString())).ToArray();
+
+            for (int i = 0; i < 5; i++)
+            {
+                pArr[i] = pArray[i];
+            }
+            int[] atArray = dataGridView1.Rows
+               .Cast<DataGridViewRow>()
+               .Where(r => !r.IsNewRow)
+               .Select(r => Convert.ToInt32(r.Cells[1].Value.ToString())).ToArray();
+
+            for (int i = 0; i < 5; i++)
+            {
+                atArr[i] = atArray[i];
+            }
+            int[] btArray = dataGridView1.Rows
+                .Cast<DataGridViewRow>()
+                .Where(r => !r.IsNewRow)
+                .Select(r => Convert.ToInt32(r.Cells[2].Value.ToString())).ToArray();
+            
+            for (int i = 0; i <5; i++)
+            {
+                btArr[i] = btArray[i];
+            }
+
+           // label3.Text = pArr.Select(x => x.ToString()).Aggregate((a, b) => a + ", " + b);
+        }
+
+
 
         private void delete()
         {

@@ -11,7 +11,10 @@ namespace FCFS
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
+        //[STAThread]
+        public static int[] burT = new int[5];
+        public static int[] arrT = new int[5];
+        public static string[] prT = new string[5];
         static void Main()
         {
             Application.EnableVisualStyles();

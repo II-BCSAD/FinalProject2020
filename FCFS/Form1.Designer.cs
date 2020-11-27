@@ -39,9 +39,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -57,6 +54,12 @@
             this.grpQueue = new System.Windows.Forms.GroupBox();
             this.rbMultiple = new System.Windows.Forms.RadioButton();
             this.rbSingle = new System.Windows.Forms.RadioButton();
+            this.colProcess = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colComp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -79,7 +82,7 @@
             this.btnDELETE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDELETE.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDELETE.ForeColor = System.Drawing.Color.White;
-            this.btnDELETE.Location = new System.Drawing.Point(476, 25);
+            this.btnDELETE.Location = new System.Drawing.Point(846, 25);
             this.btnDELETE.Name = "btnDELETE";
             this.btnDELETE.Size = new System.Drawing.Size(115, 32);
             this.btnDELETE.TabIndex = 0;
@@ -94,12 +97,13 @@
             this.btnSTART.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSTART.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSTART.ForeColor = System.Drawing.Color.White;
-            this.btnSTART.Location = new System.Drawing.Point(476, 63);
+            this.btnSTART.Location = new System.Drawing.Point(846, 74);
             this.btnSTART.Name = "btnSTART";
             this.btnSTART.Size = new System.Drawing.Size(115, 32);
             this.btnSTART.TabIndex = 1;
             this.btnSTART.Text = "START";
             this.btnSTART.UseVisualStyleBackColor = false;
+            this.btnSTART.Click += new System.EventHandler(this.btnSTART_Click);
             // 
             // panel2
             // 
@@ -147,48 +151,21 @@
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
+            this.colProcess,
+            this.colAT,
+            this.colBT,
+            this.colWT,
+            this.colTAT,
+            this.colComp});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(215)))), ((int)(((byte)(216)))));
             this.dataGridView1.Location = new System.Drawing.Point(26, 54);
-            this.dataGridView1.MaximumSize = new System.Drawing.Size(420, 210);
-            this.dataGridView1.MinimumSize = new System.Drawing.Size(420, 210);
+            this.dataGridView1.MaximumSize = new System.Drawing.Size(760, 210);
+            this.dataGridView1.MinimumSize = new System.Drawing.Size(760, 210);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(420, 210);
+            this.dataGridView1.Size = new System.Drawing.Size(760, 210);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewTextBoxColumn1.HeaderText = "PROCESS";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridViewTextBoxColumn2.HeaderText = "ARRIVAL TIME (AT)";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewTextBoxColumn3.HeaderText = "BURST TIME (BT)";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // panel4
             // 
@@ -366,6 +343,57 @@
             this.rbSingle.Text = "SINGLE";
             this.rbSingle.UseVisualStyleBackColor = true;
             // 
+            // colProcess
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colProcess.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colProcess.HeaderText = "PROCESS";
+            this.colProcess.MinimumWidth = 6;
+            this.colProcess.Name = "colProcess";
+            this.colProcess.ReadOnly = true;
+            this.colProcess.Width = 125;
+            // 
+            // colAT
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colAT.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colAT.HeaderText = "ARRIVAL TIME (AT)";
+            this.colAT.MinimumWidth = 6;
+            this.colAT.Name = "colAT";
+            this.colAT.ReadOnly = true;
+            this.colAT.Width = 125;
+            // 
+            // colBT
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colBT.DefaultCellStyle = dataGridViewCellStyle5;
+            this.colBT.HeaderText = "BURST TIME (BT)";
+            this.colBT.MinimumWidth = 6;
+            this.colBT.Name = "colBT";
+            this.colBT.ReadOnly = true;
+            this.colBT.Width = 125;
+            // 
+            // colWT
+            // 
+            this.colWT.HeaderText = "WAITING TIME";
+            this.colWT.MinimumWidth = 6;
+            this.colWT.Name = "colWT";
+            this.colWT.Width = 125;
+            // 
+            // colTAT
+            // 
+            this.colTAT.HeaderText = "TURN-AROUND TIME";
+            this.colTAT.MinimumWidth = 6;
+            this.colTAT.Name = "colTAT";
+            this.colTAT.Width = 125;
+            // 
+            // colComp
+            // 
+            this.colComp.HeaderText = "COMPLETION TIME";
+            this.colComp.MinimumWidth = 6;
+            this.colComp.Name = "colComp";
+            this.colComp.Width = 125;
+            // 
             // fcfsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
@@ -420,9 +448,12 @@
         private System.Windows.Forms.GroupBox grpQueue;
         private System.Windows.Forms.RadioButton rbMultiple;
         private System.Windows.Forms.RadioButton rbSingle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colProcess;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colBT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colWT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTAT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colComp;
     }
 }
 
