@@ -34,12 +34,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.AWT = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ATAT = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnDELETE = new System.Windows.Forms.Button();
-            this.btnCOMPUTE = new System.Windows.Forms.Button();
+            this.btnSTART = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -76,50 +72,6 @@
             this.panel1.Size = new System.Drawing.Size(1000, 199);
             this.panel1.TabIndex = 3;
             // 
-            // AWT
-            // 
-            this.AWT.Enabled = false;
-            this.AWT.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.AWT.Location = new System.Drawing.Point(855, 159);
-            this.AWT.Name = "AWT";
-            this.AWT.ReadOnly = true;
-            this.AWT.Size = new System.Drawing.Size(115, 25);
-            this.AWT.TabIndex = 2;
-            this.AWT.Text = "0";
-            this.AWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(842, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 46);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Average Waiting Time (AWT):";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ATAT
-            // 
-            this.ATAT.Enabled = false;
-            this.ATAT.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.ATAT.Location = new System.Drawing.Point(855, 236);
-            this.ATAT.Name = "ATAT";
-            this.ATAT.ReadOnly = true;
-            this.ATAT.Size = new System.Drawing.Size(115, 25);
-            this.ATAT.TabIndex = 3;
-            this.ATAT.Text = "0";
-            this.ATAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(842, 189);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 43);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Average Turn-Around Time:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnDELETE
             // 
             this.btnDELETE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
@@ -127,7 +79,7 @@
             this.btnDELETE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDELETE.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDELETE.ForeColor = System.Drawing.Color.White;
-            this.btnDELETE.Location = new System.Drawing.Point(846, 23);
+            this.btnDELETE.Location = new System.Drawing.Point(476, 25);
             this.btnDELETE.Name = "btnDELETE";
             this.btnDELETE.Size = new System.Drawing.Size(115, 32);
             this.btnDELETE.TabIndex = 0;
@@ -135,31 +87,27 @@
             this.btnDELETE.UseVisualStyleBackColor = false;
             this.btnDELETE.Click += new System.EventHandler(this.btnDELETE_Click);
             // 
-            // btnCOMPUTE
+            // btnSTART
             // 
-            this.btnCOMPUTE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            this.btnCOMPUTE.FlatAppearance.BorderSize = 0;
-            this.btnCOMPUTE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCOMPUTE.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCOMPUTE.ForeColor = System.Drawing.Color.White;
-            this.btnCOMPUTE.Location = new System.Drawing.Point(847, 61);
-            this.btnCOMPUTE.Name = "btnCOMPUTE";
-            this.btnCOMPUTE.Size = new System.Drawing.Size(115, 32);
-            this.btnCOMPUTE.TabIndex = 1;
-            this.btnCOMPUTE.Text = "COMPUTE";
-            this.btnCOMPUTE.UseVisualStyleBackColor = false;
+            this.btnSTART.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btnSTART.FlatAppearance.BorderSize = 0;
+            this.btnSTART.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSTART.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSTART.ForeColor = System.Drawing.Color.White;
+            this.btnSTART.Location = new System.Drawing.Point(476, 63);
+            this.btnSTART.Name = "btnSTART";
+            this.btnSTART.Size = new System.Drawing.Size(115, 32);
+            this.btnSTART.TabIndex = 1;
+            this.btnSTART.Text = "START";
+            this.btnSTART.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.btnCOMPUTE);
-            this.panel2.Controls.Add(this.ATAT);
-            this.panel2.Controls.Add(this.AWT);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.btnSTART);
             this.panel2.Controls.Add(this.btnDELETE);
-            this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(1, 151);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1000, 293);
@@ -171,7 +119,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
             this.label2.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(26, 23);
+            this.label2.Location = new System.Drawing.Point(26, 22);
             this.label2.MaximumSize = new System.Drawing.Size(420, 35);
             this.label2.MinimumSize = new System.Drawing.Size(420, 35);
             this.label2.Name = "label2";
@@ -452,12 +400,8 @@
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnCOMPUTE;
-        private System.Windows.Forms.TextBox AWT;
+        private System.Windows.Forms.Button btnSTART;
         private System.Windows.Forms.Button btnDELETE;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox ATAT;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
