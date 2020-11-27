@@ -53,14 +53,14 @@
             this.inAT = new System.Windows.Forms.TextBox();
             this.btnADD = new System.Windows.Forms.Button();
             this.btnCLEAR = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.inputPanel = new System.Windows.Forms.Panel();
             this.grpQueue = new System.Windows.Forms.GroupBox();
             this.rbMultiple = new System.Windows.Forms.RadioButton();
             this.rbSingle = new System.Windows.Forms.RadioButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.inputPanel.SuspendLayout();
             this.grpQueue.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -315,22 +315,22 @@
             this.btnCLEAR.UseVisualStyleBackColor = false;
             this.btnCLEAR.Click += new System.EventHandler(this.btnCLEAR_Click);
             // 
-            // panel3
+            // inputPanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.grpQueue);
-            this.panel3.Controls.Add(this.btnCLEAR);
-            this.panel3.Controls.Add(this.btnADD);
-            this.panel3.Controls.Add(this.inAT);
-            this.panel3.Controls.Add(this.inProcess);
-            this.panel3.Controls.Add(this.lbBT);
-            this.panel3.Controls.Add(this.lb_process);
-            this.panel3.Controls.Add(this.lb_AT);
-            this.panel3.Controls.Add(this.inBT);
-            this.panel3.Location = new System.Drawing.Point(1, 30);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1000, 126);
-            this.panel3.TabIndex = 5;
+            this.inputPanel.BackColor = System.Drawing.Color.White;
+            this.inputPanel.Controls.Add(this.grpQueue);
+            this.inputPanel.Controls.Add(this.btnCLEAR);
+            this.inputPanel.Controls.Add(this.btnADD);
+            this.inputPanel.Controls.Add(this.inAT);
+            this.inputPanel.Controls.Add(this.inProcess);
+            this.inputPanel.Controls.Add(this.lbBT);
+            this.inputPanel.Controls.Add(this.lb_process);
+            this.inputPanel.Controls.Add(this.lb_AT);
+            this.inputPanel.Controls.Add(this.inBT);
+            this.inputPanel.Location = new System.Drawing.Point(1, 30);
+            this.inputPanel.Name = "inputPanel";
+            this.inputPanel.Size = new System.Drawing.Size(1000, 126);
+            this.inputPanel.TabIndex = 5;
             // 
             // grpQueue
             // 
@@ -372,7 +372,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 640);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.inputPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -390,8 +390,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.inputPanel.ResumeLayout(false);
+            this.inputPanel.PerformLayout();
             this.grpQueue.ResumeLayout(false);
             this.grpQueue.PerformLayout();
             this.ResumeLayout(false);
@@ -416,7 +416,7 @@
         private System.Windows.Forms.TextBox inAT;
         private System.Windows.Forms.Button btnADD;
         private System.Windows.Forms.Button btnCLEAR;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel inputPanel;
         private System.Windows.Forms.GroupBox grpQueue;
         private System.Windows.Forms.RadioButton rbMultiple;
         private System.Windows.Forms.RadioButton rbSingle;

@@ -134,6 +134,7 @@ namespace FCFS
                 }
                 clearTxts();
                 nRow += 1;
+                checkRows();
             }
 
             if (nRow == 0)
@@ -144,6 +145,18 @@ namespace FCFS
                 nRow = 0;
             }
                  
+        }
+
+        private void checkRows()
+        {
+            if (nRow == 5)
+            {
+                inputPanel.Enabled = false;
+            }
+            else if (nRow < 5)
+            {
+                inputPanel.Enabled = true;
+            }
         }
         private void clearTxts()
         {
@@ -173,6 +186,7 @@ namespace FCFS
                     rbMultiple.Checked = false;
                     nRow = 0;
                 }
+                nRow -= 1;
             }
             
             
@@ -180,7 +194,9 @@ namespace FCFS
         private void btnDELETE_Click(object sender, EventArgs e)
         {
             delete();
-            
+            checkRows();
+
+
         }
 
     }
