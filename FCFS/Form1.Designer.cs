@@ -159,12 +159,12 @@
             this.colComp});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(215)))), ((int)(((byte)(216)))));
             this.dataGridView1.Location = new System.Drawing.Point(26, 54);
-            this.dataGridView1.MaximumSize = new System.Drawing.Size(760, 210);
-            this.dataGridView1.MinimumSize = new System.Drawing.Size(760, 210);
+            this.dataGridView1.MaximumSize = new System.Drawing.Size(790, 210);
+            this.dataGridView1.MinimumSize = new System.Drawing.Size(790, 210);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(760, 210);
+            this.dataGridView1.Size = new System.Drawing.Size(790, 210);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel4

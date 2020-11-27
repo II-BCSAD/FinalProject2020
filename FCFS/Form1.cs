@@ -211,6 +211,7 @@ namespace FCFS
                 btArr[i] = btArray[i];
             }
 
+            btnDELETE.Enabled = false;
            // label3.Text = pArr.Select(x => x.ToString()).Aggregate((a, b) => a + ", " + b);
         }
 
