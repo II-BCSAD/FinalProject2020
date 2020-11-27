@@ -13,6 +13,8 @@ namespace FCFS
     public partial class fcfsForm : Form
     {
         public static int at, bt,nRow = 0;
+        public static int rbcount = 0;
+        public static string rbm;
         public fcfsForm()
         {
             InitializeComponent();
@@ -27,7 +29,21 @@ namespace FCFS
         {
             this.Close();
         }
+        private void checkRB()
+        {          
+            if (rbSingle.Checked == false && rbMultiple.Checked == false)
+            {
+                rbm = "• No selection for Queueing.\n";
+                rbcount = 2;
+            }
+            else if(rbSingle.Checked == true || rbMultiple.Checked == true)
+            {
+                rbm = ""
+;               rbcount = 0;
+            }
 
+
+        }
         private void btnADD_Click(object sender, EventArgs e)
         {
             DataTable ss = new DataTable();
@@ -42,33 +58,70 @@ namespace FCFS
 
             //input validation
             int count = 0;
-            if(!int.TryParse(inAT.Text, out at))
+            string msg = "", btmsg="", atmsg="";
+
+            if (!String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
             {
-                count = 1;              
+                count = 5;
+            }
+            else if(String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
+            {
+                count = 6;
+            }
+
+            if (!int.TryParse(inAT.Text, out at))
+            {
+                count = 1;
+                atmsg = "• Invalid input for Arrival Time field\n";
+                if (String.IsNullOrEmpty(inAT.Text))
+                {
+                    atmsg = "• The Arrival Time field is required.\n";
+                }
+
             }
             if (!int.TryParse(inBT.Text, out bt))
             {
-                if (count == 0)
+                    count = 2;
+                    btmsg = "• Invalid input for Burst Time field.\n";
+                if (String.IsNullOrEmpty(inBT.Text))
                 {
-                    count = 3;
+                    btmsg = "• The Burst Time field is required.\n";
                 }
-                else { count += 1; }
+            }
+            if (String.IsNullOrEmpty(inProcess.Text))
+            {
+                count = 3;
+                msg = "• The Process field is required.\n";
+            }
+            if (!String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
+            {
+                count = 4;
             }
             if (count == 2)
             {
-                MessageBox.Show("Invalid Input for Arrival Time and Burst Time. Please Try Again", "Input Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                checkRB();
+                MessageBox.Show("There were problem/s with the following field/s:\n" + rbm + msg + atmsg + btmsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 clearTxts();
                 row.Delete();
             }
             else if (count == 1)
             {
-                MessageBox.Show("Invalid Input for Arrival Time. Please Try Again", "Input Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                checkRB();
+                MessageBox.Show("There were problem/s with the following field/s:\n" + rbm + msg + atmsg + btmsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 clearTxts();
                 row.Delete();
             }
             else if (count == 3)
             {
-                MessageBox.Show("Invalid Input for Burst Time. Please Try Again", "Input Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                checkRB();
+                MessageBox.Show("There were problem/s with the following field/s:\n" + rbm + msg + atmsg + btmsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                clearTxts();
+                row.Delete();
+            }
+            else if (count == 4)
+            {
+                checkRB();
+                MessageBox.Show("There were problem/s with the following field/s:\n" + rbm + msg + atmsg + btmsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 clearTxts();
                 row.Delete();
             }
