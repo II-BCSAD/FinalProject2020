@@ -292,7 +292,7 @@ namespace FCFS
 
         private void btnSolution_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("HELLO", "GREET", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            
             SolutionForm obj = new SolutionForm();
             obj.Show();
 
