@@ -13,7 +13,7 @@ namespace FCFS
     public partial class fcfsForm : Form
     {
         public static int at, bt,nRow = 0;
-        public static int rbcount = 0;
+        public static int rbcount = 0, rbSelect = 0;
         public static string rbm;
         public static int[] btArr = new int[5];
         public static int[] atArr = new int[5];
@@ -45,8 +45,28 @@ namespace FCFS
                 rbm = ""
 ;               rbcount = 0;
             }
+        }
 
-
+        private void selectRB()
+        {
+            if (nRow > 0)
+            {
+                if (rbSingle.Checked == true)
+                {
+                    rbSelect = 1;
+                }
+            }
+            else
+            {
+                if (rbSingle.Checked == true)
+                {
+                    rbSelect = 2;
+                }
+            }
+            if (rbMultiple.Checked == true)
+            {
+                rbSelect = 2;
+            }
         }
         private void btnADD_Click(object sender, EventArgs e)
         {
@@ -64,16 +84,27 @@ namespace FCFS
             //input validation
             int count = 0;
             string msg = "", btmsg="", atmsg="";
-
+            selectRB();
             if (!int.TryParse(inAT.Text, out at))
             {
+                if(rbSingle.Checked == true)
+                {
+                    if (nRow > 1)
+                    {
+                        count = 0;
+                    }
+                }
+                else
+                {
+                    count = 1;
+                    atmsg = "• Invalid input for Arrival Time field\n";
+                }
                 count = 1;
                 atmsg = "• Invalid input for Arrival Time field\n";
                 if (String.IsNullOrEmpty(inAT.Text))
                 {
                     atmsg = "• The Arrival Time field is required.\n";
                 }
-
             }
             if (!int.TryParse(inBT.Text, out bt))
             {
@@ -126,8 +157,22 @@ namespace FCFS
                 row.Delete();
             }
             else {
+                selectRB();
+                if (rbSelect == 1)
+                {
+                   
+                    string atText = Convert.ToString(dataGridView1.Rows[0].Cells[1].Value);
+                    inAT.Text = atText.ToString();
+                    inAT.Enabled = false;
+                    
+                    //row["ARRIVAL TIME (AT)"] = dataGridView1.Rows[1].Cells[1].Value;
+                    row["ARRIVAL TIME (AT)"] = inAT.Text;
+                }
+                else if (rbSelect == 2)
+                {
+                    row["ARRIVAL TIME (AT)"] = inAT.Text;
+                }
                 row["PROCESS"] = inProcess.Text;
-                row["ARRIVAL TIME (AT)"] = inAT.Text;
                 row["BURST TIME (BT)"] = inBT.Text;
                 grpQueue.Enabled = false;
 
@@ -139,6 +184,7 @@ namespace FCFS
                     dataGridView1.Rows[num].Cells[1].Value = Drow["ARRIVAL TIME (AT)"].ToString();
                     dataGridView1.Rows[num].Cells[2].Value = Drow["BURST TIME (BT)"].ToString();
                 }
+
                 clearTxts();
                 nRow += 1;
                 checkRows();
@@ -151,6 +197,8 @@ namespace FCFS
                 rbSingle.Checked = false;
                 rbMultiple.Checked = false;
                 nRow = 0;
+                inAT.Enabled = true;
+                
             }
                  
         }
@@ -168,9 +216,31 @@ namespace FCFS
         }
         private void clearTxts()
         {
-            inProcess.Text = "";
-            inAT.Text = "";
-            inBT.Text = "";
+            
+            selectRB();
+            if (rbSelect == 2) 
+            {
+                if (rbSingle.Checked == true)
+                {
+                    inProcess.Text = "";
+                    inBT.Text = "";
+                    inAT.Enabled = false;
+                }
+
+                else
+                {
+                    inProcess.Text = "";
+                    inAT.Text = "";
+                    inBT.Text = "";
+                }
+                
+            }
+            else if (rbSelect == 1)
+            {
+                inProcess.Text = "";
+                inBT.Text = "";
+            }
+            
             
         }
         private void btnCLEAR_Click(object sender, EventArgs e)
@@ -215,7 +285,28 @@ namespace FCFS
            // label3.Text = pArr.Select(x => x.ToString()).Aggregate((a, b) => a + ", " + b);
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnSolution_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("HELLO", "GREET", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            SolutionForm obj = new SolutionForm();
+            obj.Show();
+
+        }
+
+        private void btnRestart_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
 
         private void delete()
         {
@@ -239,9 +330,8 @@ namespace FCFS
         {
             delete();
             checkRows();
-
-
         }
+
 
     }
 }
