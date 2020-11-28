@@ -319,6 +319,7 @@ namespace FCFS
                     grpQueue.Enabled = true;
                     rbSingle.Checked = false;
                     rbMultiple.Checked = false;
+                    inAT.Enabled = true;
                     nRow = 0;
                 }
                 nRow -= 1;
