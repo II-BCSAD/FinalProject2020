@@ -283,10 +283,21 @@ namespace FCFS
 
         private void btnSTART_Click(object sender, EventArgs e)
         {
+            transferValuesToArray();
+            btnDELETE.Enabled = false;         
+        }
+
+        private void displayGanttChart()
+        {
+
+        }
+
+        public void transferValuesToArray()
+        {
             string[] pArray = dataGridView1.Rows
                .Cast<DataGridViewRow>()
                .Where(r => !r.IsNewRow)
-               .Select(r =>(r.Cells[0].Value.ToString())).ToArray();
+               .Select(r => (r.Cells[0].Value.ToString())).ToArray();
 
             for (int i = 0; i < 5; i++)
             {
@@ -305,14 +316,11 @@ namespace FCFS
                 .Cast<DataGridViewRow>()
                 .Where(r => !r.IsNewRow)
                 .Select(r => Convert.ToInt32(r.Cells[2].Value.ToString())).ToArray();
-            
-            for (int i = 0; i <5; i++)
+
+            for (int i = 0; i < 5; i++)
             {
                 btArr[i] = btArray[i];
             }
-
-            btnDELETE.Enabled = false;
-           // label3.Text = pArr.Select(x => x.ToString()).Aggregate((a, b) => a + ", " + b);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -322,9 +330,12 @@ namespace FCFS
 
         private void btnSolution_Click(object sender, EventArgs e)
         {
-            
             SolutionForm obj = new SolutionForm();
             obj.Show();
+            int n = pArr.Length;
+
+            //pass value to compute() in SolutionForm.cs
+            obj.compute(pArr,n,btArr,atArr);
 
         }
 

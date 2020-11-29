@@ -8,3 +8,4 @@ C:\Users\jemimah\source\repos\FinalProject2020\FCFS\obj\Debug\FCFS.csproj.CoreCo
 C:\Users\jemimah\source\repos\FinalProject2020\FCFS\obj\Debug\FCFS.exe
 C:\Users\jemimah\source\repos\FinalProject2020\FCFS\obj\Debug\FCFS.pdb
 C:\Users\jemimah\source\repos\FinalProject2020\FCFS\obj\Debug\FCFS.fcfsForm.resources
+C:\Users\jemimah\source\repos\FinalProject2020\FCFS\obj\Debug\FCFS.SolutionForm.resources
