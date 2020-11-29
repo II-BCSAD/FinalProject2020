@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnDELETE = new System.Windows.Forms.Button();
             this.btnSTART = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnRestart = new System.Windows.Forms.Button();
+            this.btnSolution = new System.Windows.Forms.Button();
             this.gbAverage = new System.Windows.Forms.GroupBox();
             this.tbATAT = new System.Windows.Forms.TextBox();
             this.tbAWT = new System.Windows.Forms.TextBox();
@@ -52,7 +55,7 @@
             this.colComp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.inBT = new System.Windows.Forms.TextBox();
             this.lb_AT = new System.Windows.Forms.Label();
             this.lb_process = new System.Windows.Forms.Label();
@@ -66,10 +69,7 @@
             this.rbMultiple = new System.Windows.Forms.RadioButton();
             this.rbSingle = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnSolution = new System.Windows.Forms.Button();
-            this.btnRestart = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.gbAverage.SuspendLayout();
@@ -88,6 +88,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1019, 177);
             this.panel1.TabIndex = 3;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
+            this.groupBox1.Location = new System.Drawing.Point(30, 10);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(968, 147);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "GANTT CHART";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnDELETE
             // 
@@ -133,6 +145,34 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1019, 309);
             this.panel2.TabIndex = 4;
+            // 
+            // btnRestart
+            // 
+            this.btnRestart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestart.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.btnRestart.ForeColor = System.Drawing.Color.White;
+            this.btnRestart.Location = new System.Drawing.Point(859, 273);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(115, 30);
+            this.btnRestart.TabIndex = 6;
+            this.btnRestart.Text = "RESTART";
+            this.btnRestart.UseVisualStyleBackColor = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
+            // btnSolution
+            // 
+            this.btnSolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
+            this.btnSolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSolution.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSolution.ForeColor = System.Drawing.Color.White;
+            this.btnSolution.Location = new System.Drawing.Point(859, 237);
+            this.btnSolution.Name = "btnSolution";
+            this.btnSolution.Size = new System.Drawing.Size(115, 32);
+            this.btnSolution.TabIndex = 5;
+            this.btnSolution.Text = "SOLUTION";
+            this.btnSolution.UseVisualStyleBackColor = false;
+            this.btnSolution.Click += new System.EventHandler(this.btnSolution_Click);
             // 
             // gbAverage
             // 
@@ -206,19 +246,19 @@
             // 
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colProcess,
@@ -239,8 +279,8 @@
             // 
             // colProcess
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colProcess.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colProcess.DefaultCellStyle = dataGridViewCellStyle3;
             this.colProcess.HeaderText = "PROCESS";
             this.colProcess.MinimumWidth = 6;
             this.colProcess.Name = "colProcess";
@@ -249,8 +289,8 @@
             // 
             // colAT
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colAT.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colAT.DefaultCellStyle = dataGridViewCellStyle4;
             this.colAT.HeaderText = "ARRIVAL TIME (AT)";
             this.colAT.MinimumWidth = 6;
             this.colAT.Name = "colAT";
@@ -259,8 +299,8 @@
             // 
             // colBT
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colBT.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colBT.DefaultCellStyle = dataGridViewCellStyle5;
             this.colBT.HeaderText = "BURST TIME (BT)";
             this.colBT.MinimumWidth = 6;
             this.colBT.Name = "colBT";
@@ -292,7 +332,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(47)))), ((int)(((byte)(51)))));
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.btnExit);
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.MaximumSize = new System.Drawing.Size(1025, 35);
             this.panel4.MinimumSize = new System.Drawing.Size(1025, 35);
@@ -311,23 +351,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "First Come First Serve";
             // 
-            // button3
+            // btnExit
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(55)))), ((int)(((byte)(80)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(959, -3);
-            this.button3.MaximumSize = new System.Drawing.Size(60, 40);
-            this.button3.MinimumSize = new System.Drawing.Size(60, 40);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 40);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "X";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(55)))), ((int)(((byte)(80)))));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(959, -3);
+            this.btnExit.MaximumSize = new System.Drawing.Size(60, 40);
+            this.btnExit.MinimumSize = new System.Drawing.Size(60, 40);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(60, 40);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "X";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.button3_Click);
             // 
             // inBT
             // 
@@ -473,18 +513,6 @@
             this.panel3.Size = new System.Drawing.Size(472, 121);
             this.panel3.TabIndex = 7;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
-            this.groupBox1.Location = new System.Drawing.Point(30, 10);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(968, 147);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "GANTT CHART";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
             // groupBox2
             // 
             this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
@@ -496,34 +524,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "READY QUEUE";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // btnSolution
-            // 
-            this.btnSolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
-            this.btnSolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSolution.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSolution.ForeColor = System.Drawing.Color.White;
-            this.btnSolution.Location = new System.Drawing.Point(859, 237);
-            this.btnSolution.Name = "btnSolution";
-            this.btnSolution.Size = new System.Drawing.Size(115, 32);
-            this.btnSolution.TabIndex = 5;
-            this.btnSolution.Text = "SOLUTION";
-            this.btnSolution.UseVisualStyleBackColor = false;
-            this.btnSolution.Click += new System.EventHandler(this.btnSolution_Click);
-            // 
-            // btnRestart
-            // 
-            this.btnRestart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestart.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
-            this.btnRestart.ForeColor = System.Drawing.Color.White;
-            this.btnRestart.Location = new System.Drawing.Point(859, 273);
-            this.btnRestart.Name = "btnRestart";
-            this.btnRestart.Size = new System.Drawing.Size(115, 30);
-            this.btnRestart.TabIndex = 6;
-            this.btnRestart.Text = "RESTART";
-            this.btnRestart.UseVisualStyleBackColor = false;
-            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
             // fcfsForm
             // 
@@ -569,7 +569,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox inBT;

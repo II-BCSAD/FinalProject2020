@@ -12,7 +12,7 @@ namespace FCFS
 {
     public partial class fcfsForm : Form
     {
-        public static int at, bt,nRow = 0;
+        public static int at, bt,nRow = 0,  count = 0;
         public static int rbcount = 0, rbSelect = 0;
         public static string rbm;
         public static int[] btArr = new int[5];
@@ -29,6 +29,7 @@ namespace FCFS
 
         }
 
+        //Exit button
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -82,7 +83,7 @@ namespace FCFS
             DataRow row = ss.NewRow();
 
             //input validation
-            int count = 0;
+           
             string msg = "", btmsg="", atmsg="";
             selectRB();
             if (!int.TryParse(inAT.Text, out at))
@@ -156,8 +157,10 @@ namespace FCFS
                 clearTxts();
                 row.Delete();
             }
+
             else {
                 selectRB();
+                checkRows();
                 if (rbSelect == 1)
                 {
                    
@@ -170,11 +173,29 @@ namespace FCFS
                 }
                 else if (rbSelect == 2)
                 {
+                    checkRows();
+                    if (nRow == 0)
+                    {
+                        if (rbSingle.Checked == true)
+                        {
+                            string atText2 = inAT.Text;
+                            inAT.Text = atText2.ToString();
+                            inAT.Enabled = false;
+                            row["ARRIVAL TIME (AT)"] = inAT.Text;
+                        }                        
+                    }
                     row["ARRIVAL TIME (AT)"] = inAT.Text;
                 }
                 row["PROCESS"] = inProcess.Text;
                 row["BURST TIME (BT)"] = inBT.Text;
                 grpQueue.Enabled = false;
+                if (nRow == 1)
+                {
+                    if(rbMultiple.Checked == true)
+                    {
+                        grpQueue.Enabled = false;
+                    }
+                }
 
                 ss.Rows.Add(row);
                 foreach (DataRow Drow in ss.Rows)
@@ -190,7 +211,7 @@ namespace FCFS
                 checkRows();
 
             }
-
+            checkRows();
             if (nRow == 0)
             {
                 grpQueue.Enabled = true;
@@ -198,7 +219,6 @@ namespace FCFS
                 rbMultiple.Checked = false;
                 nRow = 0;
                 inAT.Enabled = true;
-                
             }
                  
         }
@@ -218,13 +238,23 @@ namespace FCFS
         {
             
             selectRB();
-            if (rbSelect == 2) 
+            if (rbSelect == 2)
             {
                 if (rbSingle.Checked == true)
                 {
-                    inProcess.Text = "";
-                    inBT.Text = "";
-                    inAT.Enabled = false;
+                    if (count == 1 || count == 2 || count == 3 || count == 4)
+                    {
+                        inProcess.Text = "";
+                        inBT.Text = "";
+                        inAT.Text = "";
+                    }
+
+                    else
+                    {
+                        inProcess.Text = "";
+                        inBT.Text = "";
+                    }
+                    count = 0;
                 }
 
                 else
@@ -240,7 +270,7 @@ namespace FCFS
                 inProcess.Text = "";
                 inBT.Text = "";
             }
-            
+            count = 0;
             
         }
         private void btnCLEAR_Click(object sender, EventArgs e)
@@ -320,6 +350,7 @@ namespace FCFS
                     rbSingle.Checked = false;
                     rbMultiple.Checked = false;
                     inAT.Enabled = true;
+                    inAT.Text = "";
                     nRow = 0;
                 }
                 nRow -= 1;
