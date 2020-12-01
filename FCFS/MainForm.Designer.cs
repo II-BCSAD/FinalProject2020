@@ -28,24 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.lowPanel = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.Process5 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
+            this.Process4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.Process3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.Process2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Process1 = new System.Windows.Forms.Label();
             this.btnDELETE = new System.Windows.Forms.Button();
             this.btnSTART = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.midPanel = new System.Windows.Forms.Panel();
             this.btnRestart = new System.Windows.Forms.Button();
             this.btnSolution = new System.Windows.Forms.Button();
             this.gbAverage = new System.Windows.Forms.GroupBox();
@@ -76,25 +92,26 @@
             this.grpQueue = new System.Windows.Forms.GroupBox();
             this.rbMultiple = new System.Windows.Forms.RadioButton();
             this.rbSingle = new System.Windows.Forms.RadioButton();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.rqPanel = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Process1 = new System.Windows.Forms.Label();
-            this.Process2 = new System.Windows.Forms.Label();
-            this.Process3 = new System.Windows.Forms.Label();
-            this.Process4 = new System.Windows.Forms.Label();
-            this.Process5 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.rq1 = new System.Windows.Forms.Panel();
+            this.rq2 = new System.Windows.Forms.Panel();
+            this.rq3 = new System.Windows.Forms.Panel();
+            this.rq4 = new System.Windows.Forms.Panel();
+            this.rq5 = new System.Windows.Forms.Panel();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.progressBar5 = new System.Windows.Forms.ProgressBar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lowPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -102,26 +119,37 @@
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.midPanel.SuspendLayout();
             this.gbAverage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
             this.inputPanel.SuspendLayout();
             this.grpQueue.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.rqPanel.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // lowPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(1, 464);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1019, 196);
-            this.panel1.TabIndex = 3;
+            this.lowPanel.BackColor = System.Drawing.Color.White;
+            this.lowPanel.Controls.Add(this.label5);
+            this.lowPanel.Controls.Add(this.label4);
+            this.lowPanel.Controls.Add(this.label3);
+            this.lowPanel.Controls.Add(this.btnRestart);
+            this.lowPanel.Controls.Add(this.groupBox1);
+            this.lowPanel.Controls.Add(this.btnSolution);
+            this.lowPanel.Location = new System.Drawing.Point(1, 464);
+            this.lowPanel.Name = "lowPanel";
+            this.lowPanel.Size = new System.Drawing.Size(1019, 196);
+            this.lowPanel.TabIndex = 3;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.progressBar5);
+            this.groupBox1.Controls.Add(this.progressBar4);
+            this.groupBox1.Controls.Add(this.progressBar3);
+            this.groupBox1.Controls.Add(this.progressBar2);
+            this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.label19);
@@ -139,11 +167,83 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
             this.groupBox1.Location = new System.Drawing.Point(30, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(968, 162);
+            this.groupBox1.Size = new System.Drawing.Size(808, 162);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "GANTT CHART";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label21.ForeColor = System.Drawing.Color.DarkGray;
+            this.label21.Location = new System.Drawing.Point(702, 129);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(76, 27);
+            this.label21.TabIndex = 1;
+            this.label21.Text = "label4";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.DarkGray;
+            this.label20.Location = new System.Drawing.Point(607, 129);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(76, 27);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "label4";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label19.ForeColor = System.Drawing.Color.DarkGray;
+            this.label19.Location = new System.Drawing.Point(500, 129);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(76, 27);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "label4";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.Color.DarkGray;
+            this.label18.Location = new System.Drawing.Point(393, 129);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(76, 27);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "label4";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label17.ForeColor = System.Drawing.Color.DarkGray;
+            this.label17.Location = new System.Drawing.Point(296, 130);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(76, 27);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "label4";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.DarkGray;
+            this.label16.Location = new System.Drawing.Point(192, 129);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(76, 27);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "label4";
             // 
             // panel11
             // 
@@ -184,6 +284,30 @@
             this.panel9.Size = new System.Drawing.Size(97, 86);
             this.panel9.TabIndex = 0;
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label26.ForeColor = System.Drawing.Color.DarkGray;
+            this.label26.Location = new System.Drawing.Point(38, 54);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(55, 20);
+            this.label26.TabIndex = 1;
+            this.label26.Text = "label4";
+            // 
+            // Process5
+            // 
+            this.Process5.AutoSize = true;
+            this.Process5.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Process5.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.Process5.Location = new System.Drawing.Point(4, 25);
+            this.Process5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Process5.Name = "Process5";
+            this.Process5.Size = new System.Drawing.Size(91, 33);
+            this.Process5.TabIndex = 1;
+            this.Process5.Text = "label4";
+            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.label25);
@@ -193,6 +317,30 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(97, 86);
             this.panel8.TabIndex = 0;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label25.ForeColor = System.Drawing.Color.DarkGray;
+            this.label25.Location = new System.Drawing.Point(38, 54);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(55, 20);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "label4";
+            // 
+            // Process4
+            // 
+            this.Process4.AutoSize = true;
+            this.Process4.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Process4.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.Process4.Location = new System.Drawing.Point(2, 26);
+            this.Process4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Process4.Name = "Process4";
+            this.Process4.Size = new System.Drawing.Size(91, 33);
+            this.Process4.TabIndex = 1;
+            this.Process4.Text = "label4";
             // 
             // panel7
             // 
@@ -204,6 +352,30 @@
             this.panel7.Size = new System.Drawing.Size(97, 86);
             this.panel7.TabIndex = 0;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label24.ForeColor = System.Drawing.Color.DarkGray;
+            this.label24.Location = new System.Drawing.Point(38, 54);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(55, 20);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "label4";
+            // 
+            // Process3
+            // 
+            this.Process3.AutoSize = true;
+            this.Process3.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Process3.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.Process3.Location = new System.Drawing.Point(4, 26);
+            this.Process3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Process3.Name = "Process3";
+            this.Process3.Size = new System.Drawing.Size(91, 33);
+            this.Process3.TabIndex = 1;
+            this.Process3.Text = "label4";
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.label23);
@@ -213,6 +385,30 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(97, 86);
             this.panel6.TabIndex = 0;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label23.ForeColor = System.Drawing.Color.DarkGray;
+            this.label23.Location = new System.Drawing.Point(38, 54);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(55, 20);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "label4";
+            // 
+            // Process2
+            // 
+            this.Process2.AutoSize = true;
+            this.Process2.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Process2.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.Process2.Location = new System.Drawing.Point(4, 25);
+            this.Process2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Process2.Name = "Process2";
+            this.Process2.Size = new System.Drawing.Size(91, 33);
+            this.Process2.TabIndex = 1;
+            this.Process2.Text = "label4";
             // 
             // panel5
             // 
@@ -224,6 +420,30 @@
             this.panel5.Size = new System.Drawing.Size(97, 86);
             this.panel5.TabIndex = 0;
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
+            this.label22.ForeColor = System.Drawing.Color.DarkGray;
+            this.label22.Location = new System.Drawing.Point(38, 54);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(55, 20);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "label4";
+            // 
+            // Process1
+            // 
+            this.Process1.AutoSize = true;
+            this.Process1.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.Process1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.Process1.Location = new System.Drawing.Point(2, 25);
+            this.Process1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Process1.Name = "Process1";
+            this.Process1.Size = new System.Drawing.Size(91, 33);
+            this.Process1.TabIndex = 1;
+            this.Process1.Text = "label4";
+            // 
             // btnDELETE
             // 
             this.btnDELETE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
@@ -231,7 +451,7 @@
             this.btnDELETE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDELETE.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDELETE.ForeColor = System.Drawing.Color.White;
-            this.btnDELETE.Location = new System.Drawing.Point(859, 14);
+            this.btnDELETE.Location = new System.Drawing.Point(859, 35);
             this.btnDELETE.Name = "btnDELETE";
             this.btnDELETE.Size = new System.Drawing.Size(115, 32);
             this.btnDELETE.TabIndex = 0;
@@ -246,7 +466,7 @@
             this.btnSTART.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSTART.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSTART.ForeColor = System.Drawing.Color.White;
-            this.btnSTART.Location = new System.Drawing.Point(859, 50);
+            this.btnSTART.Location = new System.Drawing.Point(859, 73);
             this.btnSTART.Name = "btnSTART";
             this.btnSTART.Size = new System.Drawing.Size(115, 32);
             this.btnSTART.TabIndex = 1;
@@ -254,20 +474,21 @@
             this.btnSTART.UseVisualStyleBackColor = false;
             this.btnSTART.Click += new System.EventHandler(this.btnSTART_Click);
             // 
-            // panel2
+            // midPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnRestart);
-            this.panel2.Controls.Add(this.btnSolution);
-            this.panel2.Controls.Add(this.gbAverage);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.btnSTART);
-            this.panel2.Controls.Add(this.btnDELETE);
-            this.panel2.Location = new System.Drawing.Point(1, 156);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1019, 309);
-            this.panel2.TabIndex = 4;
+            this.midPanel.BackColor = System.Drawing.Color.White;
+            this.midPanel.Controls.Add(this.label8);
+            this.midPanel.Controls.Add(this.label7);
+            this.midPanel.Controls.Add(this.label6);
+            this.midPanel.Controls.Add(this.gbAverage);
+            this.midPanel.Controls.Add(this.label2);
+            this.midPanel.Controls.Add(this.dataGridView1);
+            this.midPanel.Controls.Add(this.btnSTART);
+            this.midPanel.Controls.Add(this.btnDELETE);
+            this.midPanel.Location = new System.Drawing.Point(1, 162);
+            this.midPanel.Name = "midPanel";
+            this.midPanel.Size = new System.Drawing.Size(1019, 303);
+            this.midPanel.TabIndex = 4;
             // 
             // btnRestart
             // 
@@ -275,7 +496,7 @@
             this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestart.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
             this.btnRestart.ForeColor = System.Drawing.Color.White;
-            this.btnRestart.Location = new System.Drawing.Point(859, 273);
+            this.btnRestart.Location = new System.Drawing.Point(865, 73);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(115, 30);
             this.btnRestart.TabIndex = 6;
@@ -289,7 +510,7 @@
             this.btnSolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSolution.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
             this.btnSolution.ForeColor = System.Drawing.Color.White;
-            this.btnSolution.Location = new System.Drawing.Point(859, 237);
+            this.btnSolution.Location = new System.Drawing.Point(865, 32);
             this.btnSolution.Name = "btnSolution";
             this.btnSolution.Size = new System.Drawing.Size(115, 32);
             this.btnSolution.TabIndex = 5;
@@ -304,7 +525,7 @@
             this.gbAverage.Controls.Add(this.lblTAT);
             this.gbAverage.Controls.Add(this.lb_awt);
             this.gbAverage.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAverage.Location = new System.Drawing.Point(834, 87);
+            this.gbAverage.Location = new System.Drawing.Point(834, 124);
             this.gbAverage.Name = "gbAverage";
             this.gbAverage.Size = new System.Drawing.Size(173, 140);
             this.gbAverage.TabIndex = 4;
@@ -356,7 +577,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
             this.label2.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(26, 22);
+            this.label2.Location = new System.Drawing.Point(26, 32);
             this.label2.MaximumSize = new System.Drawing.Size(795, 35);
             this.label2.MinimumSize = new System.Drawing.Size(795, 35);
             this.label2.Name = "label2";
@@ -369,19 +590,19 @@
             // 
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colProcess,
@@ -391,7 +612,7 @@
             this.colTAT,
             this.colComp});
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(215)))), ((int)(((byte)(216)))));
-            this.dataGridView1.Location = new System.Drawing.Point(26, 54);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 64);
             this.dataGridView1.MaximumSize = new System.Drawing.Size(795, 230);
             this.dataGridView1.MinimumSize = new System.Drawing.Size(795, 230);
             this.dataGridView1.Name = "dataGridView1";
@@ -402,8 +623,8 @@
             // 
             // colProcess
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colProcess.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colProcess.DefaultCellStyle = dataGridViewCellStyle18;
             this.colProcess.HeaderText = "PROCESS";
             this.colProcess.MinimumWidth = 6;
             this.colProcess.Name = "colProcess";
@@ -412,8 +633,8 @@
             // 
             // colAT
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colAT.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colAT.DefaultCellStyle = dataGridViewCellStyle19;
             this.colAT.HeaderText = "ARRIVAL TIME (AT)";
             this.colAT.MinimumWidth = 6;
             this.colAT.Name = "colAT";
@@ -422,8 +643,8 @@
             // 
             // colBT
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colBT.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colBT.DefaultCellStyle = dataGridViewCellStyle20;
             this.colBT.HeaderText = "BURST TIME (BT)";
             this.colBT.MinimumWidth = 6;
             this.colBT.Name = "colBT";
@@ -496,6 +717,7 @@
             // 
             this.inBT.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.inBT.Location = new System.Drawing.Point(304, 88);
+            this.inBT.MaxLength = 3;
             this.inBT.Name = "inBT";
             this.inBT.Size = new System.Drawing.Size(100, 25);
             this.inBT.TabIndex = 2;
@@ -534,6 +756,7 @@
             // 
             this.inProcess.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.inProcess.Location = new System.Drawing.Point(304, 26);
+            this.inProcess.MaxLength = 2;
             this.inProcess.Name = "inProcess";
             this.inProcess.Size = new System.Drawing.Size(100, 25);
             this.inProcess.TabIndex = 0;
@@ -542,6 +765,7 @@
             // 
             this.inAT.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.inAT.Location = new System.Drawing.Point(304, 57);
+            this.inAT.MaxLength = 2;
             this.inAT.Name = "inAT";
             this.inAT.Size = new System.Drawing.Size(100, 25);
             this.inAT.TabIndex = 1;
@@ -590,7 +814,7 @@
             this.inputPanel.Controls.Add(this.inBT);
             this.inputPanel.Location = new System.Drawing.Point(1, 30);
             this.inputPanel.Name = "inputPanel";
-            this.inputPanel.Size = new System.Drawing.Size(554, 126);
+            this.inputPanel.Size = new System.Drawing.Size(554, 135);
             this.inputPanel.TabIndex = 5;
             // 
             // grpQueue
@@ -627,229 +851,174 @@
             this.rbSingle.Text = "SINGLE";
             this.rbSingle.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // rqPanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.groupBox2);
-            this.panel3.Location = new System.Drawing.Point(548, 35);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(472, 121);
-            this.panel3.TabIndex = 7;
+            this.rqPanel.BackColor = System.Drawing.Color.White;
+            this.rqPanel.Controls.Add(this.groupBox2);
+            this.rqPanel.Location = new System.Drawing.Point(548, 35);
+            this.rqPanel.Name = "rqPanel";
+            this.rqPanel.Size = new System.Drawing.Size(472, 130);
+            this.rqPanel.TabIndex = 7;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.rq5);
+            this.groupBox2.Controls.Add(this.rq4);
+            this.groupBox2.Controls.Add(this.rq3);
+            this.groupBox2.Controls.Add(this.rq2);
+            this.groupBox2.Controls.Add(this.rq1);
+            this.groupBox2.Controls.Add(this.panel12);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
             this.groupBox2.Location = new System.Drawing.Point(13, 8);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(432, 100);
+            this.groupBox2.Size = new System.Drawing.Size(432, 113);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "READY QUEUE";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // Process1
+            // panel12
             // 
-            this.Process1.AutoSize = true;
-            this.Process1.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Process1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Process1.Location = new System.Drawing.Point(2, 25);
-            this.Process1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Process1.Name = "Process1";
-            this.Process1.Size = new System.Drawing.Size(91, 33);
-            this.Process1.TabIndex = 1;
-            this.Process1.Text = "label4";
+            this.panel12.Location = new System.Drawing.Point(55, 34);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(28, 66);
+            this.panel12.TabIndex = 0;
             // 
-            // Process2
+            // rq1
             // 
-            this.Process2.AutoSize = true;
-            this.Process2.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Process2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Process2.Location = new System.Drawing.Point(4, 25);
-            this.Process2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Process2.Name = "Process2";
-            this.Process2.Size = new System.Drawing.Size(91, 33);
-            this.Process2.TabIndex = 1;
-            this.Process2.Text = "label4";
+            this.rq1.Location = new System.Drawing.Point(32, 31);
+            this.rq1.Name = "rq1";
+            this.rq1.Size = new System.Drawing.Size(51, 73);
+            this.rq1.TabIndex = 0;
             // 
-            // Process3
+            // rq2
             // 
-            this.Process3.AutoSize = true;
-            this.Process3.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Process3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Process3.Location = new System.Drawing.Point(4, 26);
-            this.Process3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Process3.Name = "Process3";
-            this.Process3.Size = new System.Drawing.Size(91, 33);
-            this.Process3.TabIndex = 1;
-            this.Process3.Text = "label4";
+            this.rq2.Location = new System.Drawing.Point(89, 31);
+            this.rq2.Name = "rq2";
+            this.rq2.Size = new System.Drawing.Size(51, 73);
+            this.rq2.TabIndex = 0;
             // 
-            // Process4
+            // rq3
             // 
-            this.Process4.AutoSize = true;
-            this.Process4.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Process4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Process4.Location = new System.Drawing.Point(2, 26);
-            this.Process4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Process4.Name = "Process4";
-            this.Process4.Size = new System.Drawing.Size(91, 33);
-            this.Process4.TabIndex = 1;
-            this.Process4.Text = "label4";
+            this.rq3.Location = new System.Drawing.Point(146, 31);
+            this.rq3.Name = "rq3";
+            this.rq3.Size = new System.Drawing.Size(51, 73);
+            this.rq3.TabIndex = 0;
             // 
-            // Process5
+            // rq4
             // 
-            this.Process5.AutoSize = true;
-            this.Process5.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.Process5.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.Process5.Location = new System.Drawing.Point(4, 25);
-            this.Process5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Process5.Name = "Process5";
-            this.Process5.Size = new System.Drawing.Size(91, 33);
-            this.Process5.TabIndex = 1;
-            this.Process5.Text = "label4";
+            this.rq4.Location = new System.Drawing.Point(203, 31);
+            this.rq4.Name = "rq4";
+            this.rq4.Size = new System.Drawing.Size(51, 73);
+            this.rq4.TabIndex = 0;
             // 
-            // label22
+            // rq5
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label22.ForeColor = System.Drawing.Color.DarkGray;
-            this.label22.Location = new System.Drawing.Point(38, 54);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(55, 20);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "label4";
+            this.rq5.Location = new System.Drawing.Point(260, 31);
+            this.rq5.Name = "rq5";
+            this.rq5.Size = new System.Drawing.Size(51, 73);
+            this.rq5.TabIndex = 0;
             // 
-            // label23
+            // progressBar1
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label23.ForeColor = System.Drawing.Color.DarkGray;
-            this.label23.Location = new System.Drawing.Point(38, 54);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(55, 20);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "label4";
+            this.progressBar1.Location = new System.Drawing.Point(229, 25);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(95, 10);
+            this.progressBar1.TabIndex = 2;
             // 
-            // label24
+            // progressBar2
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label24.ForeColor = System.Drawing.Color.DarkGray;
-            this.label24.Location = new System.Drawing.Point(38, 54);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(55, 20);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "label4";
+            this.progressBar2.Location = new System.Drawing.Point(335, 25);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(95, 10);
+            this.progressBar2.TabIndex = 2;
             // 
-            // label25
+            // progressBar3
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label25.ForeColor = System.Drawing.Color.DarkGray;
-            this.label25.Location = new System.Drawing.Point(38, 54);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(55, 20);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "label4";
+            this.progressBar3.Location = new System.Drawing.Point(438, 23);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(95, 10);
+            this.progressBar3.TabIndex = 2;
             // 
-            // label26
+            // progressBar4
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label26.ForeColor = System.Drawing.Color.DarkGray;
-            this.label26.Location = new System.Drawing.Point(38, 54);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(55, 20);
-            this.label26.TabIndex = 1;
-            this.label26.Text = "label4";
+            this.progressBar4.Location = new System.Drawing.Point(543, 23);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(95, 10);
+            this.progressBar4.TabIndex = 2;
             // 
-            // label16
+            // progressBar5
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.DarkGray;
-            this.label16.Location = new System.Drawing.Point(192, 129);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 27);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "label4";
+            this.progressBar5.Location = new System.Drawing.Point(648, 23);
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Size = new System.Drawing.Size(95, 10);
+            this.progressBar5.TabIndex = 2;
             // 
-            // label17
+            // label3
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.DarkGray;
-            this.label17.Location = new System.Drawing.Point(296, 130);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(76, 27);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "label4";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(844, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(50, 19);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "label3";
             // 
-            // label18
+            // label4
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.DarkGray;
-            this.label18.Location = new System.Drawing.Point(393, 129);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(76, 27);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "label4";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(844, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 19);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "label3";
             // 
-            // label19
+            // label5
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.DarkGray;
-            this.label19.Location = new System.Drawing.Point(500, 129);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(76, 27);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "label4";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(844, 152);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 19);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "label3";
             // 
-            // label20
+            // label6
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.DarkGray;
-            this.label20.Location = new System.Drawing.Point(607, 129);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(76, 27);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "label4";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(223, 205);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 19);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "label3";
             // 
-            // label21
+            // label7
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.label21.ForeColor = System.Drawing.Color.DarkGray;
-            this.label21.Location = new System.Drawing.Point(702, 129);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(76, 27);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "label4";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(223, 224);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 19);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "label3";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(223, 247);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 19);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "label3";
             // 
             // fcfsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 660);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.rqPanel);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.inputPanel);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.midPanel);
+            this.Controls.Add(this.lowPanel);
             this.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -860,7 +1029,8 @@
             this.Name = "fcfsForm";
             this.ShowIcon = false;
             this.Text = "First Come First Serve";
-            this.panel1.ResumeLayout(false);
+            this.lowPanel.ResumeLayout(false);
+            this.lowPanel.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -875,8 +1045,8 @@
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.midPanel.ResumeLayout(false);
+            this.midPanel.PerformLayout();
             this.gbAverage.ResumeLayout(false);
             this.gbAverage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -886,16 +1056,17 @@
             this.inputPanel.PerformLayout();
             this.grpQueue.ResumeLayout(false);
             this.grpQueue.PerformLayout();
-            this.panel3.ResumeLayout(false);
+            this.rqPanel.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel lowPanel;
         private System.Windows.Forms.Button btnSTART;
         private System.Windows.Forms.Button btnDELETE;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel midPanel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
@@ -919,7 +1090,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colWT;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTAT;
         private System.Windows.Forms.DataGridViewTextBoxColumn colComp;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel rqPanel;
         private System.Windows.Forms.Label lb_awt;
         private System.Windows.Forms.GroupBox gbAverage;
         private System.Windows.Forms.TextBox tbATAT;
@@ -953,6 +1124,23 @@
         private System.Windows.Forms.Label Process2;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label Process1;
+        private System.Windows.Forms.Panel rq5;
+        private System.Windows.Forms.Panel rq4;
+        private System.Windows.Forms.Panel rq3;
+        private System.Windows.Forms.Panel rq2;
+        private System.Windows.Forms.Panel rq1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.ProgressBar progressBar5;
+        private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
 

@@ -18,6 +18,16 @@ namespace FCFS
         public static int[] btArr = new int[5];
         public static int[] atArr = new int[5];
         public static string[] pArr = new string[5];
+        public static int[] bt1 = new int[5];
+        public static int[] at1 = new int[5];
+        public static string[] p1 = new string[5];
+        public static int[] finalBT = new int[5];
+        public static int[] finalAT = new int[5];
+        public static string[] finalProcess = new string[5];
+        public static int[] finalWT = new int[5];
+        public static int[] finalTAT = new int[5];
+        public static int[] finalCT = new int[5];
+
 
         public fcfsForm()
         {
@@ -284,9 +294,124 @@ namespace FCFS
         private void btnSTART_Click(object sender, EventArgs e)
         {
             transferValuesToArray();
-            btnDELETE.Enabled = false;         
+            btnDELETE.Enabled = false;       
+            int p  = pArr.Length;
+
+            //sorting
+            if (rbMultiple.Checked)
+            {
+                int size = atArr.Length;
+
+                for (int i = 0 ; i < size - 1; i++)
+                {
+                    int min = i;
+
+                    for (int j = i + 1; j < size; j++)
+                    {
+                        if (atArr[j] < atArr[min])
+                        {
+                            min = j;
+                        }
+                    }
+
+                    int tempAT = atArr[min];
+                    atArr[min] = atArr[i];
+                    atArr[i] = tempAT;
+
+                    int tempBT = btArr[min];
+                    btArr[min] = btArr[i];
+                    btArr[i] = tempBT;
+
+                    string tempProcess = pArr[min];
+                    pArr[min] = pArr[i];
+                    pArr[i] = tempProcess;
+                }
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                bt1[i] = btArr[i];
+                at1[i] = atArr[i];
+                p1[i] = pArr[i];
+             }
+
+            
+            findAvgTime(p1, p, bt1, at1);
+            display();
+        }
+        
+        public void display()
+        {
+            label3.Text = finalProcess.Aggregate((a, b) => a + " " + b);
+            label4.Text = finalAT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+            label5.Text = finalBT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+            label6.Text = finalWT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+            label7.Text = finalTAT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+            label8.Text = finalCT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+        }
+        
+        //calculate avg WT and TAT
+        public static void findAvgTime(string []process, int n, int []bt, int []at)
+        {
+            int[] wt = new int[n];
+            int[] tat = new int[n];
+            int[] ct = new int[n];
+
+            findWT(process, n, bt, wt, at);
+            findTAT(process, n, bt, wt, tat);
+
+            int totalWT = 0;
+            int totalTAT = 0;
+            for (int i = 0; i < n; i++)
+            {
+                totalWT = totalWT + wt[i];
+                totalTAT = totalTAT + tat[i];
+                ct[i] = tat[i] + at[i];
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                finalProcess[i] = process[i];
+                finalAT[i] = at[i];
+                finalBT[i] = bt[i];
+                finalWT[i] = wt[i];
+                finalTAT[i] = tat[i];
+                finalCT[i] = ct[i];
+            }
         }
 
+        static void findWT(string[] process, int n, int[] bt, int[] wt, int[] at)
+        {
+            int[] service_time = new int[n];
+            service_time[0] = bt[0] + at[0];
+            wt[0] = at[0] - at[0];
+
+            // calculating waiting time 
+            for (int i = 1; i < n; i++)
+            {
+                // Add burst time of previous processes 
+                service_time[i] = service_time[i-1] + bt[i ];
+                
+                // Find waiting time for current process = 
+                // sum - at[i] 
+                wt[i] = service_time[i-1] - at[i ];
+
+                // If waiting time for a process is in negative 
+                // that means it is already in the ready queue 
+                // before CPU becomes idle so its waiting time is 0 
+                if (wt[i] < 0)
+                    wt[i] = 0;
+            }
+        }
+        static void findTAT(string[] process, int n, int[] bt,
+                                    int[] wt, int[] tat)
+        {
+            // Calculating turnaround time by adding bt[i] + wt[i] 
+            for (int i = 0; i < n; i++)
+                tat[i] = bt[i] + wt[i];
+        }
+
+        
         private void displayGanttChart()
         {
 
