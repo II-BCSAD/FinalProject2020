@@ -58,7 +58,7 @@ namespace FCFS
             }
         }
 
-        private void selectRB()
+        public void selectRB()
         {
             if (nRow > 0)
             {
@@ -89,6 +89,7 @@ namespace FCFS
             ss.Columns.Add("TURN-AROUND TIME");
             ss.Columns.Add("COMPLETION TIME");
 
+            
 
             DataRow row = ss.NewRow();
 
@@ -98,7 +99,7 @@ namespace FCFS
             selectRB();
             if (!int.TryParse(inAT.Text, out at))
             {
-                if(rbSingle.Checked == true)
+                if(rbSingle.Checked)
                 {
                     if (nRow > 1)
                     {
@@ -179,19 +180,19 @@ namespace FCFS
                     inAT.Enabled = false;
                     
                     //row["ARRIVAL TIME (AT)"] = dataGridView1.Rows[1].Cells[1].Value;
-                    row["ARRIVAL TIME (AT)"] = inAT.Text;
+                    row["ARRIVAL TIME (AT)"] = atText;
                 }
                 else if (rbSelect == 2)
                 {
-                    checkRows();
+                    //checkRows();
                     if (nRow == 0)
                     {
-                        if (rbSingle.Checked == true)
+                        if (rbSingle.Checked)
                         {
                             string atText2 = inAT.Text;
                             inAT.Text = atText2.ToString();
                             inAT.Enabled = false;
-                            row["ARRIVAL TIME (AT)"] = inAT.Text;
+                            row["ARRIVAL TIME (AT)"] = atText2;
                         }                        
                     }
                     row["ARRIVAL TIME (AT)"] = inAT.Text;
@@ -227,10 +228,36 @@ namespace FCFS
                 grpQueue.Enabled = true;
                 rbSingle.Checked = false;
                 rbMultiple.Checked = false;
-                nRow = 0;
+                //nRow = 0;
                 inAT.Enabled = true;
             }
-                 
+
+            if (nRow > 0)
+            {
+                grpQueue.Enabled = false;
+                if (rbSingle.Checked == true)
+                {
+                    rbSingle.Checked = true;
+                    grpQueue.Enabled = false;
+                    inAT.Enabled = false;
+                }
+                else if (rbMultiple.Checked == true)
+                {
+                    rbMultiple.Checked = true;
+                    grpQueue.Enabled = false;
+                }
+               // inAT.Enabled = true;
+            }
+
+            label9.Text = dataGridView1.Rows.Count.ToString();
+            if (nRow != 5)
+            {
+                btnSTART.Enabled = false;
+            }
+            else
+            {
+                btnSTART.Enabled = true;
+            }
         }
         
         private void checkRows()
@@ -242,6 +269,33 @@ namespace FCFS
             else if (nRow < 5)
             {
                 inputPanel.Enabled = true;
+            }
+            
+            if (nRow > 0)
+            {
+                if (rbSingle.Checked == true)
+                {
+                    rbSingle.Checked = true;
+                    grpQueue.Enabled = false;
+                }
+                else if (rbMultiple.Checked == true)
+                {
+                    rbMultiple.Checked = true;
+                    grpQueue.Enabled = false;
+                }
+            }
+            else if (nRow == 0)
+            {
+                if (rbSingle.Checked)
+                {
+                    rbSingle.Checked = true;
+                    grpQueue.Enabled = false;
+                }
+                else if (rbMultiple.Checked)
+                {
+                    rbMultiple.Checked = true;
+                    grpQueue.Enabled = false;
+                }
             }
         }
         private void clearTxts()
@@ -488,8 +542,12 @@ namespace FCFS
                     inAT.Enabled = true;
                     inAT.Text = "";
                     nRow = 0;
+                    rbSelect = 0;
                 }
-                nRow -= 1;
+                else
+                {
+                    nRow -= 1;
+                }     
             }
             
             

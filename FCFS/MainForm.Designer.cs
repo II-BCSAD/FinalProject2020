@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lowPanel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnRestart = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.progressBar5 = new System.Windows.Forms.ProgressBar();
+            this.progressBar4 = new System.Windows.Forms.ProgressBar();
+            this.progressBar3 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -59,11 +68,13 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
             this.Process1 = new System.Windows.Forms.Label();
+            this.btnSolution = new System.Windows.Forms.Button();
             this.btnDELETE = new System.Windows.Forms.Button();
             this.btnSTART = new System.Windows.Forms.Button();
             this.midPanel = new System.Windows.Forms.Panel();
-            this.btnRestart = new System.Windows.Forms.Button();
-            this.btnSolution = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.gbAverage = new System.Windows.Forms.GroupBox();
             this.tbATAT = new System.Windows.Forms.TextBox();
             this.tbAWT = new System.Windows.Forms.TextBox();
@@ -94,23 +105,13 @@
             this.rbSingle = new System.Windows.Forms.RadioButton();
             this.rqPanel = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.rq1 = new System.Windows.Forms.Panel();
-            this.rq2 = new System.Windows.Forms.Panel();
-            this.rq3 = new System.Windows.Forms.Panel();
-            this.rq4 = new System.Windows.Forms.Panel();
             this.rq5 = new System.Windows.Forms.Panel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.progressBar5 = new System.Windows.Forms.ProgressBar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.rq4 = new System.Windows.Forms.Panel();
+            this.rq3 = new System.Windows.Forms.Panel();
+            this.rq2 = new System.Windows.Forms.Panel();
+            this.rq1 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.lowPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -143,6 +144,47 @@
             this.lowPanel.Size = new System.Drawing.Size(1019, 196);
             this.lowPanel.TabIndex = 3;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(844, 152);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 19);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "bt";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(844, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(22, 19);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "at";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(844, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 19);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "process";
+            // 
+            // btnRestart
+            // 
+            this.btnRestart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestart.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.btnRestart.ForeColor = System.Drawing.Color.White;
+            this.btnRestart.Location = new System.Drawing.Point(865, 73);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(115, 30);
+            this.btnRestart.TabIndex = 6;
+            this.btnRestart.Text = "RESTART";
+            this.btnRestart.UseVisualStyleBackColor = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.progressBar5);
@@ -172,6 +214,41 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "GANTT CHART";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // progressBar5
+            // 
+            this.progressBar5.Location = new System.Drawing.Point(648, 23);
+            this.progressBar5.Name = "progressBar5";
+            this.progressBar5.Size = new System.Drawing.Size(95, 10);
+            this.progressBar5.TabIndex = 2;
+            // 
+            // progressBar4
+            // 
+            this.progressBar4.Location = new System.Drawing.Point(543, 23);
+            this.progressBar4.Name = "progressBar4";
+            this.progressBar4.Size = new System.Drawing.Size(95, 10);
+            this.progressBar4.TabIndex = 2;
+            // 
+            // progressBar3
+            // 
+            this.progressBar3.Location = new System.Drawing.Point(438, 23);
+            this.progressBar3.Name = "progressBar3";
+            this.progressBar3.Size = new System.Drawing.Size(95, 10);
+            this.progressBar3.TabIndex = 2;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(335, 25);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(95, 10);
+            this.progressBar2.TabIndex = 2;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(229, 25);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(95, 10);
+            this.progressBar1.TabIndex = 2;
             // 
             // label21
             // 
@@ -444,6 +521,20 @@
             this.Process1.TabIndex = 1;
             this.Process1.Text = "label4";
             // 
+            // btnSolution
+            // 
+            this.btnSolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
+            this.btnSolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSolution.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSolution.ForeColor = System.Drawing.Color.White;
+            this.btnSolution.Location = new System.Drawing.Point(865, 32);
+            this.btnSolution.Name = "btnSolution";
+            this.btnSolution.Size = new System.Drawing.Size(115, 32);
+            this.btnSolution.TabIndex = 5;
+            this.btnSolution.Text = "SOLUTION";
+            this.btnSolution.UseVisualStyleBackColor = false;
+            this.btnSolution.Click += new System.EventHandler(this.btnSolution_Click);
+            // 
             // btnDELETE
             // 
             this.btnDELETE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
@@ -477,6 +568,7 @@
             // midPanel
             // 
             this.midPanel.BackColor = System.Drawing.Color.White;
+            this.midPanel.Controls.Add(this.label9);
             this.midPanel.Controls.Add(this.label8);
             this.midPanel.Controls.Add(this.label7);
             this.midPanel.Controls.Add(this.label6);
@@ -490,33 +582,32 @@
             this.midPanel.Size = new System.Drawing.Size(1019, 303);
             this.midPanel.TabIndex = 4;
             // 
-            // btnRestart
+            // label8
             // 
-            this.btnRestart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestart.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
-            this.btnRestart.ForeColor = System.Drawing.Color.White;
-            this.btnRestart.Location = new System.Drawing.Point(865, 73);
-            this.btnRestart.Name = "btnRestart";
-            this.btnRestart.Size = new System.Drawing.Size(115, 30);
-            this.btnRestart.TabIndex = 6;
-            this.btnRestart.Text = "RESTART";
-            this.btnRestart.UseVisualStyleBackColor = false;
-            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(223, 247);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(21, 19);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "ct";
             // 
-            // btnSolution
+            // label7
             // 
-            this.btnSolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
-            this.btnSolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSolution.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSolution.ForeColor = System.Drawing.Color.White;
-            this.btnSolution.Location = new System.Drawing.Point(865, 32);
-            this.btnSolution.Name = "btnSolution";
-            this.btnSolution.Size = new System.Drawing.Size(115, 32);
-            this.btnSolution.TabIndex = 5;
-            this.btnSolution.Text = "SOLUTION";
-            this.btnSolution.UseVisualStyleBackColor = false;
-            this.btnSolution.Click += new System.EventHandler(this.btnSolution_Click);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(223, 224);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 19);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "tat";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(223, 205);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(25, 19);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "wt";
             // 
             // gbAverage
             // 
@@ -590,19 +681,19 @@
             // 
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colProcess,
@@ -623,8 +714,8 @@
             // 
             // colProcess
             // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colProcess.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colProcess.DefaultCellStyle = dataGridViewCellStyle8;
             this.colProcess.HeaderText = "PROCESS";
             this.colProcess.MinimumWidth = 6;
             this.colProcess.Name = "colProcess";
@@ -633,8 +724,8 @@
             // 
             // colAT
             // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colAT.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colAT.DefaultCellStyle = dataGridViewCellStyle9;
             this.colAT.HeaderText = "ARRIVAL TIME (AT)";
             this.colAT.MinimumWidth = 6;
             this.colAT.Name = "colAT";
@@ -643,8 +734,8 @@
             // 
             // colBT
             // 
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colBT.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colBT.DefaultCellStyle = dataGridViewCellStyle10;
             this.colBT.HeaderText = "BURST TIME (BT)";
             this.colBT.MinimumWidth = 6;
             this.colBT.Name = "colBT";
@@ -878,33 +969,12 @@
             this.groupBox2.Text = "READY QUEUE";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // panel12
+            // rq5
             // 
-            this.panel12.Location = new System.Drawing.Point(55, 34);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(28, 66);
-            this.panel12.TabIndex = 0;
-            // 
-            // rq1
-            // 
-            this.rq1.Location = new System.Drawing.Point(32, 31);
-            this.rq1.Name = "rq1";
-            this.rq1.Size = new System.Drawing.Size(51, 73);
-            this.rq1.TabIndex = 0;
-            // 
-            // rq2
-            // 
-            this.rq2.Location = new System.Drawing.Point(89, 31);
-            this.rq2.Name = "rq2";
-            this.rq2.Size = new System.Drawing.Size(51, 73);
-            this.rq2.TabIndex = 0;
-            // 
-            // rq3
-            // 
-            this.rq3.Location = new System.Drawing.Point(146, 31);
-            this.rq3.Name = "rq3";
-            this.rq3.Size = new System.Drawing.Size(51, 73);
-            this.rq3.TabIndex = 0;
+            this.rq5.Location = new System.Drawing.Point(260, 31);
+            this.rq5.Name = "rq5";
+            this.rq5.Size = new System.Drawing.Size(51, 73);
+            this.rq5.TabIndex = 0;
             // 
             // rq4
             // 
@@ -913,101 +983,42 @@
             this.rq4.Size = new System.Drawing.Size(51, 73);
             this.rq4.TabIndex = 0;
             // 
-            // rq5
+            // rq3
             // 
-            this.rq5.Location = new System.Drawing.Point(260, 31);
-            this.rq5.Name = "rq5";
-            this.rq5.Size = new System.Drawing.Size(51, 73);
-            this.rq5.TabIndex = 0;
+            this.rq3.Location = new System.Drawing.Point(146, 31);
+            this.rq3.Name = "rq3";
+            this.rq3.Size = new System.Drawing.Size(51, 73);
+            this.rq3.TabIndex = 0;
             // 
-            // progressBar1
+            // rq2
             // 
-            this.progressBar1.Location = new System.Drawing.Point(229, 25);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(95, 10);
-            this.progressBar1.TabIndex = 2;
+            this.rq2.Location = new System.Drawing.Point(89, 31);
+            this.rq2.Name = "rq2";
+            this.rq2.Size = new System.Drawing.Size(51, 73);
+            this.rq2.TabIndex = 0;
             // 
-            // progressBar2
+            // rq1
             // 
-            this.progressBar2.Location = new System.Drawing.Point(335, 25);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(95, 10);
-            this.progressBar2.TabIndex = 2;
+            this.rq1.Location = new System.Drawing.Point(32, 31);
+            this.rq1.Name = "rq1";
+            this.rq1.Size = new System.Drawing.Size(51, 73);
+            this.rq1.TabIndex = 0;
             // 
-            // progressBar3
+            // panel12
             // 
-            this.progressBar3.Location = new System.Drawing.Point(438, 23);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(95, 10);
-            this.progressBar3.TabIndex = 2;
+            this.panel12.Location = new System.Drawing.Point(55, 34);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(28, 66);
+            this.panel12.TabIndex = 0;
             // 
-            // progressBar4
+            // label9
             // 
-            this.progressBar4.Location = new System.Drawing.Point(543, 23);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(95, 10);
-            this.progressBar4.TabIndex = 2;
-            // 
-            // progressBar5
-            // 
-            this.progressBar5.Location = new System.Drawing.Point(648, 23);
-            this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(95, 10);
-            this.progressBar5.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(844, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 19);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(844, 133);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 19);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "label3";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(844, 152);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 19);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "label3";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(223, 205);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 19);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "label3";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(223, 224);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 19);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "label3";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(223, 247);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 19);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "label3";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(758, 245);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(41, 19);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "rows";
             // 
             // fcfsForm
             // 
@@ -1141,6 +1152,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
     }
 }
 
