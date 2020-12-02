@@ -30,15 +30,6 @@ namespace FCFS
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void SolutionForm_Load(object sender, EventArgs e)
         {
@@ -70,11 +61,6 @@ namespace FCFS
 
         }
 
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
@@ -83,6 +69,46 @@ namespace FCFS
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label39_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wt1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wt2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tat05_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label49_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label51_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
