@@ -438,9 +438,6 @@ namespace FCFS
                 // sum - at[i] 
                 wt[i] = service_time[i-1] - at[i ];
 
-                // If waiting time for a process is in negative 
-                // that means it is already in the ready queue 
-                // before CPU becomes idle so its waiting time is 0 
                 if (wt[i] < 0)
                     wt[i] = 0;
             }
@@ -451,12 +448,6 @@ namespace FCFS
             // Calculating turnaround time by adding bt[i] + wt[i] 
             for (int i = 0; i < n; i++)
                 tat[i] = bt[i] + wt[i];
-        }
-
-        
-        private void displayGanttChart()
-        {
-
         }
 
         public void transferValuesToArray()
@@ -490,7 +481,7 @@ namespace FCFS
             }
         }
 
-
+        // delayed display 
         public async void callValTable()
         {
             for (int i = 0; i<5; i++)
