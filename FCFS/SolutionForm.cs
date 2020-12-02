@@ -22,8 +22,11 @@ namespace FCFS
             // sample display of arrays, pwde idelete pati ung 3 labels na nasa SolutionForm.cs[Design]
             label1.Text = processes.Aggregate((a, b) => a + " " + b);
             label2.Text = bt.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
-            label3.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b); 
+            label3.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+
             
+
+
         }
     }
 }

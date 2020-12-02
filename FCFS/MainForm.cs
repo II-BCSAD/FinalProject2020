@@ -12,7 +12,7 @@ namespace FCFS
 {
     public partial class fcfsForm : Form
     {
-        public static int at, bt,nRow = 0,  count = 0;
+        public static int at, bt,nRow = 0,  count = 0, timer = 0, timeSt=0, secs = 0;
         public static int rbcount = 0, rbSelect = 0;
         public static string rbm;
         public static int[] btArr = new int[5];
@@ -248,8 +248,6 @@ namespace FCFS
                 }
                // inAT.Enabled = true;
             }
-
-            label9.Text = dataGridView1.Rows.Count.ToString();
             if (nRow != 5)
             {
                 btnSTART.Enabled = false;
@@ -391,17 +389,7 @@ namespace FCFS
 
             
             findAvgTime(p1, p, bt1, at1);
-            display();
-        }
-        
-        public void display()
-        {
-            label3.Text = finalProcess.Aggregate((a, b) => a + " " + b);
-            label4.Text = finalAT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
-            label5.Text = finalBT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
-            label6.Text = finalWT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
-            label7.Text = finalTAT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
-            label8.Text = finalCT.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+            callValTable();
         }
         
         //calculate avg WT and TAT
@@ -502,6 +490,35 @@ namespace FCFS
             }
         }
 
+
+        public async void callValTable()
+        {
+            for (int i = 0; i<5; i++)
+            {
+                timeSt = i;
+                secs = finalBT[i] * 1000;
+                for (int j = 0; j < 1; j++)
+                {
+                    if (j == 0) await Task.Delay(secs);
+                    TimerMethod();
+                }
+            }
+         }
+
+        private void TimerMethod()
+        {
+            if (secs == finalBT[timeSt] * 1000)
+            {
+                dataGridView1.Rows[timeSt].Cells[3].Value = finalWT[timeSt].ToString();
+                dataGridView1.Rows[timeSt].Cells[4].Value = finalTAT[timeSt].ToString();
+                dataGridView1.Rows[timeSt].Cells[5].Value = finalCT[timeSt].ToString();
+                secs = 0;
+            }
+           
+            
+        }
+        
+       
         private void label3_Click(object sender, EventArgs e)
         {
 
