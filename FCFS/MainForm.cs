@@ -27,6 +27,8 @@ namespace FCFS
         public static int[] finalWT = new int[5];
         public static int[] finalTAT = new int[5];
         public static int[] finalCT = new int[5];
+        public static float finalAWT = 0, finalATAT = 0;
+
 
 
         public fcfsForm()
@@ -411,6 +413,8 @@ namespace FCFS
                 ct[i] = tat[i] + at[i];
             }
 
+            float AWT = totalWT / 5;
+            float ATAT = totalTAT / 5;
             for (int i = 0; i < 5; i++)
             {
                 finalProcess[i] = process[i];
@@ -420,6 +424,8 @@ namespace FCFS
                 finalTAT[i] = tat[i];
                 finalCT[i] = ct[i];
             }
+            finalAWT = AWT;
+            finalATAT = ATAT;
         }
 
         static void findWT(string[] process, int n, int[] bt, int[] wt, int[] at)
@@ -494,7 +500,10 @@ namespace FCFS
                     TimerMethod();
                 }
             }
-         }
+            tbAWT.Text = finalAWT.ToString("0.00");
+            tbATAT.Text = finalATAT.ToString("0.00");
+
+        }
 
         private void TimerMethod()
         {
@@ -504,12 +513,14 @@ namespace FCFS
                 dataGridView1.Rows[timeSt].Cells[4].Value = finalTAT[timeSt].ToString();
                 dataGridView1.Rows[timeSt].Cells[5].Value = finalCT[timeSt].ToString();
                 secs = 0;
-            }
-           
-            
+            } 
         }
-        
-       
+        private void displayGanttChart() 
+        { 
+
+        }
+
+
         private void label3_Click(object sender, EventArgs e)
         {
 
