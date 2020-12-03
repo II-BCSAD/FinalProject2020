@@ -27,7 +27,7 @@ namespace FCFS
         public static int[] finalWT = new int[5];
         public static int[] finalTAT = new int[5];
         public static int[] finalCT = new int[5];
-        public static float finalAWT = 0, finalATAT = 0;
+        public static double finalAWT = 0d, finalATAT = 0d;
         public static int[] qOrder = new int[5];
 
 
@@ -456,8 +456,8 @@ namespace FCFS
             findWT(process, n, bt, wt, at);
             findTAT(process, n, bt, wt, tat);
 
-            int totalWT = 0;
-            int totalTAT = 0;
+            Double totalWT = 0d;
+            Double totalTAT = 0d;
             for (int i = 0; i < n; i++)
             {
                 totalWT = totalWT + wt[i];
@@ -465,8 +465,8 @@ namespace FCFS
                 ct[i] = tat[i] + at[i];
             }
 
-            float AWT = totalWT / 5;
-            float ATAT = totalTAT / 5;
+            double AWT = (totalWT / 5);
+            double ATAT = (totalTAT / 5);
             for (int i = 0; i < 5; i++)
             {
                 finalProcess[i] = process[i];
@@ -617,8 +617,8 @@ namespace FCFS
                     TimerMethod();
                 }
             }
-            tbAWT.Text = finalAWT.ToString("0.00");
-            tbATAT.Text = finalATAT.ToString("0.00");
+            tbAWT.Text = finalAWT.ToString();
+            tbATAT.Text = finalATAT.ToString();
         }
         void timer1_Tick(object sender, EventArgs e)
         {
