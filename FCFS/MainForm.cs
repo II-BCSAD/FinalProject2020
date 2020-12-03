@@ -27,8 +27,12 @@ namespace FCFS
         public static int[] finalWT = new int[5];
         public static int[] finalTAT = new int[5];
         public static int[] finalCT = new int[5];
+        public static int[] UnsortedfinalCT = new int[5];
+        public static int[] UnsortedfinalTAT = new int[5];
+        public static int[] UnsortedfinalWT = new int[5];
         public static double finalAWT = 0d, finalATAT = 0d;
         public static int[] qOrder = new int[5];
+        public static int[] UnsortedqOrder = new int[5];
 
 
 
@@ -362,7 +366,7 @@ namespace FCFS
             {
                 multiQueueOrder[i] = i + 1;
             }
-            //sorting by AT
+            //sorting by AT when Multiple Queueing
             if (rbMultiple.Checked)
             {
                 int size = atArr.Length;
@@ -373,7 +377,7 @@ namespace FCFS
 
                     for (int j = i + 1; j < size; j++)
                     {
-                        if (atArr[j] < atArr[min])
+                        if (atArr[j] <= atArr[min])
                         {
                             min = j;
                         }
@@ -397,6 +401,10 @@ namespace FCFS
                 }
             }
 
+            for (int i = 0; i < 5; i++)
+            {
+                UnsortedqOrder[i] = multiQueueOrder[i];
+            }
             for (int i = 0; i < 5; i++)
             {
                 bt1[i] = btArr[i];
@@ -449,6 +457,7 @@ namespace FCFS
         //calculate avg WT and TAT
         public static void findAvgTime(string []process, int n, int []bt, int []at)
         {
+            //ct is completion time/finishing time
             int[] wt = new int[n];
             int[] tat = new int[n];
             int[] ct = new int[n];
@@ -475,6 +484,7 @@ namespace FCFS
                 finalWT[i] = wt[i];
                 finalTAT[i] = tat[i];
                 finalCT[i] = ct[i];
+                UnsortedfinalCT[i] = ct[i];
             }
             finalAWT = AWT;
             finalATAT = ATAT;
@@ -572,7 +582,7 @@ namespace FCFS
                     panelP2.BackColor = Color.FromArgb(40, 166, 200);
                     lbProcess2.Text = finalProcess[timeSt];
                     lblBT2.Text = finalBT[timeSt].ToString();
-                    lbT2.Text = finalCT[timeSt-1].ToString();
+                    lbT2.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT2.ForeColor = Color.DarkGray; 
                 }
                 else if (timeSt == 2)
@@ -583,7 +593,7 @@ namespace FCFS
                     panelP3.BackColor = Color.FromArgb(58, 192, 197);
                     lbProcess3.Text = finalProcess[timeSt];
                     lblBT3.Text = finalBT[timeSt].ToString();
-                    lbT3.Text = finalCT[timeSt - 1].ToString();
+                    lbT3.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT3.ForeColor = Color.DarkGray;
                 }
                 else if (timeSt == 3)
@@ -594,7 +604,7 @@ namespace FCFS
                     panelP4.BackColor = Color.FromArgb(40, 166, 200);
                     lbProcess4.Text = finalProcess[timeSt];
                     lblBT4.Text = finalBT[timeSt].ToString();
-                    lbT4.Text = finalCT[timeSt - 1].ToString();
+                    lbT4.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT4.ForeColor = Color.DarkGray;
                 }
                 else if (timeSt == 4)
@@ -605,7 +615,7 @@ namespace FCFS
                     panelP5.BackColor = Color.FromArgb(58, 192, 197);
                     lbProcess5.Text = finalProcess[timeSt];
                     lblBT5.Text = finalBT[timeSt].ToString();
-                    lbT5.Text = finalCT[timeSt - 1].ToString();
+                    lbT5.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT5.ForeColor = Color.DarkGray;
                 }
 
@@ -685,7 +695,7 @@ namespace FCFS
                     progressBar5.Value = finalBT[timeSt];
                     timer1.Stop();
                     progressBar5.Hide();
-                    lbT6.Text = finalCT[timeSt].ToString();
+                    lbT6.Text = UnsortedfinalCT[timeSt].ToString();
                     lbT6.ForeColor = Color.DarkGray;
                 }
             }
@@ -696,12 +706,14 @@ namespace FCFS
         {
             if (secs == finalBT[timeSt] * 1000)
             {
-
-                dataGridView1.Rows[timeSt].Cells[3].Value = finalWT[timeSt].ToString();
-                dataGridView1.Rows[timeSt].Cells[4].Value = finalTAT[timeSt].ToString();
-                dataGridView1.Rows[timeSt].Cells[5].Value = finalCT[timeSt].ToString();
-                secs = 0;
-
+                for (int i = timeSt; i < timeSt + 1; i++)
+                {
+                    timeSt = UnsortedqOrder[i] - 1;
+                    dataGridView1.Rows[timeSt].Cells[3].Value = finalWT[timeSt].ToString();
+                    dataGridView1.Rows[timeSt].Cells[4].Value = finalTAT[timeSt].ToString();
+                    dataGridView1.Rows[timeSt].Cells[5].Value = finalCT[timeSt].ToString();
+                    secs = 0;
+                }
             }
         }
         private void displayGanttChart() 
