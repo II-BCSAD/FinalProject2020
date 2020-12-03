@@ -562,8 +562,8 @@ namespace FCFS
             {
                 timer1.Enabled = true;
                 timeSt = i;
-                secs = finalBT[i] * 1000;
-                timer1.Interval = 2000;
+                secs = finalBT[i] * 500;
+                timer1.Interval = 1000;
                 if (timeSt == 0)
                 {
                     progressBar1.Maximum = finalBT[i];
@@ -704,7 +704,7 @@ namespace FCFS
 
         private void TimerMethod()
         {
-            if (secs == finalBT[timeSt] * 1000)
+            if (secs == finalBT[timeSt] * 500)
             {
                 for (int i = timeSt; i < timeSt + 1; i++)
                 {
