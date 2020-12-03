@@ -19,14 +19,6 @@ namespace FCFS
 
         public void compute(string[] processes, int n, int[] bt, int[] at)
         {
-            /*
-            // sample display of arrays, pwde idelete pati ung 3 labels na nasa SolutionForm.cs[Design]
-            groupBox_SF1.Text = processes.Aggregate((a, b) => a + " " + b);
-            label2.Text = bt.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
-            SF_CAWT.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
-            */ 
-            //pwede na yata idelete to -vane
-
 
         }
 

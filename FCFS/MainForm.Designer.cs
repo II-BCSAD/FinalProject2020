@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lowPanel = new System.Windows.Forms.Panel();
             this.btnRestart = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -100,11 +101,17 @@
             this.rqPanel = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rq5 = new System.Windows.Forms.Panel();
+            this.lbRq5 = new System.Windows.Forms.Label();
             this.rq4 = new System.Windows.Forms.Panel();
+            this.lbRq4 = new System.Windows.Forms.Label();
             this.rq3 = new System.Windows.Forms.Panel();
+            this.lbRq3 = new System.Windows.Forms.Label();
             this.rq2 = new System.Windows.Forms.Panel();
+            this.lbRq2 = new System.Windows.Forms.Label();
             this.rq1 = new System.Windows.Forms.Panel();
+            this.lbRq1 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lowPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panelCPU.SuspendLayout();
@@ -121,6 +128,11 @@
             this.grpQueue.SuspendLayout();
             this.rqPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.rq5.SuspendLayout();
+            this.rq4.SuspendLayout();
+            this.rq3.SuspendLayout();
+            this.rq2.SuspendLayout();
+            this.rq1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lowPanel
@@ -216,74 +228,80 @@
             // lbT6
             // 
             this.lbT6.AutoSize = true;
-            this.lbT6.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.lbT6.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbT6.Location = new System.Drawing.Point(702, 129);
+            this.lbT6.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT6.ForeColor = System.Drawing.Color.White;
+            this.lbT6.Location = new System.Drawing.Point(725, 129);
             this.lbT6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT6.Name = "lbT6";
-            this.lbT6.Size = new System.Drawing.Size(76, 27);
+            this.lbT6.Size = new System.Drawing.Size(39, 35);
             this.lbT6.TabIndex = 1;
-            this.lbT6.Text = "label4";
+            this.lbT6.Text = "lb";
+            this.lbT6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbT5
             // 
             this.lbT5.AutoSize = true;
-            this.lbT5.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.lbT5.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbT5.Location = new System.Drawing.Point(607, 129);
+            this.lbT5.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT5.ForeColor = System.Drawing.Color.White;
+            this.lbT5.Location = new System.Drawing.Point(630, 129);
             this.lbT5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT5.Name = "lbT5";
-            this.lbT5.Size = new System.Drawing.Size(76, 27);
+            this.lbT5.Size = new System.Drawing.Size(39, 35);
             this.lbT5.TabIndex = 1;
-            this.lbT5.Text = "label4";
+            this.lbT5.Text = "lb";
+            this.lbT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbT4
             // 
             this.lbT4.AutoSize = true;
-            this.lbT4.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.lbT4.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbT4.Location = new System.Drawing.Point(500, 129);
+            this.lbT4.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT4.ForeColor = System.Drawing.Color.White;
+            this.lbT4.Location = new System.Drawing.Point(523, 129);
             this.lbT4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT4.Name = "lbT4";
-            this.lbT4.Size = new System.Drawing.Size(76, 27);
+            this.lbT4.Size = new System.Drawing.Size(39, 35);
             this.lbT4.TabIndex = 1;
-            this.lbT4.Text = "label4";
+            this.lbT4.Text = "lb";
+            this.lbT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbT3
             // 
             this.lbT3.AutoSize = true;
-            this.lbT3.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.lbT3.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbT3.Location = new System.Drawing.Point(393, 129);
+            this.lbT3.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT3.ForeColor = System.Drawing.Color.White;
+            this.lbT3.Location = new System.Drawing.Point(416, 129);
             this.lbT3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT3.Name = "lbT3";
-            this.lbT3.Size = new System.Drawing.Size(76, 27);
+            this.lbT3.Size = new System.Drawing.Size(39, 35);
             this.lbT3.TabIndex = 1;
-            this.lbT3.Text = "label4";
+            this.lbT3.Text = "lb";
+            this.lbT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbT2
             // 
             this.lbT2.AutoSize = true;
-            this.lbT2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.lbT2.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbT2.Location = new System.Drawing.Point(296, 130);
+            this.lbT2.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT2.ForeColor = System.Drawing.Color.White;
+            this.lbT2.Location = new System.Drawing.Point(319, 130);
             this.lbT2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT2.Name = "lbT2";
-            this.lbT2.Size = new System.Drawing.Size(76, 27);
+            this.lbT2.Size = new System.Drawing.Size(39, 35);
             this.lbT2.TabIndex = 1;
-            this.lbT2.Text = "label4";
+            this.lbT2.Text = "lb";
+            this.lbT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbT1
             // 
             this.lbT1.AutoSize = true;
-            this.lbT1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.lbT1.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbT1.Location = new System.Drawing.Point(192, 129);
+            this.lbT1.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT1.ForeColor = System.Drawing.Color.White;
+            this.lbT1.Location = new System.Drawing.Point(207, 129);
             this.lbT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT1.Name = "lbT1";
-            this.lbT1.Size = new System.Drawing.Size(76, 27);
+            this.lbT1.Size = new System.Drawing.Size(39, 35);
             this.lbT1.TabIndex = 1;
-            this.lbT1.Text = "label4";
+            this.lbT1.Text = "lb";
+            this.lbT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelbar
             // 
@@ -306,13 +324,14 @@
             // 
             this.lbCPU.AutoSize = true;
             this.lbCPU.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbCPU.ForeColor = System.Drawing.Color.DarkGray;
-            this.lbCPU.Location = new System.Drawing.Point(4, 26);
+            this.lbCPU.ForeColor = System.Drawing.Color.White;
+            this.lbCPU.Location = new System.Drawing.Point(14, 26);
             this.lbCPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCPU.Name = "lbCPU";
-            this.lbCPU.Size = new System.Drawing.Size(91, 33);
+            this.lbCPU.Size = new System.Drawing.Size(68, 33);
             this.lbCPU.TabIndex = 1;
-            this.lbCPU.Text = "label4";
+            this.lbCPU.Text = "CPU";
+            this.lbCPU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelP5
             // 
@@ -327,26 +346,27 @@
             // lblBT5
             // 
             this.lblBT5.AutoSize = true;
-            this.lblBT5.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblBT5.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblBT5.Location = new System.Drawing.Point(38, 54);
+            this.lblBT5.BackColor = System.Drawing.Color.Transparent;
+            this.lblBT5.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT5.ForeColor = System.Drawing.Color.White;
+            this.lblBT5.Location = new System.Drawing.Point(61, 54);
             this.lblBT5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT5.Name = "lblBT5";
-            this.lblBT5.Size = new System.Drawing.Size(55, 20);
+            this.lblBT5.Size = new System.Drawing.Size(0, 30);
             this.lblBT5.TabIndex = 1;
-            this.lblBT5.Text = "label4";
+            this.lblBT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess5
             // 
             this.lbProcess5.AutoSize = true;
-            this.lbProcess5.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbProcess5.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lbProcess5.Location = new System.Drawing.Point(4, 25);
+            this.lbProcess5.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess5.ForeColor = System.Drawing.Color.White;
+            this.lbProcess5.Location = new System.Drawing.Point(33, 20);
             this.lbProcess5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess5.Name = "lbProcess5";
-            this.lbProcess5.Size = new System.Drawing.Size(91, 33);
+            this.lbProcess5.Size = new System.Drawing.Size(0, 41);
             this.lbProcess5.TabIndex = 1;
-            this.lbProcess5.Text = "label4";
+            this.lbProcess5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelP4
             // 
@@ -361,26 +381,27 @@
             // lblBT4
             // 
             this.lblBT4.AutoSize = true;
-            this.lblBT4.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblBT4.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblBT4.Location = new System.Drawing.Point(38, 54);
+            this.lblBT4.BackColor = System.Drawing.Color.Transparent;
+            this.lblBT4.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT4.ForeColor = System.Drawing.Color.White;
+            this.lblBT4.Location = new System.Drawing.Point(61, 54);
             this.lblBT4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT4.Name = "lblBT4";
-            this.lblBT4.Size = new System.Drawing.Size(55, 20);
+            this.lblBT4.Size = new System.Drawing.Size(0, 30);
             this.lblBT4.TabIndex = 1;
-            this.lblBT4.Text = "label4";
+            this.lblBT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess4
             // 
             this.lbProcess4.AutoSize = true;
-            this.lbProcess4.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbProcess4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lbProcess4.Location = new System.Drawing.Point(2, 26);
+            this.lbProcess4.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess4.ForeColor = System.Drawing.Color.White;
+            this.lbProcess4.Location = new System.Drawing.Point(31, 21);
             this.lbProcess4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess4.Name = "lbProcess4";
-            this.lbProcess4.Size = new System.Drawing.Size(91, 33);
+            this.lbProcess4.Size = new System.Drawing.Size(0, 41);
             this.lbProcess4.TabIndex = 1;
-            this.lbProcess4.Text = "label4";
+            this.lbProcess4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelP3
             // 
@@ -395,26 +416,27 @@
             // lblBT3
             // 
             this.lblBT3.AutoSize = true;
-            this.lblBT3.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblBT3.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblBT3.Location = new System.Drawing.Point(38, 54);
+            this.lblBT3.BackColor = System.Drawing.Color.Transparent;
+            this.lblBT3.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT3.ForeColor = System.Drawing.Color.White;
+            this.lblBT3.Location = new System.Drawing.Point(61, 54);
             this.lblBT3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT3.Name = "lblBT3";
-            this.lblBT3.Size = new System.Drawing.Size(55, 20);
+            this.lblBT3.Size = new System.Drawing.Size(0, 30);
             this.lblBT3.TabIndex = 1;
-            this.lblBT3.Text = "label4";
+            this.lblBT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess3
             // 
             this.lbProcess3.AutoSize = true;
-            this.lbProcess3.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbProcess3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lbProcess3.Location = new System.Drawing.Point(4, 26);
+            this.lbProcess3.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess3.ForeColor = System.Drawing.Color.White;
+            this.lbProcess3.Location = new System.Drawing.Point(33, 21);
             this.lbProcess3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess3.Name = "lbProcess3";
-            this.lbProcess3.Size = new System.Drawing.Size(91, 33);
+            this.lbProcess3.Size = new System.Drawing.Size(0, 41);
             this.lbProcess3.TabIndex = 1;
-            this.lbProcess3.Text = "label4";
+            this.lbProcess3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelP2
             // 
@@ -429,26 +451,27 @@
             // lblBT2
             // 
             this.lblBT2.AutoSize = true;
-            this.lblBT2.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblBT2.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblBT2.Location = new System.Drawing.Point(38, 54);
+            this.lblBT2.BackColor = System.Drawing.Color.Transparent;
+            this.lblBT2.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT2.ForeColor = System.Drawing.Color.White;
+            this.lblBT2.Location = new System.Drawing.Point(61, 54);
             this.lblBT2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT2.Name = "lblBT2";
-            this.lblBT2.Size = new System.Drawing.Size(55, 20);
+            this.lblBT2.Size = new System.Drawing.Size(0, 30);
             this.lblBT2.TabIndex = 1;
-            this.lblBT2.Text = "label4";
+            this.lblBT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess2
             // 
             this.lbProcess2.AutoSize = true;
-            this.lbProcess2.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbProcess2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lbProcess2.Location = new System.Drawing.Point(4, 25);
+            this.lbProcess2.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess2.ForeColor = System.Drawing.Color.White;
+            this.lbProcess2.Location = new System.Drawing.Point(33, 20);
             this.lbProcess2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess2.Name = "lbProcess2";
-            this.lbProcess2.Size = new System.Drawing.Size(91, 33);
+            this.lbProcess2.Size = new System.Drawing.Size(0, 41);
             this.lbProcess2.TabIndex = 1;
-            this.lbProcess2.Text = "label4";
+            this.lbProcess2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelP1
             // 
@@ -463,26 +486,27 @@
             // lblBT1
             // 
             this.lblBT1.AutoSize = true;
-            this.lblBT1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.25F, System.Drawing.FontStyle.Bold);
-            this.lblBT1.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblBT1.Location = new System.Drawing.Point(38, 54);
+            this.lblBT1.BackColor = System.Drawing.Color.Transparent;
+            this.lblBT1.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT1.ForeColor = System.Drawing.Color.White;
+            this.lblBT1.Location = new System.Drawing.Point(61, 54);
             this.lblBT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT1.Name = "lblBT1";
-            this.lblBT1.Size = new System.Drawing.Size(55, 20);
+            this.lblBT1.Size = new System.Drawing.Size(0, 30);
             this.lblBT1.TabIndex = 1;
-            this.lblBT1.Text = "label4";
+            this.lblBT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess1
             // 
             this.lbProcess1.AutoSize = true;
-            this.lbProcess1.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lbProcess1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lbProcess1.Location = new System.Drawing.Point(2, 25);
+            this.lbProcess1.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess1.ForeColor = System.Drawing.Color.White;
+            this.lbProcess1.Location = new System.Drawing.Point(31, 20);
             this.lbProcess1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess1.Name = "lbProcess1";
-            this.lbProcess1.Size = new System.Drawing.Size(91, 33);
+            this.lbProcess1.Size = new System.Drawing.Size(0, 41);
             this.lbProcess1.TabIndex = 1;
-            this.lbProcess1.Text = "label4";
+            this.lbProcess1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSolution
             // 
@@ -507,9 +531,9 @@
             this.btnDELETE.ForeColor = System.Drawing.Color.White;
             this.btnDELETE.Location = new System.Drawing.Point(859, 35);
             this.btnDELETE.Name = "btnDELETE";
-            this.btnDELETE.Size = new System.Drawing.Size(115, 32);
+            this.btnDELETE.Size = new System.Drawing.Size(139, 32);
             this.btnDELETE.TabIndex = 0;
-            this.btnDELETE.Text = "DELETE";
+            this.btnDELETE.Text = " DELETE ROW";
             this.btnDELETE.UseVisualStyleBackColor = false;
             this.btnDELETE.Click += new System.EventHandler(this.btnDELETE_Click);
             // 
@@ -522,7 +546,7 @@
             this.btnSTART.ForeColor = System.Drawing.Color.White;
             this.btnSTART.Location = new System.Drawing.Point(859, 73);
             this.btnSTART.Name = "btnSTART";
-            this.btnSTART.Size = new System.Drawing.Size(115, 32);
+            this.btnSTART.Size = new System.Drawing.Size(139, 32);
             this.btnSTART.TabIndex = 1;
             this.btnSTART.Text = "START";
             this.btnSTART.UseVisualStyleBackColor = false;
@@ -611,21 +635,22 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colProcess,
@@ -646,8 +671,8 @@
             // 
             // colProcess
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colProcess.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colProcess.DefaultCellStyle = dataGridViewCellStyle8;
             this.colProcess.HeaderText = "PROCESS";
             this.colProcess.MinimumWidth = 6;
             this.colProcess.Name = "colProcess";
@@ -656,8 +681,8 @@
             // 
             // colAT
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colAT.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colAT.DefaultCellStyle = dataGridViewCellStyle9;
             this.colAT.HeaderText = "ARRIVAL TIME (AT)";
             this.colAT.MinimumWidth = 6;
             this.colAT.Name = "colAT";
@@ -666,8 +691,8 @@
             // 
             // colBT
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colBT.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colBT.DefaultCellStyle = dataGridViewCellStyle10;
             this.colBT.HeaderText = "BURST TIME (BT)";
             this.colBT.MinimumWidth = 6;
             this.colBT.Name = "colBT";
@@ -690,7 +715,7 @@
             // 
             // colComp
             // 
-            this.colComp.HeaderText = "COMPLETION TIME";
+            this.colComp.HeaderText = "FINISHING TIME";
             this.colComp.MinimumWidth = 6;
             this.colComp.Name = "colComp";
             this.colComp.Width = 125;
@@ -903,38 +928,98 @@
             // 
             // rq5
             // 
+            this.rq5.Controls.Add(this.lbRq5);
             this.rq5.Location = new System.Drawing.Point(260, 31);
             this.rq5.Name = "rq5";
             this.rq5.Size = new System.Drawing.Size(51, 73);
             this.rq5.TabIndex = 0;
             // 
+            // lbRq5
+            // 
+            this.lbRq5.AutoSize = true;
+            this.lbRq5.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq5.Location = new System.Drawing.Point(12, 21);
+            this.lbRq5.Name = "lbRq5";
+            this.lbRq5.Size = new System.Drawing.Size(25, 35);
+            this.lbRq5.TabIndex = 0;
+            this.lbRq5.Text = "1";
+            this.lbRq5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // rq4
             // 
+            this.rq4.Controls.Add(this.lbRq4);
             this.rq4.Location = new System.Drawing.Point(203, 31);
             this.rq4.Name = "rq4";
             this.rq4.Size = new System.Drawing.Size(51, 73);
             this.rq4.TabIndex = 0;
             // 
+            // lbRq4
+            // 
+            this.lbRq4.AutoSize = true;
+            this.lbRq4.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq4.Location = new System.Drawing.Point(14, 21);
+            this.lbRq4.Name = "lbRq4";
+            this.lbRq4.Size = new System.Drawing.Size(25, 35);
+            this.lbRq4.TabIndex = 0;
+            this.lbRq4.Text = "1";
+            this.lbRq4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // rq3
             // 
+            this.rq3.Controls.Add(this.lbRq3);
             this.rq3.Location = new System.Drawing.Point(146, 31);
             this.rq3.Name = "rq3";
             this.rq3.Size = new System.Drawing.Size(51, 73);
             this.rq3.TabIndex = 0;
             // 
+            // lbRq3
+            // 
+            this.lbRq3.AutoSize = true;
+            this.lbRq3.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq3.Location = new System.Drawing.Point(13, 21);
+            this.lbRq3.Name = "lbRq3";
+            this.lbRq3.Size = new System.Drawing.Size(25, 35);
+            this.lbRq3.TabIndex = 0;
+            this.lbRq3.Text = "1";
+            this.lbRq3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // rq2
             // 
+            this.rq2.Controls.Add(this.lbRq2);
             this.rq2.Location = new System.Drawing.Point(89, 31);
             this.rq2.Name = "rq2";
             this.rq2.Size = new System.Drawing.Size(51, 73);
             this.rq2.TabIndex = 0;
             // 
+            // lbRq2
+            // 
+            this.lbRq2.AutoSize = true;
+            this.lbRq2.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq2.Location = new System.Drawing.Point(13, 21);
+            this.lbRq2.Name = "lbRq2";
+            this.lbRq2.Size = new System.Drawing.Size(25, 35);
+            this.lbRq2.TabIndex = 0;
+            this.lbRq2.Text = "1";
+            this.lbRq2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // rq1
             // 
+            this.rq1.Controls.Add(this.lbRq1);
             this.rq1.Location = new System.Drawing.Point(32, 31);
             this.rq1.Name = "rq1";
             this.rq1.Size = new System.Drawing.Size(51, 73);
             this.rq1.TabIndex = 0;
+            // 
+            // lbRq1
+            // 
+            this.lbRq1.AutoSize = true;
+            this.lbRq1.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq1.Location = new System.Drawing.Point(13, 21);
+            this.lbRq1.Name = "lbRq1";
+            this.lbRq1.Size = new System.Drawing.Size(25, 35);
+            this.lbRq1.TabIndex = 0;
+            this.lbRq1.Text = "1";
+            this.lbRq1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel12
             // 
@@ -991,6 +1076,16 @@
             this.grpQueue.PerformLayout();
             this.rqPanel.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.rq5.ResumeLayout(false);
+            this.rq5.PerformLayout();
+            this.rq4.ResumeLayout(false);
+            this.rq4.PerformLayout();
+            this.rq3.ResumeLayout(false);
+            this.rq3.PerformLayout();
+            this.rq2.ResumeLayout(false);
+            this.rq2.PerformLayout();
+            this.rq1.ResumeLayout(false);
+            this.rq1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1017,12 +1112,6 @@
         private System.Windows.Forms.GroupBox grpQueue;
         private System.Windows.Forms.RadioButton rbMultiple;
         private System.Windows.Forms.RadioButton rbSingle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colProcess;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colAT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colBT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colWT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTAT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colComp;
         private System.Windows.Forms.Panel rqPanel;
         private System.Windows.Forms.Label lb_awt;
         private System.Windows.Forms.GroupBox gbAverage;
@@ -1068,6 +1157,18 @@
         private System.Windows.Forms.ProgressBar progressBar3;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colProcess;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colBT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colWT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTAT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colComp;
+        private System.Windows.Forms.Label lbRq1;
+        private System.Windows.Forms.Label lbRq5;
+        private System.Windows.Forms.Label lbRq4;
+        private System.Windows.Forms.Label lbRq3;
+        private System.Windows.Forms.Label lbRq2;
     }
 }
 

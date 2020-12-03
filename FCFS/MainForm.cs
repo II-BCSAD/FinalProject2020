@@ -28,12 +28,18 @@ namespace FCFS
         public static int[] finalTAT = new int[5];
         public static int[] finalCT = new int[5];
         public static float finalAWT = 0, finalATAT = 0;
+        public static int[] qOrder = new int[5];
 
 
 
         public fcfsForm()
         {
             InitializeComponent();
+            progressBar1.Hide();
+            progressBar2.Hide();
+            progressBar3.Hide();
+            progressBar4.Hide();
+            progressBar5.Hide();
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -89,7 +95,7 @@ namespace FCFS
             ss.Columns.Add("BURST TIME (BT)");
             ss.Columns.Add("WAITING TIME");
             ss.Columns.Add("TURN-AROUND TIME");
-            ss.Columns.Add("COMPLETION TIME");
+            ss.Columns.Add("FINISHING TIME");
 
             
 
@@ -99,6 +105,7 @@ namespace FCFS
            
             string msg = "", btmsg="", atmsg="";
             selectRB();
+            checkRB();
             if (!int.TryParse(inAT.Text, out at))
             {
                 if(rbSingle.Checked)
@@ -180,8 +187,7 @@ namespace FCFS
                     string atText = Convert.ToString(dataGridView1.Rows[0].Cells[1].Value);
                     inAT.Text = atText.ToString();
                     inAT.Enabled = false;
-                    
-                    //row["ARRIVAL TIME (AT)"] = dataGridView1.Rows[1].Cells[1].Value;
+
                     row["ARRIVAL TIME (AT)"] = atText;
                 }
                 else if (rbSelect == 2)
@@ -350,8 +356,13 @@ namespace FCFS
             transferValuesToArray();
             btnDELETE.Enabled = false;       
             int p  = pArr.Length;
-
-            //sorting
+            int[] multiQueueOrder = new int [5];
+            
+            for (int i = 0; i < 5; i++)
+            {
+                multiQueueOrder[i] = i + 1;
+            }
+            //sorting by AT
             if (rbMultiple.Checked)
             {
                 int size = atArr.Length;
@@ -379,6 +390,10 @@ namespace FCFS
                     string tempProcess = pArr[min];
                     pArr[min] = pArr[i];
                     pArr[i] = tempProcess;
+
+                    int tempQueueOrder = multiQueueOrder[min];
+                    multiQueueOrder[min] = multiQueueOrder[i];
+                    multiQueueOrder[i] = tempQueueOrder;
                 }
             }
 
@@ -387,11 +402,48 @@ namespace FCFS
                 bt1[i] = btArr[i];
                 at1[i] = atArr[i];
                 p1[i] = pArr[i];
+                qOrder[i] = multiQueueOrder[i];
              }
 
             
             findAvgTime(p1, p, bt1, at1);
+
+            // sorting by user input order
+            if (rbMultiple.Checked)
+            {
+                int size = qOrder.Length;
+
+                for (int i = 0; i < size - 1; i++)
+                {
+                    int min = i;
+
+                    for (int j = i + 1; j < size; j++)
+                    {
+                        if (qOrder[j] < qOrder[min])
+                        {
+                            min = j;
+                        }
+                    }
+                    int tempQueueOrder = qOrder[min];
+                    qOrder[min] = qOrder[i];
+                    qOrder[i] = tempQueueOrder;
+
+                    int tempWT = finalWT[min];
+                    finalWT[min] = finalWT[i];
+                    finalWT[i] = tempWT;
+
+                    int tempTAT = finalTAT[min];
+                    finalTAT[min] = finalTAT[i];
+                    finalTAT[i] = tempTAT;
+
+                    int tempCT = finalCT[min];
+                    finalCT[min] = finalCT[i];
+                    finalCT[i] = tempCT;
+                }
+            }
+
             callValTable();
+            btnSTART.Enabled = false;
         }
         
         //calculate avg WT and TAT
@@ -490,18 +542,153 @@ namespace FCFS
         // delayed display 
         public async void callValTable()
         {
-            for (int i = 0; i<5; i++)
+
+            panelCPU.BackColor = Color.FromArgb(46, 47, 51);
+            panelbar.BackColor = Color.LightGray;
+
+            if (timeSt == 0) await Task.Delay(500);
+
+            for (int i = 0; i < 5; i++)
             {
+                timer1.Enabled = true;
                 timeSt = i;
                 secs = finalBT[i] * 1000;
+                timer1.Interval = 2000;
+                if (timeSt == 0)
+                {
+                    progressBar1.Maximum = finalBT[i];
+                    progressBar1.Show();
+                    panelP1.BackColor = Color.FromArgb(58, 192, 197);
+                    lbProcess1.Text = finalProcess[timeSt];
+                    lblBT1.Text = finalBT[timeSt].ToString();
+                    lbT1.Text = finalAT[timeSt].ToString();
+                    lbT1.ForeColor = Color.DarkGray;
+                }
+                else if (timeSt == 1)
+                {
+                    progressBar2.Maximum = finalBT[i];
+                    progressBar1.Hide();
+                    progressBar2.Show();
+                    panelP2.BackColor = Color.FromArgb(40, 166, 200);
+                    lbProcess2.Text = finalProcess[timeSt];
+                    lblBT2.Text = finalBT[timeSt].ToString();
+                    lbT2.Text = finalCT[timeSt-1].ToString();
+                    lbT2.ForeColor = Color.DarkGray; 
+                }
+                else if (timeSt == 2)
+                {
+                    progressBar3.Maximum = finalBT[i];
+                    progressBar2.Hide();
+                    progressBar3.Show();
+                    panelP3.BackColor = Color.FromArgb(58, 192, 197);
+                    lbProcess3.Text = finalProcess[timeSt];
+                    lblBT3.Text = finalBT[timeSt].ToString();
+                    lbT3.Text = finalCT[timeSt - 1].ToString();
+                    lbT3.ForeColor = Color.DarkGray;
+                }
+                else if (timeSt == 3)
+                {
+                    progressBar4.Maximum = finalBT[i];
+                    progressBar3.Hide();
+                    progressBar4.Show();
+                    panelP4.BackColor = Color.FromArgb(40, 166, 200);
+                    lbProcess4.Text = finalProcess[timeSt];
+                    lblBT4.Text = finalBT[timeSt].ToString();
+                    lbT4.Text = finalCT[timeSt - 1].ToString();
+                    lbT4.ForeColor = Color.DarkGray;
+                }
+                else if (timeSt == 4)
+                {
+                    progressBar5.Maximum = finalBT[i];
+                    progressBar4.Hide();
+                    progressBar5.Show();
+                    panelP5.BackColor = Color.FromArgb(58, 192, 197);
+                    lbProcess5.Text = finalProcess[timeSt];
+                    lblBT5.Text = finalBT[timeSt].ToString();
+                    lbT5.Text = finalCT[timeSt - 1].ToString();
+                    lbT5.ForeColor = Color.DarkGray;
+                }
+
                 for (int j = 0; j < 1; j++)
                 {
-                    if (j == 0) await Task.Delay(secs);
+                    timer1.Start();
+                    timer1.Tick += new EventHandler(timer1_Tick);
+                    if (j == 0) await Task.Delay(secs + 100);
                     TimerMethod();
                 }
             }
             tbAWT.Text = finalAWT.ToString("0.00");
             tbATAT.Text = finalATAT.ToString("0.00");
+        }
+        void timer1_Tick(object sender, EventArgs e)
+        {
+            if (timeSt == 0)
+            {
+                if (progressBar1.Value != finalBT[timeSt])
+                {
+                    progressBar1.Value++;
+                }
+                else
+                {
+                    progressBar1.Value = finalBT[timeSt];
+                    timer1.Stop();
+                    progressBar1.Hide();
+                }
+            }
+            else if (timeSt == 1)
+            {
+                if (progressBar2.Value != finalBT[timeSt])
+                {
+                    progressBar2.Value++;
+                }
+                else
+                {
+                    progressBar2.Value = finalBT[timeSt];
+                    timer1.Stop();
+                    progressBar2.Hide();
+                }
+            }
+            else if (timeSt == 2)
+            {
+                if (progressBar3.Value != finalBT[timeSt])
+                {
+                    progressBar3.Value++;
+                }
+                else
+                {
+                    progressBar3.Value = finalBT[timeSt];
+                    timer1.Stop();
+                    progressBar3.Hide();
+                }
+            }
+            else if (timeSt == 3)
+            {
+                if (progressBar4.Value != finalBT[timeSt])
+                {
+                    progressBar4.Value++;
+                }
+                else
+                {
+                    progressBar4.Value = finalBT[timeSt];
+                    timer1.Stop();
+                    progressBar4.Hide();
+                }
+            }
+            else if (timeSt == 4)
+            {
+                if (progressBar5.Value != finalBT[timeSt])
+                {
+                    progressBar5.Value++;
+                }
+                else
+                {
+                    progressBar5.Value = finalBT[timeSt];
+                    timer1.Stop();
+                    progressBar5.Hide();
+                    lbT6.Text = finalCT[timeSt].ToString();
+                    lbT6.ForeColor = Color.DarkGray;
+                }
+            }
 
         }
 
@@ -509,11 +696,13 @@ namespace FCFS
         {
             if (secs == finalBT[timeSt] * 1000)
             {
+
                 dataGridView1.Rows[timeSt].Cells[3].Value = finalWT[timeSt].ToString();
                 dataGridView1.Rows[timeSt].Cells[4].Value = finalTAT[timeSt].ToString();
                 dataGridView1.Rows[timeSt].Cells[5].Value = finalCT[timeSt].ToString();
                 secs = 0;
-            } 
+
+            }
         }
         private void displayGanttChart() 
         { 
@@ -553,20 +742,7 @@ namespace FCFS
             {
                 int index = dataGridView1.SelectedRows[0].Index;
                 dataGridView1.Rows.RemoveAt(index);
-                if (dataGridView1.Rows.Count == 1)
-                {
-                    grpQueue.Enabled = true;
-                    rbSingle.Checked = false;
-                    rbMultiple.Checked = false;
-                    inAT.Enabled = true;
-                    inAT.Text = "";
-                    nRow = 0;
-                    rbSelect = 0;
-                }
-                else
-                {
-                    nRow -= 1;
-                }     
+                   
             }
             
             
@@ -574,6 +750,20 @@ namespace FCFS
         private void btnDELETE_Click(object sender, EventArgs e)
         {
             delete();
+            if (dataGridView1.Rows.Count == 0)
+            {
+                grpQueue.Enabled = true;
+                rbSingle.Checked = false;
+                rbMultiple.Checked = false;
+                inAT.Enabled = true;
+                inAT.Text = "";
+                nRow = 0;
+                rbSelect = 0;
+            }
+            else
+            {
+                nRow -= 1;
+            }
             checkRows();
         }
 
