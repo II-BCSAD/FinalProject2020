@@ -203,9 +203,6 @@ namespace FCFS
             //Display of Average Waiting Time
 
             int aWT = 0;
-            //int wt1, wt2, wt3, wt4, wt5, avt1, avt2, avt3, avt4, avt5;
-            //Double totalWT = 0d;
-            //Double totalTAT = 0d; 
 
             if (aWT < n)
             {
@@ -219,17 +216,6 @@ namespace FCFS
                 aWT++;
                 tw5.Text = wt[aWT].ToString();
             }
-
-            /*wt1 = Convert.ToInt32(tw1.Text);
-            wt2 = Convert.ToInt32(tw2.Text);
-            wt3 = Convert.ToInt32(tw3.Text);
-            wt4 = Convert.ToInt32(tw4.Text);
-            wt5 = Convert.ToInt32(tw5.Text);
-
-            totalWT = wt1 + wt2 + wt3 + wt4 + wt5;
-            double AWT = (totalWT / n);
-
-            tot1.Text = AWT.ToString();*/
 
             //Display of Average Turn-Around Time
 
@@ -247,17 +233,6 @@ namespace FCFS
                 aTAT++;
                 atat5.Text = tat[aTAT].ToString();
             }
-
-            /*avt1 = Convert.ToInt32(atat1.Text);
-            avt2 = Convert.ToInt32(atat2.Text);
-            avt3 = Convert.ToInt32(atat3.Text);
-            avt4 = Convert.ToInt32(atat4.Text);
-            avt5 = Convert.ToInt32(atat5.Text);
-
-            totalTAT = avt1 + avt2 + avt3 + avt4 + avt5;
-            double ATAT = (totalTAT / n);
-
-            tot2.Text = ATAT.ToString();*/
         }
 
         // Display AWT & ATAT
@@ -268,9 +243,6 @@ namespace FCFS
 
             finalATAT.Text = fTAT.ToString();
             fATAT.Text = fTAT.ToString();
-
-           // int totalWT = Convert.ToInt32(fAWT.Text);
-            //int totalTAT = Convert.ToInt32(fATAT.Text);
 
             double AWT = fWT * n;
             double ATAT = fTAT * n;
