@@ -33,6 +33,8 @@ namespace FCFS
         public static double finalAWT = 0d, finalATAT = 0d;
         public static int[] qOrder = new int[5];
         public static int[] UnsortedqOrder = new int[5];
+        public static bool drag = false;
+        public static Point start_point = new Point(0, 0);
 
 
 
@@ -46,6 +48,23 @@ namespace FCFS
             progressBar5.Hide();
         }
 
+        private void panel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            drag = true;
+            start_point = new Point(e.X, e.Y);
+        }
+        private void panel4_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (drag)
+            {
+                Point p = PointToScreen(e.Location);
+                this.Location = new Point(p.X - start_point.X, p.Y - start_point.Y);
+            }
+        }
+        private void panel4_MouseUp(object sender, MouseEventArgs e)
+        {
+            drag = false;
+        }
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
@@ -561,9 +580,11 @@ namespace FCFS
             for (int i = 0; i < 5; i++)
             {
                 timer1.Enabled = true;
+                timer2.Enabled = true;
                 timeSt = i;
                 secs = finalBT[i] * 250;
                 timer1.Interval = 500;
+                timer2.Interval = 500;
                 if (timeSt == 0)
                 {
                     progressBar1.Maximum = finalBT[i];
@@ -573,6 +594,16 @@ namespace FCFS
                     lblBT1.Text = finalBT[timeSt].ToString();
                     lbT1.Text = finalAT[timeSt].ToString();
                     lbT1.ForeColor = Color.DarkGray;
+
+                    rq1.BackColor = Color.FromArgb(40, 166, 200);
+                    rq2.BackColor = Color.FromArgb(58, 192, 197);
+                    rq3.BackColor = Color.FromArgb(40, 166, 200);
+                    rq4.BackColor = Color.FromArgb(58, 192, 197);
+
+                    lbRq1.Text = finalProcess[timeSt + 1];
+                    lbRq2.Text = finalProcess[timeSt + 2];
+                    lbRq3.Text = finalProcess[timeSt + 3];
+                    lbRq4.Text = finalProcess[timeSt + 4];
                 }
                 else if (timeSt == 1)
                 {
@@ -583,7 +614,17 @@ namespace FCFS
                     lbProcess2.Text = finalProcess[timeSt];
                     lblBT2.Text = finalBT[timeSt].ToString();
                     lbT2.Text = UnsortedfinalCT[timeSt-1].ToString();
-                    lbT2.ForeColor = Color.DarkGray; 
+                    lbT2.ForeColor = Color.DarkGray;
+
+                    rq1.BackColor = Color.FromArgb(58, 192, 197);
+                    rq2.BackColor = Color.FromArgb(40, 166, 200);
+                    rq3.BackColor = Color.FromArgb(58, 192, 197);
+                    rq4.Hide();
+
+                    lbRq1.Text = finalProcess[timeSt + 1];
+                    lbRq2.Text = finalProcess[timeSt + 2];
+                    lbRq3.Text = finalProcess[timeSt + 3];
+                    lbRq4.Hide();
                 }
                 else if (timeSt == 2)
                 {
@@ -595,6 +636,16 @@ namespace FCFS
                     lblBT3.Text = finalBT[timeSt].ToString();
                     lbT3.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT3.ForeColor = Color.DarkGray;
+
+                    rq1.BackColor = Color.FromArgb(40, 166, 200);
+                    rq2.BackColor = Color.FromArgb(58, 192, 197);
+                    rq3.Hide();
+                    rq4.Hide();
+
+                    lbRq1.Text = finalProcess[timeSt + 1];
+                    lbRq2.Text = finalProcess[timeSt + 2];
+                    lbRq3.Hide();
+                    lbRq4.Hide();
                 }
                 else if (timeSt == 3)
                 {
@@ -606,6 +657,16 @@ namespace FCFS
                     lblBT4.Text = finalBT[timeSt].ToString();
                     lbT4.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT4.ForeColor = Color.DarkGray;
+
+                    rq1.BackColor = Color.FromArgb(58, 192, 197);
+                    rq2.Hide();
+                    rq3.Hide();
+                    rq4.Hide();
+
+                    lbRq1.Text = finalProcess[timeSt + 1];
+                    lbRq2.Hide();
+                    lbRq3.Hide();
+                    lbRq4.Hide();
                 }
                 else if (timeSt == 4)
                 {
@@ -617,12 +678,26 @@ namespace FCFS
                     lblBT5.Text = finalBT[timeSt].ToString();
                     lbT5.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT5.ForeColor = Color.DarkGray;
+
+                    rq1.Hide();
+                    rq2.Hide();
+                    rq3.Hide();
+                    rq4.Hide();
+
+                    lbRq1.Hide();
+                    lbRq2.Hide();
+                    lbRq3.Hide();
+                    lbRq4.Hide();
                 }
+
+                
 
                 for (int j = 0; j < 1; j++)
                 {
                     timer1.Start();
+                    timer2.Start();
                     timer1.Tick += new EventHandler(timer1_Tick);
+                    timer2.Tick += new EventHandler(timer2_Tick);
                     if (j == 0) await Task.Delay(secs + 100);
                     TimerMethod();
                 }
@@ -700,6 +775,11 @@ namespace FCFS
                 }
             }
 
+        }
+
+        void timer2_Tick(object sender, EventArgs e)
+        {
+            
         }
 
         private void TimerMethod()

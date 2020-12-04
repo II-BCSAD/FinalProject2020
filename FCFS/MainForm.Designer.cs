@@ -100,8 +100,6 @@
             this.rbSingle = new System.Windows.Forms.RadioButton();
             this.rqPanel = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rq5 = new System.Windows.Forms.Panel();
-            this.lbRq5 = new System.Windows.Forms.Label();
             this.rq4 = new System.Windows.Forms.Panel();
             this.lbRq4 = new System.Windows.Forms.Label();
             this.rq3 = new System.Windows.Forms.Panel();
@@ -110,8 +108,8 @@
             this.lbRq2 = new System.Windows.Forms.Label();
             this.rq1 = new System.Windows.Forms.Panel();
             this.lbRq1 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.lowPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panelCPU.SuspendLayout();
@@ -128,7 +126,6 @@
             this.grpQueue.SuspendLayout();
             this.rqPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.rq5.SuspendLayout();
             this.rq4.SuspendLayout();
             this.rq3.SuspendLayout();
             this.rq2.SuspendLayout();
@@ -731,6 +728,9 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1025, 35);
             this.panel4.TabIndex = 6;
+            this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
+            this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
+            this.panel4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseUp);
             // 
             // label1
             // 
@@ -910,12 +910,10 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.rq5);
             this.groupBox2.Controls.Add(this.rq4);
             this.groupBox2.Controls.Add(this.rq3);
             this.groupBox2.Controls.Add(this.rq2);
             this.groupBox2.Controls.Add(this.rq1);
-            this.groupBox2.Controls.Add(this.panel12);
             this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
             this.groupBox2.Location = new System.Drawing.Point(13, 8);
@@ -926,29 +924,10 @@
             this.groupBox2.Text = "READY QUEUE";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // rq5
-            // 
-            this.rq5.Controls.Add(this.lbRq5);
-            this.rq5.Location = new System.Drawing.Point(260, 31);
-            this.rq5.Name = "rq5";
-            this.rq5.Size = new System.Drawing.Size(51, 73);
-            this.rq5.TabIndex = 0;
-            // 
-            // lbRq5
-            // 
-            this.lbRq5.AutoSize = true;
-            this.lbRq5.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.lbRq5.Location = new System.Drawing.Point(12, 21);
-            this.lbRq5.Name = "lbRq5";
-            this.lbRq5.Size = new System.Drawing.Size(25, 35);
-            this.lbRq5.TabIndex = 0;
-            this.lbRq5.Text = "1";
-            this.lbRq5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // rq4
             // 
             this.rq4.Controls.Add(this.lbRq4);
-            this.rq4.Location = new System.Drawing.Point(203, 31);
+            this.rq4.Location = new System.Drawing.Point(285, 31);
             this.rq4.Name = "rq4";
             this.rq4.Size = new System.Drawing.Size(51, 73);
             this.rq4.TabIndex = 0;
@@ -957,6 +936,7 @@
             // 
             this.lbRq4.AutoSize = true;
             this.lbRq4.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq4.ForeColor = System.Drawing.Color.White;
             this.lbRq4.Location = new System.Drawing.Point(14, 21);
             this.lbRq4.Name = "lbRq4";
             this.lbRq4.Size = new System.Drawing.Size(25, 35);
@@ -967,7 +947,7 @@
             // rq3
             // 
             this.rq3.Controls.Add(this.lbRq3);
-            this.rq3.Location = new System.Drawing.Point(146, 31);
+            this.rq3.Location = new System.Drawing.Point(228, 31);
             this.rq3.Name = "rq3";
             this.rq3.Size = new System.Drawing.Size(51, 73);
             this.rq3.TabIndex = 0;
@@ -976,6 +956,7 @@
             // 
             this.lbRq3.AutoSize = true;
             this.lbRq3.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq3.ForeColor = System.Drawing.Color.White;
             this.lbRq3.Location = new System.Drawing.Point(13, 21);
             this.lbRq3.Name = "lbRq3";
             this.lbRq3.Size = new System.Drawing.Size(25, 35);
@@ -986,7 +967,7 @@
             // rq2
             // 
             this.rq2.Controls.Add(this.lbRq2);
-            this.rq2.Location = new System.Drawing.Point(89, 31);
+            this.rq2.Location = new System.Drawing.Point(171, 31);
             this.rq2.Name = "rq2";
             this.rq2.Size = new System.Drawing.Size(51, 73);
             this.rq2.TabIndex = 0;
@@ -995,6 +976,7 @@
             // 
             this.lbRq2.AutoSize = true;
             this.lbRq2.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq2.ForeColor = System.Drawing.Color.White;
             this.lbRq2.Location = new System.Drawing.Point(13, 21);
             this.lbRq2.Name = "lbRq2";
             this.lbRq2.Size = new System.Drawing.Size(25, 35);
@@ -1005,7 +987,7 @@
             // rq1
             // 
             this.rq1.Controls.Add(this.lbRq1);
-            this.rq1.Location = new System.Drawing.Point(32, 31);
+            this.rq1.Location = new System.Drawing.Point(114, 31);
             this.rq1.Name = "rq1";
             this.rq1.Size = new System.Drawing.Size(51, 73);
             this.rq1.TabIndex = 0;
@@ -1014,6 +996,7 @@
             // 
             this.lbRq1.AutoSize = true;
             this.lbRq1.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq1.ForeColor = System.Drawing.Color.White;
             this.lbRq1.Location = new System.Drawing.Point(13, 21);
             this.lbRq1.Name = "lbRq1";
             this.lbRq1.Size = new System.Drawing.Size(25, 35);
@@ -1021,12 +1004,13 @@
             this.lbRq1.Text = "1";
             this.lbRq1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel12
+            // timer1
             // 
-            this.panel12.Location = new System.Drawing.Point(55, 34);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(28, 66);
-            this.panel12.TabIndex = 0;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // fcfsForm
             // 
@@ -1076,8 +1060,6 @@
             this.grpQueue.PerformLayout();
             this.rqPanel.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.rq5.ResumeLayout(false);
-            this.rq5.PerformLayout();
             this.rq4.ResumeLayout(false);
             this.rq4.PerformLayout();
             this.rq3.ResumeLayout(false);
@@ -1146,12 +1128,10 @@
         private System.Windows.Forms.Label lbProcess2;
         private System.Windows.Forms.Label lblBT1;
         private System.Windows.Forms.Label lbProcess1;
-        private System.Windows.Forms.Panel rq5;
         private System.Windows.Forms.Panel rq4;
         private System.Windows.Forms.Panel rq3;
         private System.Windows.Forms.Panel rq2;
         private System.Windows.Forms.Panel rq1;
-        private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.ProgressBar progressBar5;
         private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.ProgressBar progressBar3;
@@ -1165,10 +1145,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colTAT;
         private System.Windows.Forms.DataGridViewTextBoxColumn colComp;
         private System.Windows.Forms.Label lbRq1;
-        private System.Windows.Forms.Label lbRq5;
         private System.Windows.Forms.Label lbRq4;
         private System.Windows.Forms.Label lbRq3;
         private System.Windows.Forms.Label lbRq2;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
