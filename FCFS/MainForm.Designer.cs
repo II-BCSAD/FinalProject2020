@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lowPanel = new System.Windows.Forms.Panel();
             this.btnRestart = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -100,6 +100,8 @@
             this.rbSingle = new System.Windows.Forms.RadioButton();
             this.rqPanel = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rq5 = new System.Windows.Forms.Panel();
+            this.lbRq5 = new System.Windows.Forms.Label();
             this.rq4 = new System.Windows.Forms.Panel();
             this.lbRq4 = new System.Windows.Forms.Label();
             this.rq3 = new System.Windows.Forms.Panel();
@@ -108,8 +110,8 @@
             this.lbRq2 = new System.Windows.Forms.Label();
             this.rq1 = new System.Windows.Forms.Panel();
             this.lbRq1 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.lowPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panelCPU.SuspendLayout();
@@ -126,6 +128,7 @@
             this.grpQueue.SuspendLayout();
             this.rqPanel.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.rq5.SuspendLayout();
             this.rq4.SuspendLayout();
             this.rq3.SuspendLayout();
             this.rq2.SuspendLayout();
@@ -146,8 +149,7 @@
             // btnRestart
             // 
             this.btnRestart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestart.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.btnRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnRestart.ForeColor = System.Drawing.Color.White;
             this.btnRestart.Location = new System.Drawing.Point(865, 73);
             this.btnRestart.Name = "btnRestart";
@@ -177,7 +179,7 @@
             this.groupBox1.Controls.Add(this.panelP3);
             this.groupBox1.Controls.Add(this.panelP2);
             this.groupBox1.Controls.Add(this.panelP1);
-            this.groupBox1.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
             this.groupBox1.Location = new System.Drawing.Point(30, 7);
             this.groupBox1.Name = "groupBox1";
@@ -225,12 +227,12 @@
             // lbT6
             // 
             this.lbT6.AutoSize = true;
-            this.lbT6.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbT6.ForeColor = System.Drawing.Color.White;
             this.lbT6.Location = new System.Drawing.Point(725, 129);
             this.lbT6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT6.Name = "lbT6";
-            this.lbT6.Size = new System.Drawing.Size(39, 35);
+            this.lbT6.Size = new System.Drawing.Size(29, 25);
             this.lbT6.TabIndex = 1;
             this.lbT6.Text = "lb";
             this.lbT6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -238,12 +240,12 @@
             // lbT5
             // 
             this.lbT5.AutoSize = true;
-            this.lbT5.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbT5.ForeColor = System.Drawing.Color.White;
             this.lbT5.Location = new System.Drawing.Point(630, 129);
             this.lbT5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT5.Name = "lbT5";
-            this.lbT5.Size = new System.Drawing.Size(39, 35);
+            this.lbT5.Size = new System.Drawing.Size(29, 25);
             this.lbT5.TabIndex = 1;
             this.lbT5.Text = "lb";
             this.lbT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -251,12 +253,12 @@
             // lbT4
             // 
             this.lbT4.AutoSize = true;
-            this.lbT4.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbT4.ForeColor = System.Drawing.Color.White;
             this.lbT4.Location = new System.Drawing.Point(523, 129);
             this.lbT4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT4.Name = "lbT4";
-            this.lbT4.Size = new System.Drawing.Size(39, 35);
+            this.lbT4.Size = new System.Drawing.Size(29, 25);
             this.lbT4.TabIndex = 1;
             this.lbT4.Text = "lb";
             this.lbT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,12 +266,12 @@
             // lbT3
             // 
             this.lbT3.AutoSize = true;
-            this.lbT3.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbT3.ForeColor = System.Drawing.Color.White;
             this.lbT3.Location = new System.Drawing.Point(416, 129);
             this.lbT3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT3.Name = "lbT3";
-            this.lbT3.Size = new System.Drawing.Size(39, 35);
+            this.lbT3.Size = new System.Drawing.Size(29, 25);
             this.lbT3.TabIndex = 1;
             this.lbT3.Text = "lb";
             this.lbT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -277,12 +279,12 @@
             // lbT2
             // 
             this.lbT2.AutoSize = true;
-            this.lbT2.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbT2.ForeColor = System.Drawing.Color.White;
-            this.lbT2.Location = new System.Drawing.Point(319, 130);
+            this.lbT2.Location = new System.Drawing.Point(319, 129);
             this.lbT2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT2.Name = "lbT2";
-            this.lbT2.Size = new System.Drawing.Size(39, 35);
+            this.lbT2.Size = new System.Drawing.Size(29, 25);
             this.lbT2.TabIndex = 1;
             this.lbT2.Text = "lb";
             this.lbT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,12 +292,12 @@
             // lbT1
             // 
             this.lbT1.AutoSize = true;
-            this.lbT1.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
+            this.lbT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbT1.ForeColor = System.Drawing.Color.White;
-            this.lbT1.Location = new System.Drawing.Point(207, 129);
+            this.lbT1.Location = new System.Drawing.Point(223, 129);
             this.lbT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbT1.Name = "lbT1";
-            this.lbT1.Size = new System.Drawing.Size(39, 35);
+            this.lbT1.Size = new System.Drawing.Size(29, 25);
             this.lbT1.TabIndex = 1;
             this.lbT1.Text = "lb";
             this.lbT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -320,12 +322,12 @@
             // lbCPU
             // 
             this.lbCPU.AutoSize = true;
-            this.lbCPU.Font = new System.Drawing.Font("Montserrat SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lbCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.lbCPU.ForeColor = System.Drawing.Color.White;
             this.lbCPU.Location = new System.Drawing.Point(14, 26);
             this.lbCPU.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCPU.Name = "lbCPU";
-            this.lbCPU.Size = new System.Drawing.Size(68, 33);
+            this.lbCPU.Size = new System.Drawing.Size(51, 24);
             this.lbCPU.TabIndex = 1;
             this.lbCPU.Text = "CPU";
             this.lbCPU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -344,24 +346,24 @@
             // 
             this.lblBT5.AutoSize = true;
             this.lblBT5.BackColor = System.Drawing.Color.Transparent;
-            this.lblBT5.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.lblBT5.ForeColor = System.Drawing.Color.White;
             this.lblBT5.Location = new System.Drawing.Point(61, 54);
             this.lblBT5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT5.Name = "lblBT5";
-            this.lblBT5.Size = new System.Drawing.Size(0, 30);
+            this.lblBT5.Size = new System.Drawing.Size(0, 22);
             this.lblBT5.TabIndex = 1;
             this.lblBT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess5
             // 
             this.lbProcess5.AutoSize = true;
-            this.lbProcess5.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.lbProcess5.ForeColor = System.Drawing.Color.White;
             this.lbProcess5.Location = new System.Drawing.Point(33, 20);
             this.lbProcess5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess5.Name = "lbProcess5";
-            this.lbProcess5.Size = new System.Drawing.Size(0, 41);
+            this.lbProcess5.Size = new System.Drawing.Size(0, 29);
             this.lbProcess5.TabIndex = 1;
             this.lbProcess5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -379,24 +381,24 @@
             // 
             this.lblBT4.AutoSize = true;
             this.lblBT4.BackColor = System.Drawing.Color.Transparent;
-            this.lblBT4.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.lblBT4.ForeColor = System.Drawing.Color.White;
             this.lblBT4.Location = new System.Drawing.Point(61, 54);
             this.lblBT4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT4.Name = "lblBT4";
-            this.lblBT4.Size = new System.Drawing.Size(0, 30);
+            this.lblBT4.Size = new System.Drawing.Size(0, 22);
             this.lblBT4.TabIndex = 1;
             this.lblBT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess4
             // 
             this.lbProcess4.AutoSize = true;
-            this.lbProcess4.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.lbProcess4.ForeColor = System.Drawing.Color.White;
             this.lbProcess4.Location = new System.Drawing.Point(31, 21);
             this.lbProcess4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess4.Name = "lbProcess4";
-            this.lbProcess4.Size = new System.Drawing.Size(0, 41);
+            this.lbProcess4.Size = new System.Drawing.Size(0, 29);
             this.lbProcess4.TabIndex = 1;
             this.lbProcess4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -414,24 +416,24 @@
             // 
             this.lblBT3.AutoSize = true;
             this.lblBT3.BackColor = System.Drawing.Color.Transparent;
-            this.lblBT3.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.lblBT3.ForeColor = System.Drawing.Color.White;
             this.lblBT3.Location = new System.Drawing.Point(61, 54);
             this.lblBT3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT3.Name = "lblBT3";
-            this.lblBT3.Size = new System.Drawing.Size(0, 30);
+            this.lblBT3.Size = new System.Drawing.Size(0, 22);
             this.lblBT3.TabIndex = 1;
             this.lblBT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess3
             // 
             this.lbProcess3.AutoSize = true;
-            this.lbProcess3.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.lbProcess3.ForeColor = System.Drawing.Color.White;
             this.lbProcess3.Location = new System.Drawing.Point(33, 21);
             this.lbProcess3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess3.Name = "lbProcess3";
-            this.lbProcess3.Size = new System.Drawing.Size(0, 41);
+            this.lbProcess3.Size = new System.Drawing.Size(0, 29);
             this.lbProcess3.TabIndex = 1;
             this.lbProcess3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -449,24 +451,24 @@
             // 
             this.lblBT2.AutoSize = true;
             this.lblBT2.BackColor = System.Drawing.Color.Transparent;
-            this.lblBT2.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.lblBT2.ForeColor = System.Drawing.Color.White;
             this.lblBT2.Location = new System.Drawing.Point(61, 54);
             this.lblBT2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT2.Name = "lblBT2";
-            this.lblBT2.Size = new System.Drawing.Size(0, 30);
+            this.lblBT2.Size = new System.Drawing.Size(0, 22);
             this.lblBT2.TabIndex = 1;
             this.lblBT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess2
             // 
             this.lbProcess2.AutoSize = true;
-            this.lbProcess2.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.lbProcess2.ForeColor = System.Drawing.Color.White;
             this.lbProcess2.Location = new System.Drawing.Point(33, 20);
             this.lbProcess2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess2.Name = "lbProcess2";
-            this.lbProcess2.Size = new System.Drawing.Size(0, 41);
+            this.lbProcess2.Size = new System.Drawing.Size(0, 29);
             this.lbProcess2.TabIndex = 1;
             this.lbProcess2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -484,32 +486,31 @@
             // 
             this.lblBT1.AutoSize = true;
             this.lblBT1.BackColor = System.Drawing.Color.Transparent;
-            this.lblBT1.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.lblBT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.lblBT1.ForeColor = System.Drawing.Color.White;
             this.lblBT1.Location = new System.Drawing.Point(61, 54);
             this.lblBT1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBT1.Name = "lblBT1";
-            this.lblBT1.Size = new System.Drawing.Size(0, 30);
+            this.lblBT1.Size = new System.Drawing.Size(0, 22);
             this.lblBT1.TabIndex = 1;
             this.lblBT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbProcess1
             // 
             this.lbProcess1.AutoSize = true;
-            this.lbProcess1.Font = new System.Drawing.Font("Montserrat SemiBold", 18F, System.Drawing.FontStyle.Bold);
+            this.lbProcess1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
             this.lbProcess1.ForeColor = System.Drawing.Color.White;
             this.lbProcess1.Location = new System.Drawing.Point(31, 20);
             this.lbProcess1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbProcess1.Name = "lbProcess1";
-            this.lbProcess1.Size = new System.Drawing.Size(0, 41);
+            this.lbProcess1.Size = new System.Drawing.Size(0, 29);
             this.lbProcess1.TabIndex = 1;
             this.lbProcess1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSolution
             // 
             this.btnSolution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
-            this.btnSolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSolution.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold);
+            this.btnSolution.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.btnSolution.ForeColor = System.Drawing.Color.White;
             this.btnSolution.Location = new System.Drawing.Point(865, 32);
             this.btnSolution.Name = "btnSolution";
@@ -523,8 +524,7 @@
             // 
             this.btnDELETE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
             this.btnDELETE.FlatAppearance.BorderSize = 0;
-            this.btnDELETE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDELETE.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDELETE.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDELETE.ForeColor = System.Drawing.Color.White;
             this.btnDELETE.Location = new System.Drawing.Point(859, 35);
             this.btnDELETE.Name = "btnDELETE";
@@ -538,8 +538,7 @@
             // 
             this.btnSTART.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
             this.btnSTART.FlatAppearance.BorderSize = 0;
-            this.btnSTART.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSTART.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSTART.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSTART.ForeColor = System.Drawing.Color.White;
             this.btnSTART.Location = new System.Drawing.Point(859, 73);
             this.btnSTART.Name = "btnSTART";
@@ -568,7 +567,7 @@
             this.gbAverage.Controls.Add(this.tbAWT);
             this.gbAverage.Controls.Add(this.lblTAT);
             this.gbAverage.Controls.Add(this.lb_awt);
-            this.gbAverage.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbAverage.Location = new System.Drawing.Point(834, 124);
             this.gbAverage.Name = "gbAverage";
             this.gbAverage.Size = new System.Drawing.Size(173, 140);
@@ -582,7 +581,7 @@
             this.tbATAT.Enabled = false;
             this.tbATAT.Location = new System.Drawing.Point(10, 103);
             this.tbATAT.Name = "tbATAT";
-            this.tbATAT.Size = new System.Drawing.Size(136, 26);
+            this.tbATAT.Size = new System.Drawing.Size(136, 21);
             this.tbATAT.TabIndex = 1;
             // 
             // tbAWT
@@ -590,16 +589,16 @@
             this.tbAWT.Enabled = false;
             this.tbAWT.Location = new System.Drawing.Point(10, 48);
             this.tbAWT.Name = "tbAWT";
-            this.tbAWT.Size = new System.Drawing.Size(136, 26);
+            this.tbAWT.Size = new System.Drawing.Size(136, 21);
             this.tbAWT.TabIndex = 1;
             // 
             // lblTAT
             // 
             this.lblTAT.AutoSize = true;
-            this.lblTAT.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTAT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTAT.Location = new System.Drawing.Point(6, 80);
             this.lblTAT.Name = "lblTAT";
-            this.lblTAT.Size = new System.Drawing.Size(158, 20);
+            this.lblTAT.Size = new System.Drawing.Size(117, 13);
             this.lblTAT.TabIndex = 0;
             this.lblTAT.Text = "TURN-AROUND TIME";
             this.lblTAT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -607,10 +606,10 @@
             // lb_awt
             // 
             this.lb_awt.AutoSize = true;
-            this.lb_awt.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_awt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_awt.Location = new System.Drawing.Point(6, 25);
             this.lb_awt.Name = "lb_awt";
-            this.lb_awt.Size = new System.Drawing.Size(106, 20);
+            this.lb_awt.Size = new System.Drawing.Size(80, 13);
             this.lb_awt.TabIndex = 0;
             this.lb_awt.Text = "WATING TIME";
             this.lb_awt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -619,7 +618,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
-            this.label2.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(26, 32);
             this.label2.MaximumSize = new System.Drawing.Size(795, 35);
@@ -635,19 +634,19 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colProcess,
@@ -668,8 +667,8 @@
             // 
             // colProcess
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colProcess.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colProcess.DefaultCellStyle = dataGridViewCellStyle18;
             this.colProcess.HeaderText = "PROCESS";
             this.colProcess.MinimumWidth = 6;
             this.colProcess.Name = "colProcess";
@@ -678,8 +677,8 @@
             // 
             // colAT
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colAT.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colAT.DefaultCellStyle = dataGridViewCellStyle19;
             this.colAT.HeaderText = "ARRIVAL TIME (AT)";
             this.colAT.MinimumWidth = 6;
             this.colAT.Name = "colAT";
@@ -688,8 +687,8 @@
             // 
             // colBT
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colBT.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colBT.DefaultCellStyle = dataGridViewCellStyle20;
             this.colBT.HeaderText = "BURST TIME (BT)";
             this.colBT.MinimumWidth = 6;
             this.colBT.Name = "colBT";
@@ -728,18 +727,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1025, 35);
             this.panel4.TabIndex = 6;
-            this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
-            this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
-            this.panel4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseUp);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(375, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 26);
+            this.label1.Size = new System.Drawing.Size(179, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "First Come First Serve";
             // 
@@ -748,7 +744,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(55)))), ((int)(((byte)(80)))));
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(959, -3);
             this.btnExit.MaximumSize = new System.Drawing.Size(60, 40);
@@ -767,36 +763,36 @@
             this.inBT.Location = new System.Drawing.Point(304, 88);
             this.inBT.MaxLength = 3;
             this.inBT.Name = "inBT";
-            this.inBT.Size = new System.Drawing.Size(100, 25);
+            this.inBT.Size = new System.Drawing.Size(100, 19);
             this.inBT.TabIndex = 2;
             // 
             // lb_AT
             // 
             this.lb_AT.AutoSize = true;
-            this.lb_AT.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_AT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_AT.Location = new System.Drawing.Point(190, 60);
             this.lb_AT.Name = "lb_AT";
-            this.lb_AT.Size = new System.Drawing.Size(108, 20);
+            this.lb_AT.Size = new System.Drawing.Size(82, 13);
             this.lb_AT.TabIndex = 0;
             this.lb_AT.Text = "ARRIVAL TIME";
             // 
             // lb_process
             // 
             this.lb_process.AutoSize = true;
-            this.lb_process.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_process.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_process.Location = new System.Drawing.Point(190, 29);
             this.lb_process.Name = "lb_process";
-            this.lb_process.Size = new System.Drawing.Size(78, 20);
+            this.lb_process.Size = new System.Drawing.Size(58, 13);
             this.lb_process.TabIndex = 0;
             this.lb_process.Text = "PROCESS";
             // 
             // lbBT
             // 
             this.lbBT.AutoSize = true;
-            this.lbBT.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBT.Location = new System.Drawing.Point(190, 91);
             this.lbBT.Name = "lbBT";
-            this.lbBT.Size = new System.Drawing.Size(96, 20);
+            this.lbBT.Size = new System.Drawing.Size(73, 13);
             this.lbBT.TabIndex = 0;
             this.lbBT.Text = "BURST TIME";
             // 
@@ -804,10 +800,11 @@
             // 
             this.inProcess.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.inProcess.Location = new System.Drawing.Point(304, 26);
-            this.inProcess.MaxLength = 1;
+            this.inProcess.MaxLength = 2;
             this.inProcess.Name = "inProcess";
-            this.inProcess.Size = new System.Drawing.Size(100, 25);
+            this.inProcess.Size = new System.Drawing.Size(100, 19);
             this.inProcess.TabIndex = 0;
+            this.inProcess.TextChanged += new System.EventHandler(this.inProcess_TextChanged);
             // 
             // inAT
             // 
@@ -815,15 +812,14 @@
             this.inAT.Location = new System.Drawing.Point(304, 57);
             this.inAT.MaxLength = 2;
             this.inAT.Name = "inAT";
-            this.inAT.Size = new System.Drawing.Size(100, 25);
+            this.inAT.Size = new System.Drawing.Size(100, 19);
             this.inAT.TabIndex = 1;
             // 
             // btnADD
             // 
             this.btnADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(192)))), ((int)(((byte)(197)))));
             this.btnADD.FlatAppearance.BorderSize = 0;
-            this.btnADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnADD.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnADD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnADD.ForeColor = System.Drawing.Color.White;
             this.btnADD.Location = new System.Drawing.Point(426, 29);
             this.btnADD.Name = "btnADD";
@@ -837,8 +833,7 @@
             // 
             this.btnCLEAR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
             this.btnCLEAR.FlatAppearance.BorderSize = 0;
-            this.btnCLEAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCLEAR.Font = new System.Drawing.Font("Montserrat Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCLEAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCLEAR.ForeColor = System.Drawing.Color.White;
             this.btnCLEAR.Location = new System.Drawing.Point(426, 69);
             this.btnCLEAR.Name = "btnCLEAR";
@@ -869,7 +864,7 @@
             // 
             this.grpQueue.Controls.Add(this.rbMultiple);
             this.grpQueue.Controls.Add(this.rbSingle);
-            this.grpQueue.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpQueue.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpQueue.Location = new System.Drawing.Point(26, 23);
             this.grpQueue.Name = "grpQueue";
             this.grpQueue.Size = new System.Drawing.Size(128, 85);
@@ -882,7 +877,7 @@
             this.rbMultiple.AutoSize = true;
             this.rbMultiple.Location = new System.Drawing.Point(14, 51);
             this.rbMultiple.Name = "rbMultiple";
-            this.rbMultiple.Size = new System.Drawing.Size(104, 24);
+            this.rbMultiple.Size = new System.Drawing.Size(81, 17);
             this.rbMultiple.TabIndex = 0;
             this.rbMultiple.TabStop = true;
             this.rbMultiple.Text = " MULTIPLE";
@@ -893,7 +888,7 @@
             this.rbSingle.AutoSize = true;
             this.rbSingle.Location = new System.Drawing.Point(14, 24);
             this.rbSingle.Name = "rbSingle";
-            this.rbSingle.Size = new System.Drawing.Size(82, 24);
+            this.rbSingle.Size = new System.Drawing.Size(64, 17);
             this.rbSingle.TabIndex = 0;
             this.rbSingle.TabStop = true;
             this.rbSingle.Text = "SINGLE";
@@ -910,11 +905,13 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.rq5);
             this.groupBox2.Controls.Add(this.rq4);
             this.groupBox2.Controls.Add(this.rq3);
             this.groupBox2.Controls.Add(this.rq2);
             this.groupBox2.Controls.Add(this.rq1);
-            this.groupBox2.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.Controls.Add(this.panel12);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
             this.groupBox2.Location = new System.Drawing.Point(13, 8);
             this.groupBox2.Name = "groupBox2";
@@ -924,10 +921,29 @@
             this.groupBox2.Text = "READY QUEUE";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // rq5
+            // 
+            this.rq5.Controls.Add(this.lbRq5);
+            this.rq5.Location = new System.Drawing.Point(260, 31);
+            this.rq5.Name = "rq5";
+            this.rq5.Size = new System.Drawing.Size(51, 73);
+            this.rq5.TabIndex = 0;
+            // 
+            // lbRq5
+            // 
+            this.lbRq5.AutoSize = true;
+            this.lbRq5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.lbRq5.Location = new System.Drawing.Point(12, 21);
+            this.lbRq5.Name = "lbRq5";
+            this.lbRq5.Size = new System.Drawing.Size(24, 25);
+            this.lbRq5.TabIndex = 0;
+            this.lbRq5.Text = "1";
+            this.lbRq5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // rq4
             // 
             this.rq4.Controls.Add(this.lbRq4);
-            this.rq4.Location = new System.Drawing.Point(285, 31);
+            this.rq4.Location = new System.Drawing.Point(203, 31);
             this.rq4.Name = "rq4";
             this.rq4.Size = new System.Drawing.Size(51, 73);
             this.rq4.TabIndex = 0;
@@ -935,11 +951,10 @@
             // lbRq4
             // 
             this.lbRq4.AutoSize = true;
-            this.lbRq4.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.lbRq4.ForeColor = System.Drawing.Color.White;
+            this.lbRq4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbRq4.Location = new System.Drawing.Point(14, 21);
             this.lbRq4.Name = "lbRq4";
-            this.lbRq4.Size = new System.Drawing.Size(25, 35);
+            this.lbRq4.Size = new System.Drawing.Size(24, 25);
             this.lbRq4.TabIndex = 0;
             this.lbRq4.Text = "1";
             this.lbRq4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -947,7 +962,7 @@
             // rq3
             // 
             this.rq3.Controls.Add(this.lbRq3);
-            this.rq3.Location = new System.Drawing.Point(228, 31);
+            this.rq3.Location = new System.Drawing.Point(146, 31);
             this.rq3.Name = "rq3";
             this.rq3.Size = new System.Drawing.Size(51, 73);
             this.rq3.TabIndex = 0;
@@ -955,11 +970,10 @@
             // lbRq3
             // 
             this.lbRq3.AutoSize = true;
-            this.lbRq3.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.lbRq3.ForeColor = System.Drawing.Color.White;
+            this.lbRq3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbRq3.Location = new System.Drawing.Point(13, 21);
             this.lbRq3.Name = "lbRq3";
-            this.lbRq3.Size = new System.Drawing.Size(25, 35);
+            this.lbRq3.Size = new System.Drawing.Size(24, 25);
             this.lbRq3.TabIndex = 0;
             this.lbRq3.Text = "1";
             this.lbRq3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -967,7 +981,7 @@
             // rq2
             // 
             this.rq2.Controls.Add(this.lbRq2);
-            this.rq2.Location = new System.Drawing.Point(171, 31);
+            this.rq2.Location = new System.Drawing.Point(89, 31);
             this.rq2.Name = "rq2";
             this.rq2.Size = new System.Drawing.Size(51, 73);
             this.rq2.TabIndex = 0;
@@ -975,11 +989,10 @@
             // lbRq2
             // 
             this.lbRq2.AutoSize = true;
-            this.lbRq2.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.lbRq2.ForeColor = System.Drawing.Color.White;
+            this.lbRq2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbRq2.Location = new System.Drawing.Point(13, 21);
             this.lbRq2.Name = "lbRq2";
-            this.lbRq2.Size = new System.Drawing.Size(25, 35);
+            this.lbRq2.Size = new System.Drawing.Size(24, 25);
             this.lbRq2.TabIndex = 0;
             this.lbRq2.Text = "1";
             this.lbRq2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -987,7 +1000,7 @@
             // rq1
             // 
             this.rq1.Controls.Add(this.lbRq1);
-            this.rq1.Location = new System.Drawing.Point(114, 31);
+            this.rq1.Location = new System.Drawing.Point(32, 31);
             this.rq1.Name = "rq1";
             this.rq1.Size = new System.Drawing.Size(51, 73);
             this.rq1.TabIndex = 0;
@@ -995,26 +1008,24 @@
             // lbRq1
             // 
             this.lbRq1.AutoSize = true;
-            this.lbRq1.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
-            this.lbRq1.ForeColor = System.Drawing.Color.White;
+            this.lbRq1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.lbRq1.Location = new System.Drawing.Point(13, 21);
             this.lbRq1.Name = "lbRq1";
-            this.lbRq1.Size = new System.Drawing.Size(25, 35);
+            this.lbRq1.Size = new System.Drawing.Size(24, 25);
             this.lbRq1.TabIndex = 0;
             this.lbRq1.Text = "1";
             this.lbRq1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer1
+            // panel12
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.panel12.Location = new System.Drawing.Point(55, 34);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(28, 66);
+            this.panel12.TabIndex = 0;
             // 
             // fcfsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 660);
             this.Controls.Add(this.rqPanel);
@@ -1022,7 +1033,7 @@
             this.Controls.Add(this.inputPanel);
             this.Controls.Add(this.midPanel);
             this.Controls.Add(this.lowPanel);
-            this.Font = new System.Drawing.Font("Open Sans", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -1060,6 +1071,8 @@
             this.grpQueue.PerformLayout();
             this.rqPanel.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.rq5.ResumeLayout(false);
+            this.rq5.PerformLayout();
             this.rq4.ResumeLayout(false);
             this.rq4.PerformLayout();
             this.rq3.ResumeLayout(false);
@@ -1128,10 +1141,12 @@
         private System.Windows.Forms.Label lbProcess2;
         private System.Windows.Forms.Label lblBT1;
         private System.Windows.Forms.Label lbProcess1;
+        private System.Windows.Forms.Panel rq5;
         private System.Windows.Forms.Panel rq4;
         private System.Windows.Forms.Panel rq3;
         private System.Windows.Forms.Panel rq2;
         private System.Windows.Forms.Panel rq1;
+        private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.ProgressBar progressBar5;
         private System.Windows.Forms.ProgressBar progressBar4;
         private System.Windows.Forms.ProgressBar progressBar3;
@@ -1145,10 +1160,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colTAT;
         private System.Windows.Forms.DataGridViewTextBoxColumn colComp;
         private System.Windows.Forms.Label lbRq1;
+        private System.Windows.Forms.Label lbRq5;
         private System.Windows.Forms.Label lbRq4;
         private System.Windows.Forms.Label lbRq3;
         private System.Windows.Forms.Label lbRq2;
-        private System.Windows.Forms.Timer timer2;
     }
 }
 
