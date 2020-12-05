@@ -12,8 +12,6 @@ namespace FCFS
 {
     public partial class SolutionForm : Form
     {
-        public static int[] getSt = new int[5];
-        public static int[] getTAT = new int[5];
         public static bool drag = false;
         public static Point start_point = new Point(0, 0);
         public SolutionForm()
@@ -39,30 +37,16 @@ namespace FCFS
             drag = false;
         }
 
-        
+        public void startingTime(int[]st)
+        {
+
+        }
         //Solution Table
-        public void solution(string[] processes, int[] at, int[] ct, int n)
+        public void solution(string[] processes, int[] at, int[] ct, int[] st, int n)
         {
             //Display Waiting Time: as Dividend
 
             //getStartTime();
-
-            for(int j = 0; j < 5; j++)
-            {
-                getTAT[j] = ct[j] - at[j];
-            }
-
-            for (int k = 0; k < 5; k++)
-            {
-                if (k == 0)
-                {
-                    getSt[k] = at[0];
-                }
-                else if (k > 0 && k < 5)
-                {
-                    getSt[k] = getTAT[k] + at[k];
-                }
-            }
 
             int i = 0;
 
@@ -87,14 +71,15 @@ namespace FCFS
 
             if (s < n)
             {
-                st1.Text = at[s].ToString();
-                st2.Text = ct[s].ToString();
+                st1.Text = st[s].ToString();
                 s++;
-                st3.Text = ct[s].ToString();
+                st2.Text = st[s].ToString();
                 s++;
-                st4.Text = ct[s].ToString();
+                st3.Text = st[s].ToString();
                 s++;
-                st5.Text = ct[s].ToString();
+                st4.Text = st[s].ToString();
+                s++;
+                st5.Text = st[s].ToString();
             }
 
             //arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                      " + b);

@@ -470,7 +470,7 @@ namespace FCFS
 
 
             callValTable();
-            //label3.Text = UnsortedfinalST.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+            label3.Text = UnsortedfinalST.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
             btnSTART.Enabled = false;
         }
         
@@ -492,15 +492,17 @@ namespace FCFS
                 totalWT = totalWT + wt[i];
                 totalTAT = totalTAT + tat[i];
                 ct[i] = tat[i] + at[i];
-                
-                if (i == 0)
+
+                UnsortedfinalST[i] = wt[i] + at[i];
+
+                /*if (i == 0)
                 {
                     UnsortedfinalST[i] = at[i];
                 }
                 if(i > 0 && i < 5)
                 {
                     UnsortedfinalST[i] = tat[i] + at[i];
-                }
+                }*/
             }
 
             double AWT = (totalWT / 5);
@@ -807,7 +809,7 @@ namespace FCFS
             //pass value to compute() in SolutionForm.cs
             if (rbSingle.Checked)
             {
-                obj.solution(pArr, atArr, finalCT, n);
+                obj.solution(pArr, atArr, finalCT, UnsortedfinalST, n);
                 obj.compute(pArr, finalWT, finalTAT, n);
                 obj.final(finalAWT, finalATAT, n);
             }
@@ -815,8 +817,9 @@ namespace FCFS
             {
                 //obj.startingTime(st, n);
                 obj.compute(UnsortedfinalProcess, finalWT, finalTAT, n);
-                obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, n);
+                obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, UnsortedfinalST, n);
                 obj.final(finalAWT, finalATAT, n);
+                obj.startingTime(UnsortedfinalST);
 
             }
 
