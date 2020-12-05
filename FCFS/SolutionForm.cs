@@ -54,7 +54,7 @@ namespace FCFS
                 wt5.Text = ct[i].ToString();
             }
 
-            arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                      " + b);
+            //arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                      " + b);
 
 
             //Start Time in Computation Table
@@ -73,7 +73,7 @@ namespace FCFS
                 st5.Text = ct[s].ToString();
             }
 
-            arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                      " + b);
+            //arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                      " + b);
 
             int t = 0;
 
@@ -145,8 +145,8 @@ namespace FCFS
             job2.Text = n.ToString();
             job3.Text = n.ToString();
             job4.Text = n.ToString();
-            job5.Text = n.ToString();
-            job6.Text = n.ToString();
+            //job5.Text = n.ToString();
+            //job6.Text = n.ToString();
 
         }
         //Computation Table
@@ -350,19 +350,159 @@ namespace FCFS
 
         }
 
+        private void solAWT_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void arrival_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnBACK_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        private void btnBACK_Click_1(object sender, EventArgs e)
+        private void wt3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnExit_Click_1(object sender, EventArgs e)
+        private void arrival2_Click(object sender, EventArgs e)
         {
-            this.Close();
+
+        }
+
+        private void solATAT_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label92_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label32_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label94_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label112_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label89_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label114_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label119_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label105_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label115_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void job3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tat04_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label117_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label118_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label111_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label116_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label107_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label110_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label90_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label91_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label93_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label113_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label95_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label97_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,7 +31,10 @@ namespace FCFS
         public static int[] UnsortedfinalCT = new int[5];
         public static int[] UnsortedfinalTAT = new int[5];
         public static int[] UnsortedfinalWT = new int[5];
+        public static string [] UnsortedfinalProcess = new string [5];
+        public static int[] UnsortedfinalAT = new int[5];
         public static double finalAWT = 0d, finalATAT = 0d;
+        public static int[] UnsortedfinalST = new int[5];
         public static int[] qOrder = new int[5];
         public static int[] UnsortedqOrder = new int[5];
         public static bool drag = false;
@@ -153,7 +156,7 @@ namespace FCFS
             }
             if (!int.TryParse(inBT.Text, out bt))
             {
-                    count = 2;
+                    count = 1;
                     btmsg = "• Invalid input for Burst Time field.\n";
                 if (String.IsNullOrEmpty(inBT.Text))
                 {
@@ -162,12 +165,12 @@ namespace FCFS
             }
             if (String.IsNullOrEmpty(inProcess.Text))
             {
-                count = 3;
+                count = 1;
                 msg = "• The Process field is required.\n";
             }
             if (!NumLetter.IsMatch(inProcess.Text))
             {
-                count = 3;
+                count = 1;
                 msg = "• Invalid input for Process field.\n";
             }
             
@@ -175,39 +178,17 @@ namespace FCFS
             {
                 if (!String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
                 {
-                    count = 4;
+                    count = 1;
                 }
             }
             
-            if (count == 2)
+            if (count == 1)
             {
                 checkRB();
                 MessageBox.Show("There were problem/s with the following field/s:\n" + rbm + msg + atmsg + btmsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 clearTxts();
                 row.Delete();
             }
-            else if (count == 1)
-            {
-                checkRB();
-                MessageBox.Show("There were problem/s with the following field/s:\n" + rbm + msg + atmsg + btmsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                clearTxts();
-                row.Delete();
-            }
-            else if (count == 3)
-            {
-                checkRB();
-                MessageBox.Show("There were problem/s with the following field/s:\n" + rbm + msg + atmsg + btmsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                clearTxts();
-                row.Delete();
-            }
-            else if (count == 4)
-            {
-                checkRB();
-                MessageBox.Show("There were problem/s with the following field/s:\n" + rbm + msg + atmsg + btmsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                clearTxts();
-                row.Delete();
-            }
-
             else {
                 selectRB();
                 checkRows();
@@ -381,7 +362,7 @@ namespace FCFS
             
         }
 
-        private void btnSTART_Click(object sender, EventArgs e)
+        public void btnSTART_Click(object sender, EventArgs e)
         {
             transferValuesToArray();
             btnDELETE.Enabled = false;       
@@ -392,6 +373,13 @@ namespace FCFS
             {
                 multiQueueOrder[i] = i + 1;
             }
+
+            for(int i = 0; i < 5; i++)
+            {
+                UnsortedfinalProcess[i] = pArr[i];
+                UnsortedfinalAT[i] = atArr[i];
+            }
+
             //sorting by AT when Multiple Queueing
             if (rbMultiple.Checked)
             {
@@ -473,8 +461,13 @@ namespace FCFS
                     int tempCT = finalCT[min];
                     finalCT[min] = finalCT[i];
                     finalCT[i] = tempCT;
+
+                    int tempST = UnsortedfinalST[min];
+                    UnsortedfinalST[min] = UnsortedfinalST[i];
+                    UnsortedfinalST[i] = tempST;
                 }
             }
+
 
             callValTable();
             btnSTART.Enabled = false;
@@ -498,6 +491,15 @@ namespace FCFS
                 totalWT = totalWT + wt[i];
                 totalTAT = totalTAT + tat[i];
                 ct[i] = tat[i] + at[i];
+                
+                if (i == 0)
+                {
+                    UnsortedfinalST[i] = at[i];
+                }
+                if(i > 0 && i < 5)
+                {
+                    UnsortedfinalST[i] = tat[i] + at[i];
+                }
             }
 
             double AWT = (totalWT / 5);
@@ -695,7 +697,6 @@ namespace FCFS
                     lbRq4.Hide();
                 }
 
-                
 
                 for (int j = 0; j < 1; j++)
                 {
@@ -777,12 +778,6 @@ namespace FCFS
                     lbT6.ForeColor = Color.DarkGray;
                 }
             }
-
-        }
-
-        void timer2_Tick(object sender, EventArgs e)
-        {
-            
         }
 
         private void TimerMethod()
@@ -803,18 +798,34 @@ namespace FCFS
         {
 
         }
-
         private void btnSolution_Click(object sender, EventArgs e)
         {
             SolutionForm obj = new SolutionForm();
             obj.Show();
             int n = pArr.Length;
 
-            //pass value to compute() in SolutionForm.cs
-            obj.solution(pArr, atArr, finalCT, n);
-            obj.compute(pArr, finalWT, finalTAT, n);
-            obj.final(finalAWT, finalATAT, n);
+            int[] st = new int [5];
 
+            for(int i = 0; i < 5; i++)
+            {
+                st[i] = UnsortedfinalST[i];
+            }
+             
+            //pass value to compute() in SolutionForm.cs
+            if (rbSingle.Checked)
+            {
+                obj.solution(pArr, atArr, finalCT, n);
+                obj.compute(pArr, finalWT, finalTAT, n);
+                obj.final(finalAWT, finalATAT, n);
+            }
+            else if (rbMultiple.Checked)
+            {
+                //obj.startingTime(st, n);
+                obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, n);
+                obj.compute(UnsortedfinalProcess, finalWT, finalTAT,n);
+                obj.final(finalAWT,finalATAT, n);
+
+            }
         }
 
         private void btnRestart_Click(object sender, EventArgs e)
@@ -832,11 +843,8 @@ namespace FCFS
             if(MessageBox.Show("Are you sure you want to delete this row?", "DELETE",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning)==DialogResult.OK)
             {
                 int index = dataGridView1.SelectedRows[0].Index;
-                dataGridView1.Rows.RemoveAt(index);
-                   
-            }
-            
-            
+                dataGridView1.Rows.RemoveAt(index);   
+            } 
         }
         private void btnDELETE_Click(object sender, EventArgs e)
         {
@@ -857,7 +865,5 @@ namespace FCFS
             }
             checkRows();
         }
-
-
     }
 }
