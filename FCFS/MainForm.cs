@@ -470,6 +470,7 @@ namespace FCFS
 
 
             callValTable();
+            //label3.Text = UnsortedfinalST.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
             btnSTART.Enabled = false;
         }
         
@@ -801,16 +802,8 @@ namespace FCFS
         private void btnSolution_Click(object sender, EventArgs e)
         {
             SolutionForm obj = new SolutionForm();
-            obj.Show();
+
             int n = pArr.Length;
-
-            int[] st = new int [5];
-
-            for(int i = 0; i < 5; i++)
-            {
-                st[i] = UnsortedfinalST[i];
-            }
-             
             //pass value to compute() in SolutionForm.cs
             if (rbSingle.Checked)
             {
@@ -821,11 +814,24 @@ namespace FCFS
             else if (rbMultiple.Checked)
             {
                 //obj.startingTime(st, n);
+                obj.compute(UnsortedfinalProcess, finalWT, finalTAT, n);
                 obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, n);
-                obj.compute(UnsortedfinalProcess, finalWT, finalTAT,n);
-                obj.final(finalAWT,finalATAT, n);
+                obj.final(finalAWT, finalATAT, n);
 
             }
+
+            obj.Show();
+            
+            
+
+            int[] st = new int [5];
+
+            for(int i = 0; i < 5; i++)
+            {
+                st[i] = UnsortedfinalST[i];
+            }
+             
+            
         }
 
         private void btnRestart_Click(object sender, EventArgs e)

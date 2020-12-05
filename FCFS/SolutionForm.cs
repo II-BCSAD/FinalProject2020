@@ -12,11 +12,14 @@ namespace FCFS
 {
     public partial class SolutionForm : Form
     {
+        public static int[] getSt = new int[5];
+        public static int[] getTAT = new int[5];
         public static bool drag = false;
         public static Point start_point = new Point(0, 0);
         public SolutionForm()
         {
             InitializeComponent();
+            //getStartTime();
         }
         private void panel5_MouseDown(object sender, MouseEventArgs e)
         {
@@ -35,10 +38,31 @@ namespace FCFS
         {
             drag = false;
         }
+
+        
         //Solution Table
         public void solution(string[] processes, int[] at, int[] ct, int n)
         {
             //Display Waiting Time: as Dividend
+
+            //getStartTime();
+
+            for(int j = 0; j < 5; j++)
+            {
+                getTAT[j] = ct[j] - at[j];
+            }
+
+            for (int k = 0; k < 5; k++)
+            {
+                if (k == 0)
+                {
+                    getSt[k] = at[0];
+                }
+                else if (k > 0 && k < 5)
+                {
+                    getSt[k] = getTAT[k] + at[k];
+                }
+            }
 
             int i = 0;
 
