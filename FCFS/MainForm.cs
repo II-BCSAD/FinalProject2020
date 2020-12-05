@@ -31,8 +31,6 @@ namespace FCFS
         public static int[] UnsortedfinalCT = new int[5];
         public static int[] UnsortedfinalTAT = new int[5];
         public static int[] UnsortedfinalWT = new int[5];
-        public static string [] UnsortedfinalProcess = new string [5];
-        public static int[] UnsortedfinalAT = new int[5];
         public static double finalAWT = 0d, finalATAT = 0d;
         public static int[] qOrder = new int[5];
         public static int[] UnsortedqOrder = new int[5];
@@ -394,13 +392,6 @@ namespace FCFS
             {
                 multiQueueOrder[i] = i + 1;
             }
-
-            for(int i = 0; i < 5; i++)
-            {
-                UnsortedfinalProcess[i] = pArr[i];
-                UnsortedfinalAT[i] = atArr[i];
-            }
-
             //sorting by AT when Multiple Queueing
             if (rbMultiple.Checked)
             {
@@ -704,6 +695,7 @@ namespace FCFS
                     lbRq4.Hide();
                 }
 
+                
 
                 for (int j = 0; j < 1; j++)
                 {
@@ -788,6 +780,11 @@ namespace FCFS
 
         }
 
+        void timer2_Tick(object sender, EventArgs e)
+        {
+            
+        }
+
         private void TimerMethod()
         {
             if (secs == finalBT[timeSt] * 250)
@@ -814,19 +811,9 @@ namespace FCFS
             int n = pArr.Length;
 
             //pass value to compute() in SolutionForm.cs
-            if (rbSingle.Checked)
-            {
-                obj.solution(pArr, atArr, finalCT, n);
-                obj.compute(pArr, finalWT, finalTAT, n);
-                obj.final(finalAWT, finalATAT, n);
-            }
-            else if (rbMultiple.Checked)
-            {
-                obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, n);
-                obj.compute(UnsortedfinalProcess, finalWT, finalTAT,n);
-                obj.final(finalAWT,finalATAT, n);
-            }
-            
+            obj.solution(pArr, atArr, finalCT, n);
+            obj.compute(pArr, finalWT, finalTAT, n);
+            obj.final(finalAWT, finalATAT, n);
 
         }
 
