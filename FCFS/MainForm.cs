@@ -69,10 +69,6 @@ namespace FCFS
         {
             drag = false;
         }
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         //Exit button
         private void button3_Click(object sender, EventArgs e)
@@ -580,6 +576,11 @@ namespace FCFS
             }
         }
 
+        private void fcfsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         // delayed display 
         public async void callValTable()
         {
@@ -713,11 +714,6 @@ namespace FCFS
             tbATAT.Text = finalATAT.ToString();
         }
 
-        private void fcfsForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         void timer1_Tick(object sender, EventArgs e)
         {
             if (timeSt == 0)
@@ -803,10 +799,7 @@ namespace FCFS
                 }
             }
         }
-        private void label3_Click(object sender, EventArgs e)
-        {
 
-        }
         private void btnSolution_Click(object sender, EventArgs e)
         {
             SolutionForm obj = new SolutionForm();
@@ -846,11 +839,6 @@ namespace FCFS
         private void btnRestart_Click(object sender, EventArgs e)
         {
             Application.Restart();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void delete()
