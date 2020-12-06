@@ -470,7 +470,7 @@ namespace FCFS
 
 
             callValTable();
-            label3.Text = UnsortedfinalST.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
+           // label3.Text = UnsortedfinalST.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
             btnSTART.Enabled = false;
         }
         
@@ -712,6 +712,12 @@ namespace FCFS
             tbAWT.Text = finalAWT.ToString();
             tbATAT.Text = finalATAT.ToString();
         }
+
+        private void fcfsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         void timer1_Tick(object sender, EventArgs e)
         {
             if (timeSt == 0)
