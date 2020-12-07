@@ -246,7 +246,7 @@ namespace FCFS
             this.label43.Location = new System.Drawing.Point(52, 126);
             this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(16, 17);
+            this.label43.Size = new System.Drawing.Size(13, 13);
             this.label43.TabIndex = 79;
             this.label43.Text = "=";
             // 
@@ -256,7 +256,7 @@ namespace FCFS
             this.label46.Location = new System.Drawing.Point(5, 197);
             this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(44, 17);
+            this.label46.Size = new System.Drawing.Size(35, 13);
             this.label46.TabIndex = 80;
             this.label46.Text = "ATAT";
             // 
@@ -266,7 +266,7 @@ namespace FCFS
             this.label45.Location = new System.Drawing.Point(52, 197);
             this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(16, 17);
+            this.label45.Size = new System.Drawing.Size(13, 13);
             this.label45.TabIndex = 81;
             this.label45.Text = "=";
             // 
@@ -276,7 +276,7 @@ namespace FCFS
             this.job4.Location = new System.Drawing.Point(111, 139);
             this.job4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.job4.Name = "job4";
-            this.job4.Size = new System.Drawing.Size(16, 17);
+            this.job4.Size = new System.Drawing.Size(13, 13);
             this.job4.TabIndex = 82;
             this.job4.Text = "0";
             // 
@@ -333,7 +333,7 @@ namespace FCFS
             this.label61.Location = new System.Drawing.Point(116, 197);
             this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(26, 17);
+            this.label61.Size = new System.Drawing.Size(20, 13);
             this.label61.TabIndex = 106;
             this.label61.Text = "ms";
             // 
@@ -355,7 +355,7 @@ namespace FCFS
             this.label93.Location = new System.Drawing.Point(444, 25);
             this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(16, 17);
+            this.label93.Size = new System.Drawing.Size(13, 13);
             this.label93.TabIndex = 103;
             this.label93.Text = "+";
             // 
@@ -365,7 +365,7 @@ namespace FCFS
             this.label85.Location = new System.Drawing.Point(433, 25);
             this.label85.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(13, 17);
+            this.label85.Size = new System.Drawing.Size(10, 13);
             this.label85.TabIndex = 100;
             this.label85.Text = ")";
             // 
@@ -375,7 +375,7 @@ namespace FCFS
             this.label64.Location = new System.Drawing.Point(333, 25);
             this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(13, 17);
+            this.label64.Size = new System.Drawing.Size(10, 13);
             this.label64.TabIndex = 99;
             this.label64.Text = ")";
             // 
@@ -385,7 +385,7 @@ namespace FCFS
             this.label62.Location = new System.Drawing.Point(527, 25);
             this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(13, 17);
+            this.label62.Size = new System.Drawing.Size(10, 13);
             this.label62.TabIndex = 98;
             this.label62.Text = ")";
             // 
@@ -395,7 +395,7 @@ namespace FCFS
             this.label59.Location = new System.Drawing.Point(457, 25);
             this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(13, 17);
+            this.label59.Size = new System.Drawing.Size(10, 13);
             this.label59.TabIndex = 96;
             this.label59.Text = "(";
             // 
@@ -405,7 +405,7 @@ namespace FCFS
             this.label58.Location = new System.Drawing.Point(357, 25);
             this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(13, 17);
+            this.label58.Size = new System.Drawing.Size(10, 13);
             this.label58.TabIndex = 95;
             this.label58.Text = "(";
             // 
@@ -427,7 +427,7 @@ namespace FCFS
             this.label56.Location = new System.Drawing.Point(256, 25);
             this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(13, 17);
+            this.label56.Size = new System.Drawing.Size(10, 13);
             this.label56.TabIndex = 93;
             this.label56.Text = "(";
             // 
@@ -437,7 +437,7 @@ namespace FCFS
             this.label54.Location = new System.Drawing.Point(69, 25);
             this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(13, 17);
+            this.label54.Size = new System.Drawing.Size(10, 13);
             this.label54.TabIndex = 92;
             this.label54.Text = "(";
             // 
@@ -447,7 +447,7 @@ namespace FCFS
             this.label53.Location = new System.Drawing.Point(140, 25);
             this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(13, 17);
+            this.label53.Size = new System.Drawing.Size(10, 13);
             this.label53.TabIndex = 91;
             this.label53.Text = ")";
             // 
@@ -457,7 +457,7 @@ namespace FCFS
             this.label50.Location = new System.Drawing.Point(161, 25);
             this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(13, 17);
+            this.label50.Size = new System.Drawing.Size(10, 13);
             this.label50.TabIndex = 90;
             this.label50.Text = "(";
             // 
@@ -467,7 +467,7 @@ namespace FCFS
             this.label49.Location = new System.Drawing.Point(233, 25);
             this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(13, 17);
+            this.label49.Size = new System.Drawing.Size(10, 13);
             this.label49.TabIndex = 89;
             this.label49.Text = ")";
             // 
@@ -501,7 +501,7 @@ namespace FCFS
             this.finalATAT.Location = new System.Drawing.Point(73, 197);
             this.finalATAT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.finalATAT.Name = "finalATAT";
-            this.finalATAT.Size = new System.Drawing.Size(16, 17);
+            this.finalATAT.Size = new System.Drawing.Size(13, 13);
             this.finalATAT.TabIndex = 85;
             this.finalATAT.Text = "0";
             // 
@@ -511,7 +511,7 @@ namespace FCFS
             this.tot2.Location = new System.Drawing.Point(107, 114);
             this.tot2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tot2.Name = "tot2";
-            this.tot2.Size = new System.Drawing.Size(16, 17);
+            this.tot2.Size = new System.Drawing.Size(13, 13);
             this.tot2.TabIndex = 84;
             this.tot2.Text = "0";
             // 
@@ -521,7 +521,7 @@ namespace FCFS
             this.label52.Location = new System.Drawing.Point(81, 118);
             this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(80, 17);
+            this.label52.Size = new System.Drawing.Size(61, 13);
             this.label52.TabIndex = 83;
             this.label52.Text = "_________";
             // 
@@ -531,7 +531,7 @@ namespace FCFS
             this.label44.Location = new System.Drawing.Point(5, 126);
             this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(44, 17);
+            this.label44.Size = new System.Drawing.Size(35, 13);
             this.label44.TabIndex = 78;
             this.label44.Text = "ATAT";
             // 
@@ -541,7 +541,7 @@ namespace FCFS
             this.job3.Location = new System.Drawing.Point(293, 64);
             this.job3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.job3.Name = "job3";
-            this.job3.Size = new System.Drawing.Size(16, 17);
+            this.job3.Size = new System.Drawing.Size(13, 13);
             this.job3.TabIndex = 77;
             this.job3.Text = "0";
             // 
@@ -575,7 +575,7 @@ namespace FCFS
             this.label33.Location = new System.Drawing.Point(344, 25);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(16, 17);
+            this.label33.Size = new System.Drawing.Size(13, 13);
             this.label33.TabIndex = 73;
             this.label33.Text = "+";
             // 
@@ -597,7 +597,7 @@ namespace FCFS
             this.tat04.Location = new System.Drawing.Point(367, 25);
             this.tat04.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat04.Name = "tat04";
-            this.tat04.Size = new System.Drawing.Size(16, 17);
+            this.tat04.Size = new System.Drawing.Size(13, 13);
             this.tat04.TabIndex = 71;
             this.tat04.Text = "0";
             // 
@@ -607,7 +607,7 @@ namespace FCFS
             this.tat05.Location = new System.Drawing.Point(467, 25);
             this.tat05.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat05.Name = "tat05";
-            this.tat05.Size = new System.Drawing.Size(16, 17);
+            this.tat05.Size = new System.Drawing.Size(13, 13);
             this.tat05.TabIndex = 70;
             this.tat05.Text = "0";
             // 
@@ -617,7 +617,7 @@ namespace FCFS
             this.tat03.Location = new System.Drawing.Point(267, 25);
             this.tat03.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat03.Name = "tat03";
-            this.tat03.Size = new System.Drawing.Size(16, 17);
+            this.tat03.Size = new System.Drawing.Size(13, 13);
             this.tat03.TabIndex = 69;
             this.tat03.Text = "0";
             // 
@@ -627,7 +627,7 @@ namespace FCFS
             this.tat02.Location = new System.Drawing.Point(171, 25);
             this.tat02.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat02.Name = "tat02";
-            this.tat02.Size = new System.Drawing.Size(16, 17);
+            this.tat02.Size = new System.Drawing.Size(13, 13);
             this.tat02.TabIndex = 68;
             this.tat02.Text = "0";
             // 
@@ -637,7 +637,7 @@ namespace FCFS
             this.tat01.Location = new System.Drawing.Point(83, 25);
             this.tat01.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat01.Name = "tat01";
-            this.tat01.Size = new System.Drawing.Size(16, 17);
+            this.tat01.Size = new System.Drawing.Size(13, 13);
             this.tat01.TabIndex = 67;
             this.tat01.Text = "0";
             // 
@@ -647,7 +647,7 @@ namespace FCFS
             this.label31.Location = new System.Drawing.Point(52, 39);
             this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(16, 17);
+            this.label31.Size = new System.Drawing.Size(13, 13);
             this.label31.TabIndex = 56;
             this.label31.Text = "=";
             // 
@@ -657,7 +657,7 @@ namespace FCFS
             this.label22.Location = new System.Drawing.Point(5, 39);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(44, 17);
+            this.label22.Size = new System.Drawing.Size(35, 13);
             this.label22.TabIndex = 52;
             this.label22.Text = "ATAT";
             // 
@@ -667,7 +667,7 @@ namespace FCFS
             this.arrival2.Location = new System.Drawing.Point(125, 25);
             this.arrival2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arrival2.Name = "arrival2";
-            this.arrival2.Size = new System.Drawing.Size(16, 17);
+            this.arrival2.Size = new System.Drawing.Size(13, 13);
             this.arrival2.TabIndex = 107;
             this.arrival2.Text = "0";
             // 
@@ -677,7 +677,7 @@ namespace FCFS
             this.tat3.Location = new System.Drawing.Point(73, 36);
             this.tat3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat3.Name = "tat3";
-            this.tat3.Size = new System.Drawing.Size(472, 17);
+            this.tat3.Size = new System.Drawing.Size(355, 13);
             this.tat3.TabIndex = 75;
             this.tat3.Text = "__________________________________________________________";
             // 
@@ -724,7 +724,7 @@ namespace FCFS
             this.label55.Location = new System.Drawing.Point(541, 5);
             this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(217, 24);
+            this.label55.Size = new System.Drawing.Size(179, 18);
             this.label55.TabIndex = 7;
             this.label55.Text = "First Come First Serve";
             // 
@@ -734,7 +734,7 @@ namespace FCFS
             this.label29.Location = new System.Drawing.Point(133, 52);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 17);
+            this.label29.Size = new System.Drawing.Size(0, 13);
             this.label29.TabIndex = 54;
             this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
@@ -744,7 +744,7 @@ namespace FCFS
             this.label30.Location = new System.Drawing.Point(52, 39);
             this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(16, 17);
+            this.label30.Size = new System.Drawing.Size(13, 13);
             this.label30.TabIndex = 55;
             this.label30.Text = "=";
             // 
@@ -754,7 +754,7 @@ namespace FCFS
             this.wt1.Location = new System.Drawing.Point(83, 34);
             this.wt1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wt1.Name = "wt1";
-            this.wt1.Size = new System.Drawing.Size(16, 17);
+            this.wt1.Size = new System.Drawing.Size(13, 13);
             this.wt1.TabIndex = 56;
             this.wt1.Text = "0";
             // 
@@ -764,7 +764,7 @@ namespace FCFS
             this.wt3.Location = new System.Drawing.Point(267, 34);
             this.wt3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wt3.Name = "wt3";
-            this.wt3.Size = new System.Drawing.Size(16, 17);
+            this.wt3.Size = new System.Drawing.Size(13, 13);
             this.wt3.TabIndex = 58;
             this.wt3.Text = "0";
             // 
@@ -774,7 +774,7 @@ namespace FCFS
             this.wt4.Location = new System.Drawing.Point(367, 34);
             this.wt4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wt4.Name = "wt4";
-            this.wt4.Size = new System.Drawing.Size(16, 17);
+            this.wt4.Size = new System.Drawing.Size(13, 13);
             this.wt4.TabIndex = 60;
             this.wt4.Text = "0";
             // 
@@ -784,7 +784,7 @@ namespace FCFS
             this.label39.Location = new System.Drawing.Point(69, 39);
             this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(472, 17);
+            this.label39.Size = new System.Drawing.Size(355, 13);
             this.label39.TabIndex = 65;
             this.label39.Text = "__________________________________________________________";
             // 
@@ -794,7 +794,7 @@ namespace FCFS
             this.label47.Location = new System.Drawing.Point(52, 197);
             this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(16, 17);
+            this.label47.Size = new System.Drawing.Size(13, 13);
             this.label47.TabIndex = 70;
             this.label47.Text = "=";
             // 
@@ -804,7 +804,7 @@ namespace FCFS
             this.job2.Location = new System.Drawing.Point(111, 139);
             this.job2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.job2.Name = "job2";
-            this.job2.Size = new System.Drawing.Size(16, 17);
+            this.job2.Size = new System.Drawing.Size(13, 13);
             this.job2.TabIndex = 78;
             this.job2.Text = "0";
             // 
@@ -814,7 +814,7 @@ namespace FCFS
             this.label51.Location = new System.Drawing.Point(81, 118);
             this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(80, 17);
+            this.label51.Size = new System.Drawing.Size(61, 13);
             this.label51.TabIndex = 79;
             this.label51.Text = "_________";
             // 
@@ -884,7 +884,7 @@ namespace FCFS
             this.label37.Location = new System.Drawing.Point(444, 34);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(16, 17);
+            this.label37.Size = new System.Drawing.Size(13, 13);
             this.label37.TabIndex = 126;
             this.label37.Text = "+";
             // 
@@ -894,7 +894,7 @@ namespace FCFS
             this.label38.Location = new System.Drawing.Point(433, 34);
             this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(13, 17);
+            this.label38.Size = new System.Drawing.Size(10, 13);
             this.label38.TabIndex = 125;
             this.label38.Text = ")";
             // 
@@ -904,7 +904,7 @@ namespace FCFS
             this.label86.Location = new System.Drawing.Point(333, 34);
             this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(13, 17);
+            this.label86.Size = new System.Drawing.Size(10, 13);
             this.label86.TabIndex = 124;
             this.label86.Text = ")";
             // 
@@ -914,7 +914,7 @@ namespace FCFS
             this.label87.Location = new System.Drawing.Point(527, 34);
             this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(13, 17);
+            this.label87.Size = new System.Drawing.Size(10, 13);
             this.label87.TabIndex = 123;
             this.label87.Text = ")";
             // 
@@ -924,7 +924,7 @@ namespace FCFS
             this.label94.Location = new System.Drawing.Point(457, 34);
             this.label94.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(13, 17);
+            this.label94.Size = new System.Drawing.Size(10, 13);
             this.label94.TabIndex = 122;
             this.label94.Text = "(";
             // 
@@ -934,7 +934,7 @@ namespace FCFS
             this.label96.Location = new System.Drawing.Point(357, 34);
             this.label96.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(13, 17);
+            this.label96.Size = new System.Drawing.Size(10, 13);
             this.label96.TabIndex = 121;
             this.label96.Text = "(";
             // 
@@ -956,7 +956,7 @@ namespace FCFS
             this.label98.Location = new System.Drawing.Point(256, 34);
             this.label98.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(13, 17);
+            this.label98.Size = new System.Drawing.Size(10, 13);
             this.label98.TabIndex = 119;
             this.label98.Text = "(";
             // 
@@ -966,7 +966,7 @@ namespace FCFS
             this.label99.Location = new System.Drawing.Point(69, 34);
             this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(13, 17);
+            this.label99.Size = new System.Drawing.Size(10, 13);
             this.label99.TabIndex = 118;
             this.label99.Text = "(";
             // 
@@ -976,7 +976,7 @@ namespace FCFS
             this.label100.Location = new System.Drawing.Point(140, 34);
             this.label100.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(13, 17);
+            this.label100.Size = new System.Drawing.Size(10, 13);
             this.label100.TabIndex = 117;
             this.label100.Text = ")";
             // 
@@ -986,7 +986,7 @@ namespace FCFS
             this.label101.Location = new System.Drawing.Point(161, 34);
             this.label101.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(13, 17);
+            this.label101.Size = new System.Drawing.Size(10, 13);
             this.label101.TabIndex = 116;
             this.label101.Text = "(";
             // 
@@ -996,7 +996,7 @@ namespace FCFS
             this.label102.Location = new System.Drawing.Point(233, 34);
             this.label102.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(13, 17);
+            this.label102.Size = new System.Drawing.Size(10, 13);
             this.label102.TabIndex = 115;
             this.label102.Text = ")";
             // 
@@ -1066,7 +1066,7 @@ namespace FCFS
             this.label109.Location = new System.Drawing.Point(344, 34);
             this.label109.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(16, 17);
+            this.label109.Size = new System.Drawing.Size(13, 13);
             this.label109.TabIndex = 110;
             this.label109.Text = "+";
             // 
@@ -1076,7 +1076,7 @@ namespace FCFS
             this.label35.Location = new System.Drawing.Point(116, 197);
             this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(26, 17);
+            this.label35.Size = new System.Drawing.Size(20, 13);
             this.label35.TabIndex = 107;
             this.label35.Text = "ms";
             // 
@@ -1086,7 +1086,7 @@ namespace FCFS
             this.finalAWT.Location = new System.Drawing.Point(73, 197);
             this.finalAWT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.finalAWT.Name = "finalAWT";
-            this.finalAWT.Size = new System.Drawing.Size(16, 17);
+            this.finalAWT.Size = new System.Drawing.Size(13, 13);
             this.finalAWT.TabIndex = 83;
             this.finalAWT.Text = "0";
             // 
@@ -1096,7 +1096,7 @@ namespace FCFS
             this.tot1.Location = new System.Drawing.Point(107, 114);
             this.tot1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tot1.Name = "tot1";
-            this.tot1.Size = new System.Drawing.Size(16, 17);
+            this.tot1.Size = new System.Drawing.Size(13, 13);
             this.tot1.TabIndex = 80;
             this.tot1.Text = "0";
             // 
@@ -1106,7 +1106,7 @@ namespace FCFS
             this.label48.Location = new System.Drawing.Point(5, 197);
             this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(39, 17);
+            this.label48.Size = new System.Drawing.Size(32, 13);
             this.label48.TabIndex = 69;
             this.label48.Text = "AWT";
             // 
@@ -1116,7 +1116,7 @@ namespace FCFS
             this.label41.Location = new System.Drawing.Point(52, 126);
             this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(16, 17);
+            this.label41.Size = new System.Drawing.Size(13, 13);
             this.label41.TabIndex = 68;
             this.label41.Text = "=";
             // 
@@ -1126,7 +1126,7 @@ namespace FCFS
             this.label42.Location = new System.Drawing.Point(5, 126);
             this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(39, 17);
+            this.label42.Size = new System.Drawing.Size(32, 13);
             this.label42.TabIndex = 67;
             this.label42.Text = "AWT";
             // 
@@ -1136,7 +1136,7 @@ namespace FCFS
             this.job1.Location = new System.Drawing.Point(293, 64);
             this.job1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.job1.Name = "job1";
-            this.job1.Size = new System.Drawing.Size(16, 17);
+            this.job1.Size = new System.Drawing.Size(13, 13);
             this.job1.TabIndex = 66;
             this.job1.Text = "0";
             // 
@@ -1146,7 +1146,7 @@ namespace FCFS
             this.wt5.Location = new System.Drawing.Point(467, 34);
             this.wt5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wt5.Name = "wt5";
-            this.wt5.Size = new System.Drawing.Size(16, 17);
+            this.wt5.Size = new System.Drawing.Size(13, 13);
             this.wt5.TabIndex = 59;
             this.wt5.Text = "0";
             // 
@@ -1156,7 +1156,7 @@ namespace FCFS
             this.wt2.Location = new System.Drawing.Point(171, 34);
             this.wt2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wt2.Name = "wt2";
-            this.wt2.Size = new System.Drawing.Size(16, 17);
+            this.wt2.Size = new System.Drawing.Size(13, 13);
             this.wt2.TabIndex = 57;
             this.wt2.Text = "0";
             // 
@@ -1166,7 +1166,7 @@ namespace FCFS
             this.label21.Location = new System.Drawing.Point(5, 39);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(39, 17);
+            this.label21.Size = new System.Drawing.Size(32, 13);
             this.label21.TabIndex = 51;
             this.label21.Text = "AWT";
             // 
@@ -1176,7 +1176,7 @@ namespace FCFS
             this.arrival1.Location = new System.Drawing.Point(125, 34);
             this.arrival1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arrival1.Name = "arrival1";
-            this.arrival1.Size = new System.Drawing.Size(16, 17);
+            this.arrival1.Size = new System.Drawing.Size(13, 13);
             this.arrival1.TabIndex = 128;
             this.arrival1.Text = "0";
             // 
@@ -1198,7 +1198,7 @@ namespace FCFS
             this.label1.Location = new System.Drawing.Point(588, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 20);
+            this.label1.Size = new System.Drawing.Size(103, 16);
             this.label1.TabIndex = 11;
             this.label1.Text = "Solution Form";
             // 
@@ -1207,7 +1207,7 @@ namespace FCFS
             this.tw5.Location = new System.Drawing.Point(427, 270);
             this.tw5.Margin = new System.Windows.Forms.Padding(4);
             this.tw5.Name = "tw5";
-            this.tw5.Size = new System.Drawing.Size(61, 22);
+            this.tw5.Size = new System.Drawing.Size(61, 20);
             this.tw5.TabIndex = 43;
             this.tw5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1229,7 +1229,7 @@ namespace FCFS
             this.tw4.Location = new System.Drawing.Point(340, 270);
             this.tw4.Margin = new System.Windows.Forms.Padding(4);
             this.tw4.Name = "tw4";
-            this.tw4.Size = new System.Drawing.Size(61, 22);
+            this.tw4.Size = new System.Drawing.Size(61, 20);
             this.tw4.TabIndex = 42;
             this.tw4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1251,7 +1251,7 @@ namespace FCFS
             this.tw2.Location = new System.Drawing.Point(167, 270);
             this.tw2.Margin = new System.Windows.Forms.Padding(4);
             this.tw2.Name = "tw2";
-            this.tw2.Size = new System.Drawing.Size(61, 22);
+            this.tw2.Size = new System.Drawing.Size(61, 20);
             this.tw2.TabIndex = 40;
             this.tw2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1273,7 +1273,7 @@ namespace FCFS
             this.tw1.Location = new System.Drawing.Point(81, 270);
             this.tw1.Margin = new System.Windows.Forms.Padding(4);
             this.tw1.Name = "tw1";
-            this.tw1.Size = new System.Drawing.Size(61, 22);
+            this.tw1.Size = new System.Drawing.Size(61, 20);
             this.tw1.TabIndex = 39;
             this.tw1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1283,7 +1283,7 @@ namespace FCFS
             this.label26.Location = new System.Drawing.Point(612, 273);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(16, 17);
+            this.label26.Size = new System.Drawing.Size(13, 13);
             this.label26.TabIndex = 39;
             this.label26.Text = "=";
             // 
@@ -1292,7 +1292,7 @@ namespace FCFS
             this.fAWT.Location = new System.Drawing.Point(637, 270);
             this.fAWT.Margin = new System.Windows.Forms.Padding(4);
             this.fAWT.Name = "fAWT";
-            this.fAWT.Size = new System.Drawing.Size(61, 22);
+            this.fAWT.Size = new System.Drawing.Size(61, 20);
             this.fAWT.TabIndex = 47;
             this.fAWT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1302,7 +1302,7 @@ namespace FCFS
             this.process.Location = new System.Drawing.Point(92, 36);
             this.process.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.process.Name = "process";
-            this.process.Size = new System.Drawing.Size(74, 34);
+            this.process.Size = new System.Drawing.Size(58, 26);
             this.process.TabIndex = 36;
             this.process.Text = "PROCESS\r\n      (P)";
             // 
@@ -1312,7 +1312,7 @@ namespace FCFS
             this.label27.Location = new System.Drawing.Point(8, 273);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(39, 17);
+            this.label27.Size = new System.Drawing.Size(32, 13);
             this.label27.TabIndex = 48;
             this.label27.Text = "AWT";
             // 
@@ -1322,7 +1322,7 @@ namespace FCFS
             this.start.Location = new System.Drawing.Point(212, 36);
             this.start.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(114, 34);
+            this.start.Size = new System.Drawing.Size(91, 26);
             this.start.TabIndex = 36;
             this.start.Text = "STARTING TIME\r\n          (ST)";
             // 
@@ -1332,7 +1332,7 @@ namespace FCFS
             this.arrive.Location = new System.Drawing.Point(361, 36);
             this.arrive.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arrive.Name = "arrive";
-            this.arrive.Size = new System.Drawing.Size(102, 34);
+            this.arrive.Size = new System.Drawing.Size(82, 26);
             this.arrive.TabIndex = 36;
             this.arrive.Text = "ARRIVAL TIME\r\n         (AT)";
             // 
@@ -1342,7 +1342,7 @@ namespace FCFS
             this.waiting.Location = new System.Drawing.Point(513, 36);
             this.waiting.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.waiting.Name = "waiting";
-            this.waiting.Size = new System.Drawing.Size(102, 34);
+            this.waiting.Size = new System.Drawing.Size(83, 26);
             this.waiting.TabIndex = 40;
             this.waiting.Text = "WAITING TIME\r\n         (WT)";
             // 
@@ -1386,7 +1386,7 @@ namespace FCFS
             this.job5.Location = new System.Drawing.Point(548, 262);
             this.job5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.job5.Name = "job5";
-            this.job5.Size = new System.Drawing.Size(32, 36);
+            this.job5.Size = new System.Drawing.Size(26, 29);
             this.job5.TabIndex = 104;
             this.job5.Text = "0";
             this.job5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1398,7 +1398,7 @@ namespace FCFS
             this.label92.Location = new System.Drawing.Point(520, 260);
             this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(31, 46);
+            this.label92.Size = new System.Drawing.Size(26, 37);
             this.label92.TabIndex = 103;
             this.label92.Text = "/";
             this.label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1426,7 +1426,7 @@ namespace FCFS
             this.label89.MaximumSize = new System.Drawing.Size(17, 31);
             this.label89.MinimumSize = new System.Drawing.Size(16, 27);
             this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(17, 31);
+            this.label89.Size = new System.Drawing.Size(17, 27);
             this.label89.TabIndex = 104;
             this.label89.Text = ")";
             this.label89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1484,146 +1484,146 @@ namespace FCFS
             this.panel_SF1.Location = new System.Drawing.Point(69, 42);
             this.panel_SF1.Margin = new System.Windows.Forms.Padding(4);
             this.panel_SF1.Name = "panel_SF1";
-            this.panel_SF1.Size = new System.Drawing.Size(579, 210);
+            this.panel_SF1.Size = new System.Drawing.Size(556, 210);
             this.panel_SF1.TabIndex = 39;
             // 
             // wait5
             // 
-            this.wait5.Location = new System.Drawing.Point(465, 171);
+            this.wait5.Location = new System.Drawing.Point(458, 171);
             this.wait5.Margin = new System.Windows.Forms.Padding(4);
             this.wait5.Name = "wait5";
-            this.wait5.Size = new System.Drawing.Size(68, 22);
+            this.wait5.Size = new System.Drawing.Size(68, 20);
             this.wait5.TabIndex = 35;
             this.wait5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // wait4
             // 
-            this.wait4.Location = new System.Drawing.Point(465, 139);
+            this.wait4.Location = new System.Drawing.Point(458, 139);
             this.wait4.Margin = new System.Windows.Forms.Padding(4);
             this.wait4.Name = "wait4";
-            this.wait4.Size = new System.Drawing.Size(68, 22);
+            this.wait4.Size = new System.Drawing.Size(68, 20);
             this.wait4.TabIndex = 34;
             this.wait4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // wait3
             // 
-            this.wait3.Location = new System.Drawing.Point(465, 107);
+            this.wait3.Location = new System.Drawing.Point(458, 107);
             this.wait3.Margin = new System.Windows.Forms.Padding(4);
             this.wait3.Name = "wait3";
-            this.wait3.Size = new System.Drawing.Size(68, 22);
+            this.wait3.Size = new System.Drawing.Size(68, 20);
             this.wait3.TabIndex = 33;
             this.wait3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // wait2
             // 
-            this.wait2.Location = new System.Drawing.Point(465, 75);
+            this.wait2.Location = new System.Drawing.Point(458, 75);
             this.wait2.Margin = new System.Windows.Forms.Padding(4);
             this.wait2.Name = "wait2";
-            this.wait2.Size = new System.Drawing.Size(68, 22);
+            this.wait2.Size = new System.Drawing.Size(68, 20);
             this.wait2.TabIndex = 32;
             this.wait2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // wait1
             // 
-            this.wait1.Location = new System.Drawing.Point(465, 43);
+            this.wait1.Location = new System.Drawing.Point(458, 43);
             this.wait1.Margin = new System.Windows.Forms.Padding(4);
             this.wait1.Name = "wait1";
-            this.wait1.Size = new System.Drawing.Size(68, 22);
+            this.wait1.Size = new System.Drawing.Size(68, 20);
             this.wait1.TabIndex = 31;
             this.wait1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(415, 175);
+            this.label16.Location = new System.Drawing.Point(408, 175);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(16, 17);
+            this.label16.Size = new System.Drawing.Size(13, 13);
             this.label16.TabIndex = 30;
             this.label16.Text = "=";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(415, 143);
+            this.label17.Location = new System.Drawing.Point(408, 143);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(16, 17);
+            this.label17.Size = new System.Drawing.Size(13, 13);
             this.label17.TabIndex = 29;
             this.label17.Text = "=";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(415, 111);
+            this.label18.Location = new System.Drawing.Point(408, 111);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(16, 17);
+            this.label18.Size = new System.Drawing.Size(13, 13);
             this.label18.TabIndex = 28;
             this.label18.Text = "=";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(415, 79);
+            this.label19.Location = new System.Drawing.Point(408, 79);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(16, 17);
+            this.label19.Size = new System.Drawing.Size(13, 13);
             this.label19.TabIndex = 27;
             this.label19.Text = "=";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(415, 47);
+            this.label20.Location = new System.Drawing.Point(408, 47);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(16, 17);
+            this.label20.Size = new System.Drawing.Size(13, 13);
             this.label20.TabIndex = 26;
             this.label20.Text = "=";
             // 
             // at5
             // 
-            this.at5.Location = new System.Drawing.Point(309, 171);
+            this.at5.Location = new System.Drawing.Point(299, 171);
             this.at5.Margin = new System.Windows.Forms.Padding(4);
             this.at5.Name = "at5";
-            this.at5.Size = new System.Drawing.Size(68, 22);
+            this.at5.Size = new System.Drawing.Size(68, 20);
             this.at5.TabIndex = 25;
             this.at5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // at4
             // 
-            this.at4.Location = new System.Drawing.Point(309, 139);
+            this.at4.Location = new System.Drawing.Point(299, 139);
             this.at4.Margin = new System.Windows.Forms.Padding(4);
             this.at4.Name = "at4";
-            this.at4.Size = new System.Drawing.Size(68, 22);
+            this.at4.Size = new System.Drawing.Size(68, 20);
             this.at4.TabIndex = 24;
             this.at4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // at3
             // 
-            this.at3.Location = new System.Drawing.Point(309, 107);
+            this.at3.Location = new System.Drawing.Point(299, 107);
             this.at3.Margin = new System.Windows.Forms.Padding(4);
             this.at3.Name = "at3";
-            this.at3.Size = new System.Drawing.Size(68, 22);
+            this.at3.Size = new System.Drawing.Size(68, 20);
             this.at3.TabIndex = 23;
             this.at3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // at2
             // 
-            this.at2.Location = new System.Drawing.Point(309, 75);
+            this.at2.Location = new System.Drawing.Point(299, 75);
             this.at2.Margin = new System.Windows.Forms.Padding(4);
             this.at2.Name = "at2";
-            this.at2.Size = new System.Drawing.Size(68, 22);
+            this.at2.Size = new System.Drawing.Size(68, 20);
             this.at2.TabIndex = 22;
             this.at2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // at1
             // 
-            this.at1.Location = new System.Drawing.Point(309, 43);
+            this.at1.Location = new System.Drawing.Point(299, 43);
             this.at1.Margin = new System.Windows.Forms.Padding(4);
             this.at1.Name = "at1";
-            this.at1.Size = new System.Drawing.Size(68, 22);
+            this.at1.Size = new System.Drawing.Size(68, 20);
             this.at1.TabIndex = 21;
             this.at1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1631,10 +1631,10 @@ namespace FCFS
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(265, 175);
+            this.label11.Location = new System.Drawing.Point(256, 175);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(14, 17);
+            this.label11.Size = new System.Drawing.Size(11, 13);
             this.label11.TabIndex = 20;
             this.label11.Text = "-";
             // 
@@ -1642,10 +1642,10 @@ namespace FCFS
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(265, 143);
+            this.label12.Location = new System.Drawing.Point(256, 143);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(14, 17);
+            this.label12.Size = new System.Drawing.Size(11, 13);
             this.label12.TabIndex = 19;
             this.label12.Text = "-";
             // 
@@ -1653,10 +1653,10 @@ namespace FCFS
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(265, 111);
+            this.label13.Location = new System.Drawing.Point(256, 111);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(14, 17);
+            this.label13.Size = new System.Drawing.Size(11, 13);
             this.label13.TabIndex = 18;
             this.label13.Text = "-";
             // 
@@ -1664,10 +1664,10 @@ namespace FCFS
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(265, 79);
+            this.label14.Location = new System.Drawing.Point(256, 79);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(14, 17);
+            this.label14.Size = new System.Drawing.Size(11, 13);
             this.label14.TabIndex = 17;
             this.label14.Text = "-";
             // 
@@ -1675,150 +1675,150 @@ namespace FCFS
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(265, 47);
+            this.label15.Location = new System.Drawing.Point(256, 47);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(14, 17);
+            this.label15.Size = new System.Drawing.Size(11, 13);
             this.label15.TabIndex = 16;
             this.label15.Text = "-";
             // 
             // st5
             // 
-            this.st5.Location = new System.Drawing.Point(168, 171);
+            this.st5.Location = new System.Drawing.Point(155, 171);
             this.st5.Margin = new System.Windows.Forms.Padding(4);
             this.st5.Name = "st5";
-            this.st5.Size = new System.Drawing.Size(68, 22);
+            this.st5.Size = new System.Drawing.Size(68, 20);
             this.st5.TabIndex = 15;
             this.st5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // st4
             // 
-            this.st4.Location = new System.Drawing.Point(168, 139);
+            this.st4.Location = new System.Drawing.Point(155, 139);
             this.st4.Margin = new System.Windows.Forms.Padding(4);
             this.st4.Name = "st4";
-            this.st4.Size = new System.Drawing.Size(68, 22);
+            this.st4.Size = new System.Drawing.Size(68, 20);
             this.st4.TabIndex = 14;
             this.st4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // st3
             // 
-            this.st3.Location = new System.Drawing.Point(168, 107);
+            this.st3.Location = new System.Drawing.Point(155, 107);
             this.st3.Margin = new System.Windows.Forms.Padding(4);
             this.st3.Name = "st3";
-            this.st3.Size = new System.Drawing.Size(68, 22);
+            this.st3.Size = new System.Drawing.Size(68, 20);
             this.st3.TabIndex = 13;
             this.st3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // st2
             // 
-            this.st2.Location = new System.Drawing.Point(168, 75);
+            this.st2.Location = new System.Drawing.Point(155, 75);
             this.st2.Margin = new System.Windows.Forms.Padding(4);
             this.st2.Name = "st2";
-            this.st2.Size = new System.Drawing.Size(68, 22);
+            this.st2.Size = new System.Drawing.Size(68, 20);
             this.st2.TabIndex = 12;
             this.st2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // st1
             // 
-            this.st1.Location = new System.Drawing.Point(168, 43);
+            this.st1.Location = new System.Drawing.Point(155, 43);
             this.st1.Margin = new System.Windows.Forms.Padding(4);
             this.st1.Name = "st1";
-            this.st1.Size = new System.Drawing.Size(68, 22);
+            this.st1.Size = new System.Drawing.Size(68, 20);
             this.st1.TabIndex = 11;
             this.st1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(121, 175);
+            this.label10.Location = new System.Drawing.Point(117, 175);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(16, 17);
+            this.label10.Size = new System.Drawing.Size(13, 13);
             this.label10.TabIndex = 10;
             this.label10.Text = "=";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(121, 143);
+            this.label9.Location = new System.Drawing.Point(117, 143);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(16, 17);
+            this.label9.Size = new System.Drawing.Size(13, 13);
             this.label9.TabIndex = 9;
             this.label9.Text = "=";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(121, 111);
+            this.label8.Location = new System.Drawing.Point(117, 111);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(16, 17);
+            this.label8.Size = new System.Drawing.Size(13, 13);
             this.label8.TabIndex = 8;
             this.label8.Text = "=";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(121, 79);
+            this.label7.Location = new System.Drawing.Point(117, 79);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(16, 17);
+            this.label7.Size = new System.Drawing.Size(13, 13);
             this.label7.TabIndex = 7;
             this.label7.Text = "=";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(121, 47);
+            this.label6.Location = new System.Drawing.Point(117, 47);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(16, 17);
+            this.label6.Size = new System.Drawing.Size(13, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "=";
             // 
             // pr5
             // 
-            this.pr5.Location = new System.Drawing.Point(27, 171);
+            this.pr5.Location = new System.Drawing.Point(20, 171);
             this.pr5.Margin = new System.Windows.Forms.Padding(4);
             this.pr5.Name = "pr5";
-            this.pr5.Size = new System.Drawing.Size(68, 22);
+            this.pr5.Size = new System.Drawing.Size(68, 20);
             this.pr5.TabIndex = 4;
             this.pr5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pr4
             // 
-            this.pr4.Location = new System.Drawing.Point(27, 139);
+            this.pr4.Location = new System.Drawing.Point(20, 139);
             this.pr4.Margin = new System.Windows.Forms.Padding(4);
             this.pr4.Name = "pr4";
-            this.pr4.Size = new System.Drawing.Size(68, 22);
+            this.pr4.Size = new System.Drawing.Size(68, 20);
             this.pr4.TabIndex = 3;
             this.pr4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pr3
             // 
-            this.pr3.Location = new System.Drawing.Point(27, 107);
+            this.pr3.Location = new System.Drawing.Point(20, 107);
             this.pr3.Margin = new System.Windows.Forms.Padding(4);
             this.pr3.Name = "pr3";
-            this.pr3.Size = new System.Drawing.Size(68, 22);
+            this.pr3.Size = new System.Drawing.Size(68, 20);
             this.pr3.TabIndex = 2;
             this.pr3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pr2
             // 
-            this.pr2.Location = new System.Drawing.Point(27, 75);
+            this.pr2.Location = new System.Drawing.Point(20, 75);
             this.pr2.Margin = new System.Windows.Forms.Padding(4);
             this.pr2.Name = "pr2";
-            this.pr2.Size = new System.Drawing.Size(68, 22);
+            this.pr2.Size = new System.Drawing.Size(68, 20);
             this.pr2.TabIndex = 1;
             this.pr2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pr1
             // 
-            this.pr1.Location = new System.Drawing.Point(27, 43);
+            this.pr1.Location = new System.Drawing.Point(20, 43);
             this.pr1.Margin = new System.Windows.Forms.Padding(4);
             this.pr1.Name = "pr1";
-            this.pr1.Size = new System.Drawing.Size(68, 22);
+            this.pr1.Size = new System.Drawing.Size(68, 20);
             this.pr1.TabIndex = 0;
             this.pr1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1827,7 +1827,7 @@ namespace FCFS
             this.tw3.Location = new System.Drawing.Point(253, 270);
             this.tw3.Margin = new System.Windows.Forms.Padding(4);
             this.tw3.Name = "tw3";
-            this.tw3.Size = new System.Drawing.Size(61, 22);
+            this.tw3.Size = new System.Drawing.Size(61, 20);
             this.tw3.TabIndex = 41;
             this.tw3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1849,7 +1849,7 @@ namespace FCFS
             this.atat5.Location = new System.Drawing.Point(427, 270);
             this.atat5.Margin = new System.Windows.Forms.Padding(4);
             this.atat5.Name = "atat5";
-            this.atat5.Size = new System.Drawing.Size(61, 22);
+            this.atat5.Size = new System.Drawing.Size(61, 20);
             this.atat5.TabIndex = 43;
             this.atat5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1871,7 +1871,7 @@ namespace FCFS
             this.atat4.Location = new System.Drawing.Point(340, 270);
             this.atat4.Margin = new System.Windows.Forms.Padding(4);
             this.atat4.Name = "atat4";
-            this.atat4.Size = new System.Drawing.Size(61, 22);
+            this.atat4.Size = new System.Drawing.Size(61, 20);
             this.atat4.TabIndex = 42;
             this.atat4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1893,7 +1893,7 @@ namespace FCFS
             this.atat3.Location = new System.Drawing.Point(253, 270);
             this.atat3.Margin = new System.Windows.Forms.Padding(4);
             this.atat3.Name = "atat3";
-            this.atat3.Size = new System.Drawing.Size(61, 22);
+            this.atat3.Size = new System.Drawing.Size(61, 20);
             this.atat3.TabIndex = 41;
             this.atat3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1915,7 +1915,7 @@ namespace FCFS
             this.atat2.Location = new System.Drawing.Point(167, 270);
             this.atat2.Margin = new System.Windows.Forms.Padding(4);
             this.atat2.Name = "atat2";
-            this.atat2.Size = new System.Drawing.Size(61, 22);
+            this.atat2.Size = new System.Drawing.Size(61, 20);
             this.atat2.TabIndex = 40;
             this.atat2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1937,7 +1937,7 @@ namespace FCFS
             this.atat1.Location = new System.Drawing.Point(81, 270);
             this.atat1.Margin = new System.Windows.Forms.Padding(4);
             this.atat1.Name = "atat1";
-            this.atat1.Size = new System.Drawing.Size(61, 22);
+            this.atat1.Size = new System.Drawing.Size(61, 20);
             this.atat1.TabIndex = 39;
             this.atat1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1947,7 +1947,7 @@ namespace FCFS
             this.label80.Location = new System.Drawing.Point(612, 273);
             this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(16, 17);
+            this.label80.Size = new System.Drawing.Size(13, 13);
             this.label80.TabIndex = 39;
             this.label80.Text = "=";
             // 
@@ -1999,7 +1999,7 @@ namespace FCFS
             this.ta5.Location = new System.Drawing.Point(481, 171);
             this.ta5.Margin = new System.Windows.Forms.Padding(4);
             this.ta5.Name = "ta5";
-            this.ta5.Size = new System.Drawing.Size(68, 22);
+            this.ta5.Size = new System.Drawing.Size(68, 20);
             this.ta5.TabIndex = 35;
             this.ta5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2008,7 +2008,7 @@ namespace FCFS
             this.ta4.Location = new System.Drawing.Point(481, 139);
             this.ta4.Margin = new System.Windows.Forms.Padding(4);
             this.ta4.Name = "ta4";
-            this.ta4.Size = new System.Drawing.Size(68, 22);
+            this.ta4.Size = new System.Drawing.Size(68, 20);
             this.ta4.TabIndex = 34;
             this.ta4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2017,7 +2017,7 @@ namespace FCFS
             this.ta3.Location = new System.Drawing.Point(481, 107);
             this.ta3.Margin = new System.Windows.Forms.Padding(4);
             this.ta3.Name = "ta3";
-            this.ta3.Size = new System.Drawing.Size(68, 22);
+            this.ta3.Size = new System.Drawing.Size(68, 20);
             this.ta3.TabIndex = 33;
             this.ta3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2026,7 +2026,7 @@ namespace FCFS
             this.ta2.Location = new System.Drawing.Point(481, 75);
             this.ta2.Margin = new System.Windows.Forms.Padding(4);
             this.ta2.Name = "ta2";
-            this.ta2.Size = new System.Drawing.Size(68, 22);
+            this.ta2.Size = new System.Drawing.Size(68, 20);
             this.ta2.TabIndex = 32;
             this.ta2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2035,7 +2035,7 @@ namespace FCFS
             this.ta1.Location = new System.Drawing.Point(481, 43);
             this.ta1.Margin = new System.Windows.Forms.Padding(4);
             this.ta1.Name = "ta1";
-            this.ta1.Size = new System.Drawing.Size(68, 22);
+            this.ta1.Size = new System.Drawing.Size(68, 20);
             this.ta1.TabIndex = 31;
             this.ta1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2045,7 +2045,7 @@ namespace FCFS
             this.label65.Location = new System.Drawing.Point(424, 175);
             this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(16, 17);
+            this.label65.Size = new System.Drawing.Size(13, 13);
             this.label65.TabIndex = 30;
             this.label65.Text = "=";
             // 
@@ -2055,7 +2055,7 @@ namespace FCFS
             this.label66.Location = new System.Drawing.Point(424, 143);
             this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(16, 17);
+            this.label66.Size = new System.Drawing.Size(13, 13);
             this.label66.TabIndex = 29;
             this.label66.Text = "=";
             // 
@@ -2065,7 +2065,7 @@ namespace FCFS
             this.label67.Location = new System.Drawing.Point(424, 111);
             this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(16, 17);
+            this.label67.Size = new System.Drawing.Size(13, 13);
             this.label67.TabIndex = 28;
             this.label67.Text = "=";
             // 
@@ -2075,7 +2075,7 @@ namespace FCFS
             this.label68.Location = new System.Drawing.Point(424, 79);
             this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(16, 17);
+            this.label68.Size = new System.Drawing.Size(13, 13);
             this.label68.TabIndex = 27;
             this.label68.Text = "=";
             // 
@@ -2085,7 +2085,7 @@ namespace FCFS
             this.label69.Location = new System.Drawing.Point(424, 47);
             this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(16, 17);
+            this.label69.Size = new System.Drawing.Size(13, 13);
             this.label69.TabIndex = 26;
             this.label69.Text = "=";
             // 
@@ -2094,7 +2094,7 @@ namespace FCFS
             this.arT5.Location = new System.Drawing.Point(309, 171);
             this.arT5.Margin = new System.Windows.Forms.Padding(4);
             this.arT5.Name = "arT5";
-            this.arT5.Size = new System.Drawing.Size(68, 22);
+            this.arT5.Size = new System.Drawing.Size(68, 20);
             this.arT5.TabIndex = 25;
             this.arT5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2103,7 +2103,7 @@ namespace FCFS
             this.arT4.Location = new System.Drawing.Point(309, 139);
             this.arT4.Margin = new System.Windows.Forms.Padding(4);
             this.arT4.Name = "arT4";
-            this.arT4.Size = new System.Drawing.Size(68, 22);
+            this.arT4.Size = new System.Drawing.Size(68, 20);
             this.arT4.TabIndex = 24;
             this.arT4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2112,7 +2112,7 @@ namespace FCFS
             this.arT3.Location = new System.Drawing.Point(309, 107);
             this.arT3.Margin = new System.Windows.Forms.Padding(4);
             this.arT3.Name = "arT3";
-            this.arT3.Size = new System.Drawing.Size(68, 22);
+            this.arT3.Size = new System.Drawing.Size(68, 20);
             this.arT3.TabIndex = 23;
             this.arT3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2121,7 +2121,7 @@ namespace FCFS
             this.arT2.Location = new System.Drawing.Point(309, 75);
             this.arT2.Margin = new System.Windows.Forms.Padding(4);
             this.arT2.Name = "arT2";
-            this.arT2.Size = new System.Drawing.Size(68, 22);
+            this.arT2.Size = new System.Drawing.Size(68, 20);
             this.arT2.TabIndex = 22;
             this.arT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2130,7 +2130,7 @@ namespace FCFS
             this.arT1.Location = new System.Drawing.Point(309, 43);
             this.arT1.Margin = new System.Windows.Forms.Padding(4);
             this.arT1.Name = "arT1";
-            this.arT1.Size = new System.Drawing.Size(68, 22);
+            this.arT1.Size = new System.Drawing.Size(68, 20);
             this.arT1.TabIndex = 21;
             this.arT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2141,7 +2141,7 @@ namespace FCFS
             this.label70.Location = new System.Drawing.Point(265, 175);
             this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(14, 17);
+            this.label70.Size = new System.Drawing.Size(11, 13);
             this.label70.TabIndex = 20;
             this.label70.Text = "-";
             // 
@@ -2152,7 +2152,7 @@ namespace FCFS
             this.label71.Location = new System.Drawing.Point(265, 143);
             this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(14, 17);
+            this.label71.Size = new System.Drawing.Size(11, 13);
             this.label71.TabIndex = 19;
             this.label71.Text = "-";
             // 
@@ -2163,7 +2163,7 @@ namespace FCFS
             this.label72.Location = new System.Drawing.Point(265, 111);
             this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(14, 17);
+            this.label72.Size = new System.Drawing.Size(11, 13);
             this.label72.TabIndex = 18;
             this.label72.Text = "-";
             // 
@@ -2174,7 +2174,7 @@ namespace FCFS
             this.label73.Location = new System.Drawing.Point(265, 79);
             this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(14, 17);
+            this.label73.Size = new System.Drawing.Size(11, 13);
             this.label73.TabIndex = 17;
             this.label73.Text = "-";
             // 
@@ -2185,7 +2185,7 @@ namespace FCFS
             this.label74.Location = new System.Drawing.Point(265, 47);
             this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(14, 17);
+            this.label74.Size = new System.Drawing.Size(11, 13);
             this.label74.TabIndex = 16;
             this.label74.Text = "-";
             // 
@@ -2194,7 +2194,7 @@ namespace FCFS
             this.ft5.Location = new System.Drawing.Point(168, 171);
             this.ft5.Margin = new System.Windows.Forms.Padding(4);
             this.ft5.Name = "ft5";
-            this.ft5.Size = new System.Drawing.Size(68, 22);
+            this.ft5.Size = new System.Drawing.Size(68, 20);
             this.ft5.TabIndex = 15;
             this.ft5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2203,7 +2203,7 @@ namespace FCFS
             this.ft4.Location = new System.Drawing.Point(168, 139);
             this.ft4.Margin = new System.Windows.Forms.Padding(4);
             this.ft4.Name = "ft4";
-            this.ft4.Size = new System.Drawing.Size(68, 22);
+            this.ft4.Size = new System.Drawing.Size(68, 20);
             this.ft4.TabIndex = 14;
             this.ft4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2212,7 +2212,7 @@ namespace FCFS
             this.ft3.Location = new System.Drawing.Point(168, 107);
             this.ft3.Margin = new System.Windows.Forms.Padding(4);
             this.ft3.Name = "ft3";
-            this.ft3.Size = new System.Drawing.Size(68, 22);
+            this.ft3.Size = new System.Drawing.Size(68, 20);
             this.ft3.TabIndex = 13;
             this.ft3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2221,7 +2221,7 @@ namespace FCFS
             this.ft2.Location = new System.Drawing.Point(168, 75);
             this.ft2.Margin = new System.Windows.Forms.Padding(4);
             this.ft2.Name = "ft2";
-            this.ft2.Size = new System.Drawing.Size(68, 22);
+            this.ft2.Size = new System.Drawing.Size(68, 20);
             this.ft2.TabIndex = 12;
             this.ft2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2230,7 +2230,7 @@ namespace FCFS
             this.ft1.Location = new System.Drawing.Point(168, 43);
             this.ft1.Margin = new System.Windows.Forms.Padding(4);
             this.ft1.Name = "ft1";
-            this.ft1.Size = new System.Drawing.Size(68, 22);
+            this.ft1.Size = new System.Drawing.Size(68, 20);
             this.ft1.TabIndex = 11;
             this.ft1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2240,7 +2240,7 @@ namespace FCFS
             this.label75.Location = new System.Drawing.Point(121, 175);
             this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(16, 17);
+            this.label75.Size = new System.Drawing.Size(13, 13);
             this.label75.TabIndex = 10;
             this.label75.Text = "=";
             // 
@@ -2250,7 +2250,7 @@ namespace FCFS
             this.label76.Location = new System.Drawing.Point(121, 143);
             this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(16, 17);
+            this.label76.Size = new System.Drawing.Size(13, 13);
             this.label76.TabIndex = 9;
             this.label76.Text = "=";
             // 
@@ -2260,7 +2260,7 @@ namespace FCFS
             this.label77.Location = new System.Drawing.Point(121, 111);
             this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(16, 17);
+            this.label77.Size = new System.Drawing.Size(13, 13);
             this.label77.TabIndex = 8;
             this.label77.Text = "=";
             // 
@@ -2270,7 +2270,7 @@ namespace FCFS
             this.label78.Location = new System.Drawing.Point(121, 79);
             this.label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(16, 17);
+            this.label78.Size = new System.Drawing.Size(13, 13);
             this.label78.TabIndex = 7;
             this.label78.Text = "=";
             // 
@@ -2280,7 +2280,7 @@ namespace FCFS
             this.label79.Location = new System.Drawing.Point(121, 47);
             this.label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(16, 17);
+            this.label79.Size = new System.Drawing.Size(13, 13);
             this.label79.TabIndex = 6;
             this.label79.Text = "=";
             // 
@@ -2289,7 +2289,7 @@ namespace FCFS
             this.p5.Location = new System.Drawing.Point(27, 171);
             this.p5.Margin = new System.Windows.Forms.Padding(4);
             this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(68, 22);
+            this.p5.Size = new System.Drawing.Size(68, 20);
             this.p5.TabIndex = 4;
             this.p5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2298,7 +2298,7 @@ namespace FCFS
             this.p4.Location = new System.Drawing.Point(27, 139);
             this.p4.Margin = new System.Windows.Forms.Padding(4);
             this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(68, 22);
+            this.p4.Size = new System.Drawing.Size(68, 20);
             this.p4.TabIndex = 3;
             this.p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2307,7 +2307,7 @@ namespace FCFS
             this.p3.Location = new System.Drawing.Point(27, 107);
             this.p3.Margin = new System.Windows.Forms.Padding(4);
             this.p3.Name = "p3";
-            this.p3.Size = new System.Drawing.Size(68, 22);
+            this.p3.Size = new System.Drawing.Size(68, 20);
             this.p3.TabIndex = 2;
             this.p3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2316,7 +2316,7 @@ namespace FCFS
             this.p2.Location = new System.Drawing.Point(27, 75);
             this.p2.Margin = new System.Windows.Forms.Padding(4);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(68, 22);
+            this.p2.Size = new System.Drawing.Size(68, 20);
             this.p2.TabIndex = 1;
             this.p2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2325,7 +2325,7 @@ namespace FCFS
             this.p1.Location = new System.Drawing.Point(27, 43);
             this.p1.Margin = new System.Windows.Forms.Padding(4);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(68, 22);
+            this.p1.Size = new System.Drawing.Size(68, 20);
             this.p1.TabIndex = 0;
             this.p1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2334,7 +2334,7 @@ namespace FCFS
             this.fATAT.Location = new System.Drawing.Point(637, 270);
             this.fATAT.Margin = new System.Windows.Forms.Padding(4);
             this.fATAT.Name = "fATAT";
-            this.fATAT.Size = new System.Drawing.Size(61, 22);
+            this.fATAT.Size = new System.Drawing.Size(61, 20);
             this.fATAT.TabIndex = 47;
             this.fATAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2344,7 +2344,7 @@ namespace FCFS
             this.proc.Location = new System.Drawing.Point(73, 31);
             this.proc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.proc.Name = "proc";
-            this.proc.Size = new System.Drawing.Size(74, 34);
+            this.proc.Size = new System.Drawing.Size(58, 26);
             this.proc.TabIndex = 36;
             this.proc.Text = "PROCESS\r\n      (P)";
             // 
@@ -2354,7 +2354,7 @@ namespace FCFS
             this.label63.Location = new System.Drawing.Point(8, 273);
             this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(44, 17);
+            this.label63.Size = new System.Drawing.Size(35, 13);
             this.label63.TabIndex = 48;
             this.label63.Text = "ATAT";
             // 
@@ -2364,7 +2364,7 @@ namespace FCFS
             this.finish.Location = new System.Drawing.Point(192, 31);
             this.finish.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.finish.Name = "finish";
-            this.finish.Size = new System.Drawing.Size(111, 34);
+            this.finish.Size = new System.Drawing.Size(90, 26);
             this.finish.TabIndex = 36;
             this.finish.Text = "FINISHING TIME\r\n           (FT)";
             // 
@@ -2374,7 +2374,7 @@ namespace FCFS
             this.arriveT.Location = new System.Drawing.Point(343, 31);
             this.arriveT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arriveT.Name = "arriveT";
-            this.arriveT.Size = new System.Drawing.Size(102, 34);
+            this.arriveT.Size = new System.Drawing.Size(82, 26);
             this.arriveT.TabIndex = 36;
             this.arriveT.Text = "ARRIVAL TIME\r\n         (AT)";
             // 
@@ -2397,7 +2397,7 @@ namespace FCFS
             this.turnaround.Location = new System.Drawing.Point(488, 31);
             this.turnaround.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.turnaround.Name = "turnaround";
-            this.turnaround.Size = new System.Drawing.Size(148, 34);
+            this.turnaround.Size = new System.Drawing.Size(117, 26);
             this.turnaround.TabIndex = 40;
             this.turnaround.Text = "TURN-AROUND TIME\r\n              (TAT)";
             // 
@@ -2441,7 +2441,7 @@ namespace FCFS
             this.job6.Location = new System.Drawing.Point(548, 262);
             this.job6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.job6.Name = "job6";
-            this.job6.Size = new System.Drawing.Size(32, 36);
+            this.job6.Size = new System.Drawing.Size(26, 29);
             this.job6.TabIndex = 104;
             this.job6.Text = "0";
             this.job6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2481,7 +2481,7 @@ namespace FCFS
             this.label5.Location = new System.Drawing.Point(520, 260);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 46);
+            this.label5.Size = new System.Drawing.Size(26, 37);
             this.label5.TabIndex = 87;
             this.label5.Text = "/";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

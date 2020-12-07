@@ -16,31 +16,29 @@ namespace FCFS
         public static int at, bt,nRow = 0,  count = 0, timer = 0, timeSt=0, secs = 0;
         public static int rbcount = 0, rbSelect = 0;
         public static string rbm;
-        public static int[] btArr = new int[5];
-        public static int[] atArr = new int[5];
-        public static string[] pArr = new string[5];
-        public static int[] bt1 = new int[5];
-        public static int[] at1 = new int[5];
-        public static string[] p1 = new string[5];
-        public static int[] finalBT = new int[5];
-        public static int[] finalAT = new int[5];
-        public static string[] finalProcess = new string[5];
-        public static int[] finalWT = new int[5];
-        public static int[] finalTAT = new int[5];
-        public static int[] finalCT = new int[5];
-        public static int[] UnsortedfinalCT = new int[5];
-        public static int[] UnsortedfinalTAT = new int[5];
-        public static int[] UnsortedfinalWT = new int[5];
-        public static string [] UnsortedfinalProcess = new string [5];
-        public static int[] UnsortedfinalAT = new int[5];
+        public static int[] btArr;
+        public static int[] atArr;
+        public static string[] pArr;
+        public static int[] bt1;
+        public static int[] at1;
+        public static string[] p1;
+        public static int[] finalBT;
+        public static int[] finalAT;
+        public static string[] finalProcess;
+        public static int[] finalWT;
+        public static int[] finalTAT;
+        public static int[] finalCT;
+        public static int[] UnsortedfinalCT;
+        public static int[] UnsortedfinalTAT;
+        public static int[] UnsortedfinalWT;
+        public static string [] UnsortedfinalProcess;
+        public static int[] UnsortedfinalAT;
         public static double finalAWT = 0d, finalATAT = 0d;
-        public static int[] UnsortedfinalST = new int[5];
-        public static int[] qOrder = new int[5];
-        public static int[] UnsortedqOrder = new int[5];
+        public static int[] UnsortedfinalST;
+        public static int[] qOrder;
+        public static int[] UnsortedqOrder;
         public static bool drag = false;
         public static Point start_point = new Point(0, 0);
-
-
 
         public fcfsForm()
         {
@@ -263,11 +261,11 @@ namespace FCFS
                 }
                // inAT.Enabled = true;
             }
-            if (nRow != 5)
+            if (nRow == 0|| nRow ==1 || nRow ==2)
             {
                 btnSTART.Enabled = false;
             }
-            else
+            else if (nRow == 3 || nRow == 4 || nRow == 5)
             {
                 btnSTART.Enabled = true;
             }
@@ -361,61 +359,83 @@ namespace FCFS
         public void btnSTART_Click(object sender, EventArgs e)
         {
             transferValuesToArray();
+            inputPanel.Enabled = false;
             btnDELETE.Enabled = false;       
             int p  = pArr.Length;
-            int[] multiQueueOrder = new int [5];
-            
-            for (int i = 0; i < 5; i++)
+            int[] multiQueueOrder = new int [p];
+
+            UnsortedfinalProcess = new string[p];
+            UnsortedfinalAT = new int[p];
+            UnsortedqOrder = new int[p];
+
+            bt1 = new int[p];
+            at1 = new int[p];
+            p1 = new string[p];
+            qOrder = new int[p];
+
+            finalWT = new int[p];
+            finalTAT = new int[p];
+            finalCT = new int[p];
+            UnsortedfinalST = new int[p];
+
+            finalProcess = new string[p];
+            finalAT = new int[p];
+            finalBT = new int[p];
+            finalWT = new int[p];
+            finalTAT = new int[p];
+            finalCT = new int[p];
+            UnsortedfinalCT = new int[p];
+
+            for (int i = 0; i < atArr.Length; i++)
             {
                 multiQueueOrder[i] = i + 1;
             }
 
-            for(int i = 0; i < 5; i++)
+            for(int i = 0; i < atArr.Length; i++)
             {
                 UnsortedfinalProcess[i] = pArr[i];
                 UnsortedfinalAT[i] = atArr[i];
             }
 
             //sorting by AT when Multiple Queueing
+
             if (rbMultiple.Checked)
             {
-                int size = atArr.Length;
+                int tempA, tempB, tempQ;
+                string tempP;
+                int num = atArr.Length;
 
-                for (int i = 0 ; i < size - 1; i++)
+                for(int i = 0; i < num; i++)
                 {
-                    int min = i;
-
-                    for (int j = i + 1; j < size; j++)
+                    for (int j = 0; j < num - 1; j++)
                     {
-                        if (atArr[j] <= atArr[min])
+                        if (atArr[j] > atArr[j + 1])
                         {
-                            min = j;
+                            tempA = atArr[j];
+                            atArr[j] = atArr[j + 1];
+                            atArr[j + 1] = tempA;
+
+                            tempB = btArr[j];
+                            btArr[j] = btArr[j + 1];
+                            btArr[j + 1] = tempB;
+
+                            tempQ = multiQueueOrder[j];
+                            multiQueueOrder[j] = multiQueueOrder[j + 1];
+                            multiQueueOrder[j + 1] = tempQ;
+
+                            tempP = pArr[j];
+                            pArr[j] = pArr[j + 1];
+                            pArr[j + 1] = tempP;
                         }
                     }
-
-                    int tempAT = atArr[min];
-                    atArr[min] = atArr[i];
-                    atArr[i] = tempAT;
-
-                    int tempBT = btArr[min];
-                    btArr[min] = btArr[i];
-                    btArr[i] = tempBT;
-
-                    string tempProcess = pArr[min];
-                    pArr[min] = pArr[i];
-                    pArr[i] = tempProcess;
-
-                    int tempQueueOrder = multiQueueOrder[min];
-                    multiQueueOrder[min] = multiQueueOrder[i];
-                    multiQueueOrder[i] = tempQueueOrder;
                 }
             }
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < multiQueueOrder.Length; i++)
             {
                 UnsortedqOrder[i] = multiQueueOrder[i];
             }
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < multiQueueOrder.Length; i++)
             {
                 bt1[i] = btArr[i];
                 at1[i] = atArr[i];
@@ -490,20 +510,11 @@ namespace FCFS
                 ct[i] = tat[i] + at[i];
 
                 UnsortedfinalST[i] = wt[i] + at[i];
-
-                /*if (i == 0)
-                {
-                    UnsortedfinalST[i] = at[i];
-                }
-                if(i > 0 && i < 5)
-                {
-                    UnsortedfinalST[i] = tat[i] + at[i];
-                }*/
             }
 
-            double AWT = (totalWT / 5);
-            double ATAT = (totalTAT / 5);
-            for (int i = 0; i < 5; i++)
+            double AWT = (totalWT / atArr.Length);
+            double ATAT = (totalTAT / atArr.Length);
+            for (int i = 0; i < atArr.Length; i++)
             {
                 finalProcess[i] = process[i];
                 finalAT[i] = at[i];
@@ -513,8 +524,8 @@ namespace FCFS
                 finalCT[i] = ct[i];
                 UnsortedfinalCT[i] = ct[i];
             }
-            finalAWT = AWT;
-            finalATAT = ATAT;
+            finalAWT = Math.Round(AWT,2);
+            finalATAT = Math.Round(ATAT,2);
         }
 
         static void findWT(string[] process, int n, int[] bt, int[] wt, int[] at)
@@ -526,11 +537,9 @@ namespace FCFS
             // calculating waiting time 
             for (int i = 1; i < n; i++)
             {
-                // Add burst time of previous processes 
                 service_time[i] = service_time[i-1] + bt[i ];
                 
-                // Find waiting time for current process = 
-                // sum - at[i] 
+
                 wt[i] = service_time[i-1] - at[i ];
 
                 if (wt[i] < 0)
@@ -547,33 +556,25 @@ namespace FCFS
 
         public void transferValuesToArray()
         {
-            string[] pArray = dataGridView1.Rows
-               .Cast<DataGridViewRow>()
-               .Where(r => !r.IsNewRow)
-               .Select(r => (r.Cells[0].Value.ToString())).ToArray();
+            pArr = new string[nRow];
+            atArr = new int[nRow];
+            btArr = new int[nRow];
+            List<string> process = dataGridView1.Rows
+                             .OfType<DataGridViewRow>()
+                             .Select(r => r.Cells[0].Value.ToString())
+                             .ToList();
+            List<int> arrivalTime = dataGridView1.Rows
+                             .OfType<DataGridViewRow>()
+                             .Select(r => Convert.ToInt32(r.Cells[1].Value.ToString())).ToArray()
+                             .ToList();
+            List<int> burstTime = dataGridView1.Rows
+                             .OfType<DataGridViewRow>()
+                             .Select(r => Convert.ToInt32(r.Cells[2].Value.ToString())).ToArray()
+                             .ToList();
 
-            for (int i = 0; i < 5; i++)
-            {
-                pArr[i] = pArray[i];
-            }
-            int[] atArray = dataGridView1.Rows
-               .Cast<DataGridViewRow>()
-               .Where(r => !r.IsNewRow)
-               .Select(r => Convert.ToInt32(r.Cells[1].Value.ToString())).ToArray();
-
-            for (int i = 0; i < 5; i++)
-            {
-                atArr[i] = atArray[i];
-            }
-            int[] btArray = dataGridView1.Rows
-                .Cast<DataGridViewRow>()
-                .Where(r => !r.IsNewRow)
-                .Select(r => Convert.ToInt32(r.Cells[2].Value.ToString())).ToArray();
-
-            for (int i = 0; i < 5; i++)
-            {
-                btArr[i] = btArray[i];
-            }
+            pArr = process.ToArray();
+            atArr = arrivalTime.ToArray();
+            btArr = burstTime.ToArray();
         }
 
         private void fcfsForm_Load(object sender, EventArgs e)
@@ -590,7 +591,7 @@ namespace FCFS
 
             if (timeSt == 0) await Task.Delay(500);
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < atArr.Length; i++)
             {
                 timer1.Enabled = true;
                 timeSt = i;
@@ -606,15 +607,34 @@ namespace FCFS
                     lbT1.Text = finalAT[timeSt].ToString();
                     lbT1.ForeColor = Color.DarkGray;
 
-                    rq1.BackColor = Color.FromArgb(40, 166, 200);
-                    rq2.BackColor = Color.FromArgb(58, 192, 197);
-                    rq3.BackColor = Color.FromArgb(40, 166, 200);
-                    rq4.BackColor = Color.FromArgb(58, 192, 197);
-
-                    lbRq1.Text = finalProcess[timeSt + 1];
-                    lbRq2.Text = finalProcess[timeSt + 2];
-                    lbRq3.Text = finalProcess[timeSt + 3];
-                    lbRq4.Text = finalProcess[timeSt + 4];
+                    if (atArr.Length == 5)
+                    {
+                        rq1.BackColor = Color.FromArgb(40, 166, 200);
+                        rq2.BackColor = Color.FromArgb(58, 192, 197);
+                        rq3.BackColor = Color.FromArgb(40, 166, 200);
+                        rq4.BackColor = Color.FromArgb(58, 192, 197);
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Text = finalProcess[timeSt + 2];
+                        lbRq3.Text = finalProcess[timeSt + 3];
+                        lbRq4.Text = finalProcess[timeSt + 4];
+                    }
+                    else if (atArr.Length == 4)
+                    {
+                        rq1.BackColor = Color.FromArgb(40, 166, 200);
+                        rq2.BackColor = Color.FromArgb(58, 192, 197);
+                        rq3.BackColor = Color.FromArgb(40, 166, 200);
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Text = finalProcess[timeSt + 2];
+                        lbRq3.Text = finalProcess[timeSt + 3];
+                    }
+                    else if (atArr.Length == 3)
+                    {
+                        rq1.BackColor = Color.FromArgb(40, 166, 200);
+                        rq2.BackColor = Color.FromArgb(58, 192, 197);
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Text = finalProcess[timeSt + 2];
+                    }
+                    
                 }
                 else if (timeSt == 1)
                 {
@@ -627,15 +647,37 @@ namespace FCFS
                     lbT2.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT2.ForeColor = Color.DarkGray;
 
-                    rq1.BackColor = Color.FromArgb(58, 192, 197);
-                    rq2.BackColor = Color.FromArgb(40, 166, 200);
-                    rq3.BackColor = Color.FromArgb(58, 192, 197);
-                    rq4.Hide();
+                    if (atArr.Length == 5)
+                    {
+                        rq1.BackColor = Color.FromArgb(58, 192, 197);
+                        rq2.BackColor = Color.FromArgb(40, 166, 200);
+                        rq3.BackColor = Color.FromArgb(58, 192, 197);
+                        rq4.Hide();
 
-                    lbRq1.Text = finalProcess[timeSt + 1];
-                    lbRq2.Text = finalProcess[timeSt + 2];
-                    lbRq3.Text = finalProcess[timeSt + 3];
-                    lbRq4.Hide();
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Text = finalProcess[timeSt + 2];
+                        lbRq3.Text = finalProcess[timeSt + 3];
+                        lbRq4.Hide();
+                    }
+                    else if(atArr.Length == 4)
+                    {
+                        rq1.BackColor = Color.FromArgb(58, 192, 197);
+                        rq2.BackColor = Color.FromArgb(40, 166, 200);
+                        rq3.Hide();
+
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Text = finalProcess[timeSt + 2];
+                        lbRq3.Hide();
+                    }
+                    else if(atArr.Length == 3)
+                    {
+                        rq1.BackColor = Color.FromArgb(58, 192, 197);
+                        rq2.Hide();
+
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Hide();
+                    }
+
                 }
                 else if (timeSt == 2)
                 {
@@ -648,15 +690,39 @@ namespace FCFS
                     lbT3.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT3.ForeColor = Color.DarkGray;
 
-                    rq1.BackColor = Color.FromArgb(40, 166, 200);
-                    rq2.BackColor = Color.FromArgb(58, 192, 197);
-                    rq3.Hide();
-                    rq4.Hide();
+                    if(atArr.Length == 5)
+                    {
+                        rq1.BackColor = Color.FromArgb(40, 166, 200);
+                        rq2.BackColor = Color.FromArgb(58, 192, 197);
+                        rq3.Hide();
+                        rq4.Hide();
 
-                    lbRq1.Text = finalProcess[timeSt + 1];
-                    lbRq2.Text = finalProcess[timeSt + 2];
-                    lbRq3.Hide();
-                    lbRq4.Hide();
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Text = finalProcess[timeSt + 2];
+                        lbRq3.Hide();
+                        lbRq4.Hide();
+                    }
+                    else if(atArr.Length == 4)
+                    {
+                        rq1.BackColor = Color.FromArgb(40, 166, 200);
+                        rq2.Hide();
+                        rq3.Hide();
+
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Hide();
+                        lbRq3.Hide();
+                    }
+                    else if (atArr.Length == 3)
+                    {
+                        rq1.Hide();
+                        rq2.Hide();
+                        rq3.Hide();
+
+                        lbRq1.Hide();
+                        lbRq2.Hide();
+                        lbRq3.Hide();
+                    }
+                    
                 }
                 else if (timeSt == 3)
                 {
@@ -669,15 +735,31 @@ namespace FCFS
                     lbT4.Text = UnsortedfinalCT[timeSt-1].ToString();
                     lbT4.ForeColor = Color.DarkGray;
 
-                    rq1.BackColor = Color.FromArgb(58, 192, 197);
-                    rq2.Hide();
-                    rq3.Hide();
-                    rq4.Hide();
+                    if (atArr.Length == 5)
+                    {
+                        rq1.BackColor = Color.FromArgb(58, 192, 197);
+                        rq2.Hide();
+                        rq3.Hide();
+                        rq4.Hide();
 
-                    lbRq1.Text = finalProcess[timeSt + 1];
-                    lbRq2.Hide();
-                    lbRq3.Hide();
-                    lbRq4.Hide();
+                        lbRq1.Text = finalProcess[timeSt + 1];
+                        lbRq2.Hide();
+                        lbRq3.Hide();
+                        lbRq4.Hide();
+                    }
+                    else if (atArr.Length == 4)
+                    {
+                        rq1.Hide();
+                        rq2.Hide();
+                        rq3.Hide();
+
+
+                        lbRq1.Hide();
+                        lbRq2.Hide();
+                        lbRq3.Hide();
+
+                    }
+                    
                 }
                 else if (timeSt == 4)
                 {
@@ -710,8 +792,8 @@ namespace FCFS
                     TimerMethod();
                 }
             }
-            tbAWT.Text = finalAWT.ToString();
-            tbATAT.Text = finalATAT.ToString();
+            tbAWT.Text = finalAWT.ToString() + " ms";
+            tbATAT.Text = finalATAT.ToString() + " ms";
         }
 
         void timer1_Tick(object sender, EventArgs e)
@@ -753,6 +835,12 @@ namespace FCFS
                     progressBar3.Value = finalBT[timeSt];
                     timer1.Stop();
                     progressBar3.Hide();
+
+                    if (atArr.Length == 3)
+                    {
+                        lbT4.Text = UnsortedfinalCT[timeSt].ToString();
+                        lbT4.ForeColor = Color.DarkGray;
+                    }
                 }
             }
             else if (timeSt == 3)
@@ -766,6 +854,12 @@ namespace FCFS
                     progressBar4.Value = finalBT[timeSt];
                     timer1.Stop();
                     progressBar4.Hide();
+
+                    if (atArr.Length == 4)
+                    {
+                        lbT5.Text = UnsortedfinalCT[timeSt].ToString();
+                        lbT5.ForeColor = Color.DarkGray;
+                    }
                 }
             }
             else if (timeSt == 4)
@@ -826,9 +920,9 @@ namespace FCFS
             
             
 
-            int[] st = new int [5];
+            int[] st = new int [atArr.Length];
 
-            for(int i = 0; i < 5; i++)
+            for(int i = 0; i < atArr.Length; i++)
             {
                 st[i] = UnsortedfinalST[i];
             }
