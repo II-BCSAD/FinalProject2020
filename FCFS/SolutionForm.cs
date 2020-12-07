@@ -37,7 +37,7 @@ namespace FCFS
             drag = false;
         }
 
-        public void startingTime(int[]st)
+        public void startingTime(int[] st)
         {
 
         }
@@ -52,18 +52,51 @@ namespace FCFS
 
             if (i < n)
             {
-                wt1.Text = at[i].ToString();
-                wt2.Text = ct[i].ToString();
-                i++;
-                wt3.Text = ct[i].ToString();
-                i++;
-                wt4.Text = ct[i].ToString();
-                i++;
-                wt5.Text = ct[i].ToString();
+                if (n == 1)
+                {
+                    wt1.Text = at[i].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    wt1.Text = at[i].ToString();
+                    wt2.Text = ct[i].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    wt1.Text = at[i].ToString();
+                    wt2.Text = ct[i].ToString();
+                    i++;
+                    wt3.Text = ct[i].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    wt1.Text = at[i].ToString();
+                    wt2.Text = ct[i].ToString();
+                    i++;
+                    wt3.Text = ct[i].ToString();
+                    i++;
+                    wt4.Text = ct[i].ToString();
+                }
+                else if (n == 5)
+                {
+                    wt1.Text = at[i].ToString();
+                    wt2.Text = ct[i].ToString();
+                    i++;
+                    wt3.Text = ct[i].ToString();
+                    i++;
+                    wt4.Text = ct[i].ToString();
+                    i++;
+                    wt5.Text = ct[i].ToString();
+                }
+                else { }
             }
 
-            arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                      " + b);
-
+            arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                               " + b);
+           //try lang hehe
+            wt6.Text = st.Select(x => x.ToString()).Aggregate((a, b) => "( " + a + " - " + "       " + " )" + "                          " + "( " + b);
 
             //Start Time in Computation Table
 
@@ -71,32 +104,102 @@ namespace FCFS
 
             if (s < n)
             {
-                st1.Text = st[s].ToString();
-                s++;
-                st2.Text = st[s].ToString();
-                s++;
-                st3.Text = st[s].ToString();
-                s++;
-                st4.Text = st[s].ToString();
-                s++;
-                st5.Text = st[s].ToString();
+                if (n == 1)
+                {
+                    st1.Text = st[s].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    st1.Text = st[s].ToString();
+                    s++;
+                    st2.Text = st[s].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    st1.Text = st[s].ToString();
+                    s++;
+                    st2.Text = st[s].ToString();
+                    s++;
+                    st3.Text = st[s].ToString();
+                }
+                else if (n == 4)
+                {
+                    st1.Text = st[s].ToString();
+                    s++;
+                    st2.Text = st[s].ToString();
+                    s++;
+                    st3.Text = st[s].ToString();
+                    s++;
+                    st4.Text = st[s].ToString();
+                }
+                else if (n == 5)
+                {
+                    st1.Text = st[s].ToString();
+                    s++;
+                    st2.Text = st[s].ToString();
+                    s++;
+                    st3.Text = st[s].ToString();
+                    s++;
+                    st4.Text = st[s].ToString();
+                    s++;
+                    st5.Text = st[s].ToString();
+                }
+                else { }
             }
 
-            arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                      " + b);
+            arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                               " + b);
+            //try lang 
+            tat06.Text = ct.Select(x => x.ToString()).Aggregate((a, b) => a + " - " + "       " + " )" + "                          " + "( " + b );
 
             int t = 0;
 
             if (t < n)
             {
-                tat01.Text = ct[t].ToString();
-                t++;
-                tat02.Text = ct[t].ToString();
-                t++;
-                tat03.Text = ct[t].ToString();
-                t++;
-                tat04.Text = ct[t].ToString();
-                t++;
-                tat05.Text = ct[t].ToString();
+                if (n == 1)
+                {
+                    tat01.Text = ct[t].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    tat01.Text = ct[t].ToString();
+                    t++;
+                    tat02.Text = ct[t].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    tat01.Text = ct[t].ToString();
+                    t++;
+                    tat02.Text = ct[t].ToString();
+                    t++;
+                    tat03.Text = ct[t].ToString();
+                }
+                else if (n == 4)
+                {
+                    tat01.Text = ct[t].ToString();
+                    t++;
+                    tat02.Text = ct[t].ToString();
+                    t++;
+                    tat03.Text = ct[t].ToString();
+                    t++;
+                    tat04.Text = ct[t].ToString();
+                }
+                else if (n == 5)
+                {
+                    tat01.Text = ct[t].ToString();
+                    t++;
+                    tat02.Text = ct[t].ToString();
+                    t++;
+                    tat03.Text = ct[t].ToString();
+                    t++;
+                    tat04.Text = ct[t].ToString();
+                    t++;
+                    tat05.Text = ct[t].ToString();
+                }
+                else { }
             }
 
             //Completion Time in Computation Table
@@ -105,15 +208,51 @@ namespace FCFS
 
             if (f < n)
             {
-                ft1.Text = ct[f].ToString();
-                f++;
-                ft2.Text = ct[f].ToString();
-                f++;
-                ft3.Text = ct[f].ToString();
-                f++;
-                ft4.Text = ct[f].ToString();
-                f++;
-                ft5.Text = ct[f].ToString();
+                if (n == 1)
+                {
+                    ft1.Text = ct[f].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    ft1.Text = ct[f].ToString();
+                    f++;
+                    ft2.Text = ct[f].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    ft1.Text = ct[f].ToString();
+                    f++;
+                    ft2.Text = ct[f].ToString();
+                    f++;
+                    ft3.Text = ct[f].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    ft1.Text = ct[f].ToString();
+                    f++;
+                    ft2.Text = ct[f].ToString();
+                    f++;
+                    ft3.Text = ct[f].ToString();
+                    f++;
+                    ft4.Text = ct[f].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    ft1.Text = ct[f].ToString();
+                    f++;
+                    ft2.Text = ct[f].ToString();
+                    f++;
+                    ft3.Text = ct[f].ToString();
+                    f++;
+                    ft4.Text = ct[f].ToString();
+                    f++;
+                    ft5.Text = ct[f].ToString();
+                }
+                else { }
             }
 
             //Display of Arrival Time in Computation Table
@@ -122,30 +261,102 @@ namespace FCFS
 
             if (ar < n)
             {
-                at1.Text = at[ar].ToString();
-                ar++;
-                at2.Text = at[ar].ToString();
-                ar++;
-                at3.Text = at[ar].ToString();
-                ar++;
-                at4.Text = at[ar].ToString();
-                ar++;
-                at5.Text = at[ar].ToString();
+                if (n == 1)
+                {
+                    at1.Text = at[ar].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    at1.Text = at[ar].ToString();
+                    ar++;
+                    at2.Text = at[ar].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    at1.Text = at[ar].ToString();
+                    ar++;
+                    at2.Text = at[ar].ToString();
+                    ar++;
+                    at3.Text = at[ar].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    at1.Text = at[ar].ToString();
+                    ar++;
+                    at2.Text = at[ar].ToString();
+                    ar++;
+                    at3.Text = at[ar].ToString();
+                    ar++;
+                    at4.Text = at[ar].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    at1.Text = at[ar].ToString();
+                    ar++;
+                    at2.Text = at[ar].ToString();
+                    ar++;
+                    at3.Text = at[ar].ToString();
+                    ar++;
+                    at4.Text = at[ar].ToString();
+                    ar++;
+                    at5.Text = at[ar].ToString();
+                }
+                else { }
             }
 
             int arT = 0;
 
             if (arT < n)
             {
-                arT1.Text = at[arT].ToString();
-                arT++;
-                arT2.Text = at[arT].ToString();
-                arT++;
-                arT3.Text = at[arT].ToString();
-                arT++;
-                arT4.Text = at[arT].ToString();
-                arT++;
-                arT5.Text = at[arT].ToString();
+                if (n == 1)
+                {
+                    arT1.Text = at[arT].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    arT1.Text = at[arT].ToString();
+                    arT++;
+                    arT2.Text = at[arT].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    arT1.Text = at[arT].ToString();
+                    arT++;
+                    arT2.Text = at[arT].ToString();
+                    arT++;
+                    arT3.Text = at[arT].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    arT1.Text = at[arT].ToString();
+                    arT++;
+                    arT2.Text = at[arT].ToString();
+                    arT++;
+                    arT3.Text = at[arT].ToString();
+                    arT++;
+                    arT4.Text = at[arT].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    arT1.Text = at[arT].ToString();
+                    arT++;
+                    arT2.Text = at[arT].ToString();
+                    arT++;
+                    arT3.Text = at[arT].ToString();
+                    arT++;
+                    arT4.Text = at[arT].ToString();
+                    arT++;
+                    arT5.Text = at[arT].ToString();
+                }
+                else { }
             }
 
             // No# of Jobs/Processes: as a Divisor
@@ -167,30 +378,102 @@ namespace FCFS
 
             if (pr < n)
             {
-                pr1.Text = process[pr].ToString();
-                pr++;
-                pr2.Text = process[pr].ToString();
-                pr++;
-                pr3.Text = process[pr].ToString();
-                pr++;
-                pr4.Text = process[pr].ToString();
-                pr++;
-                pr5.Text = process[pr].ToString();
+                if (n == 1)
+                {
+                    pr1.Text = process[pr].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    pr1.Text = process[pr].ToString();
+                    pr++;
+                    pr2.Text = process[pr].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    pr1.Text = process[pr].ToString();
+                    pr++;
+                    pr2.Text = process[pr].ToString();
+                    pr++;
+                    pr3.Text = process[pr].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    pr1.Text = process[pr].ToString();
+                    pr++;
+                    pr2.Text = process[pr].ToString();
+                    pr++;
+                    pr3.Text = process[pr].ToString();
+                    pr++;
+                    pr4.Text = process[pr].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    pr1.Text = process[pr].ToString();
+                    pr++;
+                    pr2.Text = process[pr].ToString();
+                    pr++;
+                    pr3.Text = process[pr].ToString();
+                    pr++;
+                    pr4.Text = process[pr].ToString();
+                    pr++;
+                    pr5.Text = process[pr].ToString();
+                }
+                else { }
             }
 
             int p = 0;
 
             if (p < n)
             {
-                p1.Text = process[p].ToString();
-                p++;
-                p2.Text = process[p].ToString();
-                p++;
-                p3.Text = process[p].ToString();
-                p++;
-                p4.Text = process[p].ToString();
-                p++;
-                p5.Text = process[p].ToString();
+                if (n == 1)
+                {
+                    p1.Text = process[p].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    p1.Text = process[p].ToString();
+                    p++;
+                    p2.Text = process[p].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    p1.Text = process[p].ToString();
+                    p++;
+                    p2.Text = process[p].ToString();
+                    p++;
+                    p3.Text = process[p].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    p1.Text = process[p].ToString();
+                    p++;
+                    p2.Text = process[p].ToString();
+                    p++;
+                    p3.Text = process[p].ToString();
+                    p++;
+                    p4.Text = process[p].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    p1.Text = process[p].ToString();
+                    p++;
+                    p2.Text = process[p].ToString();
+                    p++;
+                    p3.Text = process[p].ToString();
+                    p++;
+                    p4.Text = process[p].ToString();
+                    p++;
+                    p5.Text = process[p].ToString();
+                }
+                else { }
             }
 
             //Display of Waiting Time
@@ -199,15 +482,51 @@ namespace FCFS
 
             if (w < n)
             {
-                wait1.Text = wt[w].ToString();
-                w++;
-                wait2.Text = wt[w].ToString();
-                w++;
-                wait3.Text = wt[w].ToString();
-                w++;
-                wait4.Text = wt[w].ToString();
-                w++;
-                wait5.Text = wt[w].ToString();
+                if (n == 1)
+                {
+                    wait1.Text = wt[w].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    wait1.Text = wt[w].ToString();
+                    w++;
+                    wait2.Text = wt[w].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    wait1.Text = wt[w].ToString();
+                    w++;
+                    wait2.Text = wt[w].ToString();
+                    w++;
+                    wait3.Text = wt[w].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    wait1.Text = wt[w].ToString();
+                    w++;
+                    wait2.Text = wt[w].ToString();
+                    w++;
+                    wait3.Text = wt[w].ToString();
+                    w++;
+                    wait4.Text = wt[w].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    wait1.Text = wt[w].ToString();
+                    w++;
+                    wait2.Text = wt[w].ToString();
+                    w++;
+                    wait3.Text = wt[w].ToString();
+                    w++;
+                    wait4.Text = wt[w].ToString();
+                    w++;
+                    wait5.Text = wt[w].ToString();
+                }
+                else { }
             }
 
             //Display of Turn-Around Time
@@ -216,15 +535,51 @@ namespace FCFS
 
             if (ta < n)
             {
-                ta1.Text = tat[ta].ToString();
-                ta++;
-                ta2.Text = tat[ta].ToString();
-                ta++;
-                ta3.Text = tat[ta].ToString();
-                ta++;
-                ta4.Text = tat[ta].ToString();
-                ta++;
-                ta5.Text = tat[ta].ToString();
+                if (n == 1)
+                {
+                    ta1.Text = tat[ta].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    ta1.Text = tat[ta].ToString();
+                    ta++;
+                    ta2.Text = tat[ta].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    ta1.Text = tat[ta].ToString();
+                    ta++;
+                    ta2.Text = tat[ta].ToString();
+                    ta++;
+                    ta3.Text = tat[ta].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    ta1.Text = tat[ta].ToString();
+                    ta++;
+                    ta2.Text = tat[ta].ToString();
+                    ta++;
+                    ta3.Text = tat[ta].ToString();
+                    ta++;
+                    ta4.Text = tat[ta].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    ta1.Text = tat[ta].ToString();
+                    ta++;
+                    ta2.Text = tat[ta].ToString();
+                    ta++;
+                    ta3.Text = tat[ta].ToString();
+                    ta++;
+                    ta4.Text = tat[ta].ToString();
+                    ta++;
+                    ta5.Text = tat[ta].ToString();
+                }
+                else { }
             }
 
             //Display of Average Waiting Time
@@ -233,15 +588,51 @@ namespace FCFS
 
             if (aWT < n)
             {
-                tw1.Text = wt[aWT].ToString();
-                aWT++;
-                tw2.Text = wt[aWT].ToString();
-                aWT++;
-                tw3.Text = wt[aWT].ToString();
-                aWT++;
-                tw4.Text = wt[aWT].ToString();
-                aWT++;
-                tw5.Text = wt[aWT].ToString();
+                if (n == 1)
+                {
+                    tw1.Text = wt[aWT].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    tw1.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw2.Text = wt[aWT].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    tw1.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw2.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw3.Text = wt[aWT].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    tw1.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw2.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw3.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw4.Text = wt[aWT].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    tw1.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw2.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw3.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw4.Text = wt[aWT].ToString();
+                    aWT++;
+                    tw5.Text = wt[aWT].ToString();
+                }
+                else { }
             }
 
             //Display of Average Turn-Around Time
@@ -250,33 +641,69 @@ namespace FCFS
 
             if (aTAT < n)
             {
-                atat1.Text = tat[aTAT].ToString();
-                aTAT++;
-                atat2.Text = tat[aTAT].ToString();
-                aTAT++;
-                atat3.Text = tat[aTAT].ToString();
-                aTAT++;
-                atat4.Text = tat[aTAT].ToString();
-                aTAT++;
-                atat5.Text = tat[aTAT].ToString();
+                if (n == 1)
+                {
+                    atat1.Text = tat[aTAT].ToString();
+                }
+
+                else if (n == 2)
+                {
+                    atat1.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat2.Text = tat[aTAT].ToString();
+                }
+
+                else if (n == 3)
+                {
+                    atat1.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat2.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat3.Text = tat[aTAT].ToString();
+                }
+
+                else if (n == 4)
+                {
+                    atat1.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat2.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat3.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat4.Text = tat[aTAT].ToString();
+                }
+
+                else if (n == 5)
+                {
+                    atat1.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat2.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat3.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat4.Text = tat[aTAT].ToString();
+                    aTAT++;
+                    atat5.Text = tat[aTAT].ToString();
+                }
+                else { }
             }
         }
 
-        // Display AWT & ATAT
-        public void final(double fWT, double fTAT, int n)
-        {
-            finalAWT.Text = fWT.ToString();
-            fAWT.Text = fWT.ToString();
+            // Display AWT & ATAT
+            public void final(double fWT, double fTAT, int n)
+            {
+                finalAWT.Text = fWT.ToString() + " ms";
+                fAWT.Text = fWT.ToString() + " ms";
 
-            finalATAT.Text = fTAT.ToString();
-            fATAT.Text = fTAT.ToString();
+                finalATAT.Text = fTAT.ToString() + " ms";
+                fATAT.Text = fTAT.ToString() + " ms";
 
-            double AWT = fWT * n;
-            double ATAT = fTAT * n;
+                double AWT = fWT * n;
+                double ATAT = fTAT * n;
 
-            tot1.Text = AWT.ToString();
-            tot2.Text = ATAT.ToString();
-        }
+                tot1.Text = AWT.ToString();
+                tot2.Text = ATAT.ToString();
+            }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -297,6 +724,5 @@ namespace FCFS
         {
 
         }
-
     }
 }

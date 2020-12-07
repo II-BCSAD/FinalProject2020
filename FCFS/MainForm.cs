@@ -486,7 +486,6 @@ namespace FCFS
 
 
             callValTable();
-           // label3.Text = UnsortedfinalST.Select(x => x.ToString()).Aggregate((a, b) => a + " " + b);
             btnSTART.Enabled = false;
         }
         
@@ -908,7 +907,6 @@ namespace FCFS
             }
             else if (rbMultiple.Checked)
             {
-                //obj.startingTime(st, n);
                 obj.compute(UnsortedfinalProcess, finalWT, finalTAT, n);
                 obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, UnsortedfinalST, n);
                 obj.final(finalAWT, finalATAT, n);

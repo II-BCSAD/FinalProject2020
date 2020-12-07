@@ -34,7 +34,6 @@ namespace FCFS
             this.label45 = new System.Windows.Forms.Label();
             this.job4 = new System.Windows.Forms.Label();
             this.solATAT = new System.Windows.Forms.Panel();
-            this.label61 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
@@ -100,7 +99,6 @@ namespace FCFS
             this.label106 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
             this.label109 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.finalAWT = new System.Windows.Forms.Label();
             this.tot1 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -230,6 +228,8 @@ namespace FCFS
             this.label88 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBACK = new System.Windows.Forms.Button();
+            this.wt6 = new System.Windows.Forms.Label();
+            this.tat06 = new System.Windows.Forms.Label();
             this.solATAT.SuspendLayout();
             this.panel5.SuspendLayout();
             this.solAWT.SuspendLayout();
@@ -283,7 +283,7 @@ namespace FCFS
             // solATAT
             // 
             this.solATAT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.solATAT.Controls.Add(this.label61);
+            this.solATAT.Controls.Add(this.tat06);
             this.solATAT.Controls.Add(this.label95);
             this.solATAT.Controls.Add(this.label93);
             this.solATAT.Controls.Add(this.label85);
@@ -319,23 +319,13 @@ namespace FCFS
             this.solATAT.Controls.Add(this.tat01);
             this.solATAT.Controls.Add(this.label31);
             this.solATAT.Controls.Add(this.label22);
-            this.solATAT.Controls.Add(this.arrival2);
             this.solATAT.Controls.Add(this.tat3);
-            this.solATAT.Location = new System.Drawing.Point(763, 408);
+            this.solATAT.Controls.Add(this.arrival2);
+            this.solATAT.Location = new System.Drawing.Point(763, 396);
             this.solATAT.Margin = new System.Windows.Forms.Padding(4);
             this.solATAT.Name = "solATAT";
-            this.solATAT.Size = new System.Drawing.Size(573, 312);
+            this.solATAT.Size = new System.Drawing.Size(573, 300);
             this.solATAT.TabIndex = 12;
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(116, 197);
-            this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(20, 13);
-            this.label61.TabIndex = 106;
-            this.label61.Text = "ms";
             // 
             // label95
             // 
@@ -508,7 +498,7 @@ namespace FCFS
             // tot2
             // 
             this.tot2.AutoSize = true;
-            this.tot2.Location = new System.Drawing.Point(107, 114);
+            this.tot2.Location = new System.Drawing.Point(104, 114);
             this.tot2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tot2.Name = "tot2";
             this.tot2.Size = new System.Drawing.Size(13, 13);
@@ -597,9 +587,8 @@ namespace FCFS
             this.tat04.Location = new System.Drawing.Point(367, 25);
             this.tat04.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat04.Name = "tat04";
-            this.tat04.Size = new System.Drawing.Size(13, 13);
+            this.tat04.Size = new System.Drawing.Size(0, 13);
             this.tat04.TabIndex = 71;
-            this.tat04.Text = "0";
             // 
             // tat05
             // 
@@ -607,9 +596,8 @@ namespace FCFS
             this.tat05.Location = new System.Drawing.Point(467, 25);
             this.tat05.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat05.Name = "tat05";
-            this.tat05.Size = new System.Drawing.Size(13, 13);
+            this.tat05.Size = new System.Drawing.Size(0, 13);
             this.tat05.TabIndex = 70;
-            this.tat05.Text = "0";
             // 
             // tat03
             // 
@@ -677,9 +665,9 @@ namespace FCFS
             this.tat3.Location = new System.Drawing.Point(73, 36);
             this.tat3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat3.Name = "tat3";
-            this.tat3.Size = new System.Drawing.Size(355, 13);
+            this.tat3.Size = new System.Drawing.Size(469, 13);
             this.tat3.TabIndex = 75;
-            this.tat3.Text = "__________________________________________________________";
+            this.tat3.Text = "_____________________________________________________________________________";
             // 
             // btnExit
             // 
@@ -721,7 +709,7 @@ namespace FCFS
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.ForeColor = System.Drawing.Color.White;
-            this.label55.Location = new System.Drawing.Point(541, 5);
+            this.label55.Location = new System.Drawing.Point(609, 9);
             this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(179, 18);
@@ -774,9 +762,8 @@ namespace FCFS
             this.wt4.Location = new System.Drawing.Point(367, 34);
             this.wt4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wt4.Name = "wt4";
-            this.wt4.Size = new System.Drawing.Size(13, 13);
+            this.wt4.Size = new System.Drawing.Size(0, 13);
             this.wt4.TabIndex = 60;
-            this.wt4.Text = "0";
             // 
             // label39
             // 
@@ -784,9 +771,9 @@ namespace FCFS
             this.label39.Location = new System.Drawing.Point(69, 39);
             this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(355, 13);
+            this.label39.Size = new System.Drawing.Size(469, 13);
             this.label39.TabIndex = 65;
-            this.label39.Text = "__________________________________________________________";
+            this.label39.Text = "_____________________________________________________________________________";
             // 
             // label47
             // 
@@ -820,7 +807,9 @@ namespace FCFS
             // 
             // solAWT
             // 
+            this.solAWT.BackColor = System.Drawing.Color.White;
             this.solAWT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.solAWT.Controls.Add(this.wt6);
             this.solAWT.Controls.Add(this.label36);
             this.solAWT.Controls.Add(this.label37);
             this.solAWT.Controls.Add(this.label38);
@@ -840,7 +829,6 @@ namespace FCFS
             this.solAWT.Controls.Add(this.label106);
             this.solAWT.Controls.Add(this.label107);
             this.solAWT.Controls.Add(this.label109);
-            this.solAWT.Controls.Add(this.label35);
             this.solAWT.Controls.Add(this.finalAWT);
             this.solAWT.Controls.Add(this.tot1);
             this.solAWT.Controls.Add(this.label51);
@@ -860,10 +848,10 @@ namespace FCFS
             this.solAWT.Controls.Add(this.label21);
             this.solAWT.Controls.Add(this.arrival1);
             this.solAWT.Controls.Add(this.label39);
-            this.solAWT.Location = new System.Drawing.Point(763, 77);
+            this.solAWT.Location = new System.Drawing.Point(763, 70);
             this.solAWT.Margin = new System.Windows.Forms.Padding(4);
             this.solAWT.Name = "solAWT";
-            this.solAWT.Size = new System.Drawing.Size(573, 312);
+            this.solAWT.Size = new System.Drawing.Size(573, 300);
             this.solAWT.TabIndex = 11;
             // 
             // label36
@@ -1070,16 +1058,6 @@ namespace FCFS
             this.label109.TabIndex = 110;
             this.label109.Text = "+";
             // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(116, 197);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(20, 13);
-            this.label35.TabIndex = 107;
-            this.label35.Text = "ms";
-            // 
             // finalAWT
             // 
             this.finalAWT.AutoSize = true;
@@ -1093,7 +1071,7 @@ namespace FCFS
             // tot1
             // 
             this.tot1.AutoSize = true;
-            this.tot1.Location = new System.Drawing.Point(107, 114);
+            this.tot1.Location = new System.Drawing.Point(104, 114);
             this.tot1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tot1.Name = "tot1";
             this.tot1.Size = new System.Drawing.Size(13, 13);
@@ -1146,9 +1124,8 @@ namespace FCFS
             this.wt5.Location = new System.Drawing.Point(467, 34);
             this.wt5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wt5.Name = "wt5";
-            this.wt5.Size = new System.Drawing.Size(13, 13);
+            this.wt5.Size = new System.Drawing.Size(0, 13);
             this.wt5.TabIndex = 59;
-            this.wt5.Text = "0";
             // 
             // wt2
             // 
@@ -1195,7 +1172,7 @@ namespace FCFS
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(588, 2);
+            this.label1.Location = new System.Drawing.Point(643, 4);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 16);
@@ -1374,7 +1351,7 @@ namespace FCFS
             this.groupBox_SF1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_SF1.Name = "groupBox_SF1";
             this.groupBox_SF1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_SF1.Size = new System.Drawing.Size(712, 313);
+            this.groupBox_SF1.Size = new System.Drawing.Size(712, 300);
             this.groupBox_SF1.TabIndex = 7;
             this.groupBox_SF1.TabStop = false;
             this.groupBox_SF1.Text = "COMPUTATION FOR AVERAGE WAITING TIME";
@@ -2425,11 +2402,11 @@ namespace FCFS
             this.groupBox_SF2.Controls.Add(this.label5);
             this.groupBox_SF2.Controls.Add(this.label84);
             this.groupBox_SF2.Controls.Add(this.atat5);
-            this.groupBox_SF2.Location = new System.Drawing.Point(29, 401);
+            this.groupBox_SF2.Location = new System.Drawing.Point(29, 396);
             this.groupBox_SF2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox_SF2.Name = "groupBox_SF2";
             this.groupBox_SF2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox_SF2.Size = new System.Drawing.Size(712, 313);
+            this.groupBox_SF2.Size = new System.Drawing.Size(712, 300);
             this.groupBox_SF2.TabIndex = 8;
             this.groupBox_SF2.TabStop = false;
             this.groupBox_SF2.Text = "COMPUTATION FOR AVERAGE TURN-AROUND TIME";
@@ -2493,21 +2470,41 @@ namespace FCFS
             this.btnBACK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBACK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBACK.ForeColor = System.Drawing.Color.White;
-            this.btnBACK.Location = new System.Drawing.Point(666, 728);
+            this.btnBACK.Location = new System.Drawing.Point(621, 707);
             this.btnBACK.Margin = new System.Windows.Forms.Padding(4);
             this.btnBACK.Name = "btnBACK";
-            this.btnBACK.Size = new System.Drawing.Size(131, 38);
+            this.btnBACK.Size = new System.Drawing.Size(120, 30);
             this.btnBACK.TabIndex = 9;
             this.btnBACK.Text = "BACK";
             this.btnBACK.UseVisualStyleBackColor = false;
             this.btnBACK.Click += new System.EventHandler(this.btnBACK_Click_2);
+            // 
+            // wt6
+            // 
+            this.wt6.AutoSize = true;
+            this.wt6.Location = new System.Drawing.Point(73, 252);
+            this.wt6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.wt6.Name = "wt6";
+            this.wt6.Size = new System.Drawing.Size(10, 13);
+            this.wt6.TabIndex = 129;
+            this.wt6.Text = ".";
+            // 
+            // tat06
+            // 
+            this.tat06.AutoSize = true;
+            this.tat06.Location = new System.Drawing.Point(83, 259);
+            this.tat06.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.tat06.Name = "tat06";
+            this.tat06.Size = new System.Drawing.Size(10, 13);
+            this.tat06.TabIndex = 130;
+            this.tat06.Text = ".";
             // 
             // SolutionForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1360, 790);
+            this.ClientSize = new System.Drawing.Size(1360, 750);
             this.Controls.Add(this.solATAT);
             this.Controls.Add(this.solAWT);
             this.Controls.Add(this.panel1);
@@ -2517,8 +2514,8 @@ namespace FCFS
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1360, 790);
-            this.MinimumSize = new System.Drawing.Size(1360, 790);
+            this.MaximumSize = new System.Drawing.Size(1360, 750);
+            this.MinimumSize = new System.Drawing.Size(1360, 736);
             this.Name = "SolutionForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Solution Form";
@@ -2719,10 +2716,8 @@ namespace FCFS
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
@@ -2745,5 +2740,7 @@ namespace FCFS
         private System.Windows.Forms.Button btnBACK;
         private System.Windows.Forms.Label arrival2;
         private System.Windows.Forms.Label arrival1;
+        private System.Windows.Forms.Label wt6;
+        private System.Windows.Forms.Label tat06;
     }
 }
