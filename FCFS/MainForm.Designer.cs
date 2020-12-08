@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lowPanel = new System.Windows.Forms.Panel();
             this.btnRestart = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -80,12 +81,6 @@
             this.lb_awt = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colProcess = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colComp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
@@ -112,6 +107,12 @@
             this.rq1 = new System.Windows.Forms.Panel();
             this.lbRq1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.colProcess = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colComp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lowPanel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panelCPU.SuspendLayout();
@@ -240,7 +241,7 @@
             this.lbT6.Location = new System.Drawing.Point(599, 117);
             this.lbT6.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbT6.Name = "lbT6";
-            this.lbT6.Size = new System.Drawing.Size(27, 24);
+            this.lbT6.Size = new System.Drawing.Size(35, 29);
             this.lbT6.TabIndex = 1;
             this.lbT6.Text = "lb";
             this.lbT6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -253,7 +254,7 @@
             this.lbT5.Location = new System.Drawing.Point(515, 117);
             this.lbT5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbT5.Name = "lbT5";
-            this.lbT5.Size = new System.Drawing.Size(27, 24);
+            this.lbT5.Size = new System.Drawing.Size(35, 29);
             this.lbT5.TabIndex = 1;
             this.lbT5.Text = "lb";
             this.lbT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,7 +267,7 @@
             this.lbT4.Location = new System.Drawing.Point(431, 117);
             this.lbT4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbT4.Name = "lbT4";
-            this.lbT4.Size = new System.Drawing.Size(27, 24);
+            this.lbT4.Size = new System.Drawing.Size(35, 29);
             this.lbT4.TabIndex = 1;
             this.lbT4.Text = "lb";
             this.lbT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -279,7 +280,7 @@
             this.lbT3.Location = new System.Drawing.Point(345, 117);
             this.lbT3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbT3.Name = "lbT3";
-            this.lbT3.Size = new System.Drawing.Size(27, 24);
+            this.lbT3.Size = new System.Drawing.Size(35, 29);
             this.lbT3.TabIndex = 1;
             this.lbT3.Text = "lb";
             this.lbT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -292,7 +293,7 @@
             this.lbT2.Location = new System.Drawing.Point(261, 117);
             this.lbT2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbT2.Name = "lbT2";
-            this.lbT2.Size = new System.Drawing.Size(27, 24);
+            this.lbT2.Size = new System.Drawing.Size(35, 29);
             this.lbT2.TabIndex = 1;
             this.lbT2.Text = "lb";
             this.lbT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -305,7 +306,7 @@
             this.lbT1.Location = new System.Drawing.Point(178, 117);
             this.lbT1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbT1.Name = "lbT1";
-            this.lbT1.Size = new System.Drawing.Size(27, 24);
+            this.lbT1.Size = new System.Drawing.Size(35, 29);
             this.lbT1.TabIndex = 1;
             this.lbT1.Text = "lb";
             this.lbT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -335,7 +336,7 @@
             this.lbCPU.Location = new System.Drawing.Point(7, 28);
             this.lbCPU.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbCPU.Name = "lbCPU";
-            this.lbCPU.Size = new System.Drawing.Size(51, 24);
+            this.lbCPU.Size = new System.Drawing.Size(66, 29);
             this.lbCPU.TabIndex = 1;
             this.lbCPU.Text = "CPU";
             this.lbCPU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -359,7 +360,7 @@
             this.lblBT5.Location = new System.Drawing.Point(51, 51);
             this.lblBT5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblBT5.Name = "lblBT5";
-            this.lblBT5.Size = new System.Drawing.Size(21, 22);
+            this.lblBT5.Size = new System.Drawing.Size(25, 26);
             this.lblBT5.TabIndex = 1;
             this.lblBT5.Text = "5";
             this.lblBT5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -372,7 +373,7 @@
             this.lbProcess5.Location = new System.Drawing.Point(26, 20);
             this.lbProcess5.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbProcess5.Name = "lbProcess5";
-            this.lbProcess5.Size = new System.Drawing.Size(27, 29);
+            this.lbProcess5.Size = new System.Drawing.Size(33, 36);
             this.lbProcess5.TabIndex = 1;
             this.lbProcess5.Text = "5";
             this.lbProcess5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -396,7 +397,7 @@
             this.lblBT4.Location = new System.Drawing.Point(51, 51);
             this.lblBT4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblBT4.Name = "lblBT4";
-            this.lblBT4.Size = new System.Drawing.Size(21, 22);
+            this.lblBT4.Size = new System.Drawing.Size(25, 26);
             this.lblBT4.TabIndex = 1;
             this.lblBT4.Text = "4";
             this.lblBT4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -409,7 +410,7 @@
             this.lbProcess4.Location = new System.Drawing.Point(28, 20);
             this.lbProcess4.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbProcess4.Name = "lbProcess4";
-            this.lbProcess4.Size = new System.Drawing.Size(27, 29);
+            this.lbProcess4.Size = new System.Drawing.Size(33, 36);
             this.lbProcess4.TabIndex = 1;
             this.lbProcess4.Text = "4";
             this.lbProcess4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -433,7 +434,7 @@
             this.lblBT3.Location = new System.Drawing.Point(51, 51);
             this.lblBT3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblBT3.Name = "lblBT3";
-            this.lblBT3.Size = new System.Drawing.Size(21, 22);
+            this.lblBT3.Size = new System.Drawing.Size(25, 26);
             this.lblBT3.TabIndex = 1;
             this.lblBT3.Text = "3";
             this.lblBT3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -446,7 +447,7 @@
             this.lbProcess3.Location = new System.Drawing.Point(28, 20);
             this.lbProcess3.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbProcess3.Name = "lbProcess3";
-            this.lbProcess3.Size = new System.Drawing.Size(27, 29);
+            this.lbProcess3.Size = new System.Drawing.Size(33, 36);
             this.lbProcess3.TabIndex = 1;
             this.lbProcess3.Text = "3";
             this.lbProcess3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -470,7 +471,7 @@
             this.lblBT2.Location = new System.Drawing.Point(51, 51);
             this.lblBT2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblBT2.Name = "lblBT2";
-            this.lblBT2.Size = new System.Drawing.Size(21, 22);
+            this.lblBT2.Size = new System.Drawing.Size(25, 26);
             this.lblBT2.TabIndex = 1;
             this.lblBT2.Text = "2";
             this.lblBT2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -483,7 +484,7 @@
             this.lbProcess2.Location = new System.Drawing.Point(27, 20);
             this.lbProcess2.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbProcess2.Name = "lbProcess2";
-            this.lbProcess2.Size = new System.Drawing.Size(27, 29);
+            this.lbProcess2.Size = new System.Drawing.Size(33, 36);
             this.lbProcess2.TabIndex = 1;
             this.lbProcess2.Text = "2";
             this.lbProcess2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -507,7 +508,7 @@
             this.lblBT1.Location = new System.Drawing.Point(51, 51);
             this.lblBT1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lblBT1.Name = "lblBT1";
-            this.lblBT1.Size = new System.Drawing.Size(21, 22);
+            this.lblBT1.Size = new System.Drawing.Size(25, 26);
             this.lblBT1.TabIndex = 1;
             this.lblBT1.Text = "1";
             this.lblBT1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -520,7 +521,7 @@
             this.lbProcess1.Location = new System.Drawing.Point(26, 20);
             this.lbProcess1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.lbProcess1.Name = "lbProcess1";
-            this.lbProcess1.Size = new System.Drawing.Size(27, 29);
+            this.lbProcess1.Size = new System.Drawing.Size(33, 36);
             this.lbProcess1.TabIndex = 1;
             this.lbProcess1.Text = "1";
             this.lbProcess1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -608,7 +609,7 @@
             this.tbATAT.Location = new System.Drawing.Point(7, 85);
             this.tbATAT.Margin = new System.Windows.Forms.Padding(5);
             this.tbATAT.Name = "tbATAT";
-            this.tbATAT.Size = new System.Drawing.Size(91, 21);
+            this.tbATAT.Size = new System.Drawing.Size(91, 24);
             this.tbATAT.TabIndex = 1;
             // 
             // tbAWT
@@ -617,7 +618,7 @@
             this.tbAWT.Location = new System.Drawing.Point(6, 40);
             this.tbAWT.Margin = new System.Windows.Forms.Padding(5);
             this.tbAWT.Name = "tbAWT";
-            this.tbAWT.Size = new System.Drawing.Size(92, 21);
+            this.tbAWT.Size = new System.Drawing.Size(92, 24);
             this.tbAWT.TabIndex = 1;
             // 
             // lblTAT
@@ -627,7 +628,7 @@
             this.lblTAT.Location = new System.Drawing.Point(2, 69);
             this.lblTAT.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTAT.Name = "lblTAT";
-            this.lblTAT.Size = new System.Drawing.Size(117, 13);
+            this.lblTAT.Size = new System.Drawing.Size(148, 17);
             this.lblTAT.TabIndex = 0;
             this.lblTAT.Text = "TURN-AROUND TIME";
             this.lblTAT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -639,7 +640,7 @@
             this.lb_awt.Location = new System.Drawing.Point(2, 25);
             this.lb_awt.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lb_awt.Name = "lb_awt";
-            this.lb_awt.Size = new System.Drawing.Size(80, 13);
+            this.lb_awt.Size = new System.Drawing.Size(99, 17);
             this.lb_awt.TabIndex = 0;
             this.lb_awt.Text = "WATING TIME";
             this.lb_awt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -666,20 +667,20 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle42.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(166)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colProcess,
@@ -688,6 +689,14 @@
             this.colWT,
             this.colTAT,
             this.colComp});
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(215)))), ((int)(((byte)(216)))));
             this.dataGridView1.Location = new System.Drawing.Point(17, 35);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
@@ -703,71 +712,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(600, 160);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // colProcess
-            // 
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colProcess.DefaultCellStyle = dataGridViewCellStyle43;
-            this.colProcess.HeaderText = "PROCESS";
-            this.colProcess.MaxInputLength = 3;
-            this.colProcess.MinimumWidth = 6;
-            this.colProcess.Name = "colProcess";
-            this.colProcess.ReadOnly = true;
-            this.colProcess.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colProcess.Width = 87;
-            // 
-            // colAT
-            // 
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.colAT.DefaultCellStyle = dataGridViewCellStyle44;
-            this.colAT.HeaderText = "ARRIVAL TIME (AT)";
-            this.colAT.MaxInputLength = 3;
-            this.colAT.MinimumWidth = 6;
-            this.colAT.Name = "colAT";
-            this.colAT.ReadOnly = true;
-            this.colAT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // colBT
-            // 
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colBT.DefaultCellStyle = dataGridViewCellStyle45;
-            this.colBT.HeaderText = "BURST TIME (BT)";
-            this.colBT.MaxInputLength = 3;
-            this.colBT.MinimumWidth = 6;
-            this.colBT.Name = "colBT";
-            this.colBT.ReadOnly = true;
-            // 
-            // colWT
-            // 
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colWT.DefaultCellStyle = dataGridViewCellStyle46;
-            this.colWT.HeaderText = "WAITING TIME";
-            this.colWT.MaxInputLength = 3;
-            this.colWT.MinimumWidth = 6;
-            this.colWT.Name = "colWT";
-            this.colWT.ReadOnly = true;
-            // 
-            // colTAT
-            // 
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colTAT.DefaultCellStyle = dataGridViewCellStyle47;
-            this.colTAT.HeaderText = "TURN-AROUND TIME";
-            this.colTAT.MaxInputLength = 3;
-            this.colTAT.MinimumWidth = 6;
-            this.colTAT.Name = "colTAT";
-            this.colTAT.ReadOnly = true;
-            this.colTAT.Width = 110;
-            // 
-            // colComp
-            // 
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colComp.DefaultCellStyle = dataGridViewCellStyle48;
-            this.colComp.HeaderText = "FINISHING TIME";
-            this.colComp.MaxInputLength = 3;
-            this.colComp.MinimumWidth = 6;
-            this.colComp.Name = "colComp";
-            this.colComp.ReadOnly = true;
-            this.colComp.Width = 102;
             // 
             // panel4
             // 
@@ -793,7 +737,7 @@
             this.label1.Location = new System.Drawing.Point(303, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 18);
+            this.label1.Size = new System.Drawing.Size(217, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "First Come First Serve";
             // 
@@ -822,7 +766,7 @@
             this.inBT.Margin = new System.Windows.Forms.Padding(5);
             this.inBT.MaxLength = 3;
             this.inBT.Name = "inBT";
-            this.inBT.Size = new System.Drawing.Size(87, 19);
+            this.inBT.Size = new System.Drawing.Size(87, 22);
             this.inBT.TabIndex = 2;
             // 
             // lb_AT
@@ -832,7 +776,7 @@
             this.lb_AT.Location = new System.Drawing.Point(159, 56);
             this.lb_AT.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lb_AT.Name = "lb_AT";
-            this.lb_AT.Size = new System.Drawing.Size(82, 13);
+            this.lb_AT.Size = new System.Drawing.Size(102, 17);
             this.lb_AT.TabIndex = 0;
             this.lb_AT.Text = "ARRIVAL TIME";
             // 
@@ -843,7 +787,7 @@
             this.lb_process.Location = new System.Drawing.Point(159, 31);
             this.lb_process.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lb_process.Name = "lb_process";
-            this.lb_process.Size = new System.Drawing.Size(58, 13);
+            this.lb_process.Size = new System.Drawing.Size(74, 17);
             this.lb_process.TabIndex = 0;
             this.lb_process.Text = "PROCESS";
             // 
@@ -854,7 +798,7 @@
             this.lbBT.Location = new System.Drawing.Point(159, 81);
             this.lbBT.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbBT.Name = "lbBT";
-            this.lbBT.Size = new System.Drawing.Size(73, 13);
+            this.lbBT.Size = new System.Drawing.Size(91, 17);
             this.lbBT.TabIndex = 0;
             this.lbBT.Text = "BURST TIME";
             // 
@@ -865,7 +809,7 @@
             this.inProcess.Margin = new System.Windows.Forms.Padding(5);
             this.inProcess.MaxLength = 1;
             this.inProcess.Name = "inProcess";
-            this.inProcess.Size = new System.Drawing.Size(87, 19);
+            this.inProcess.Size = new System.Drawing.Size(87, 22);
             this.inProcess.TabIndex = 0;
             // 
             // inAT
@@ -875,7 +819,7 @@
             this.inAT.Margin = new System.Windows.Forms.Padding(5);
             this.inAT.MaxLength = 2;
             this.inAT.Name = "inAT";
-            this.inAT.Size = new System.Drawing.Size(87, 19);
+            this.inAT.Size = new System.Drawing.Size(87, 22);
             this.inAT.TabIndex = 1;
             // 
             // btnADD
@@ -948,7 +892,7 @@
             this.rbMultiple.Location = new System.Drawing.Point(14, 50);
             this.rbMultiple.Margin = new System.Windows.Forms.Padding(5);
             this.rbMultiple.Name = "rbMultiple";
-            this.rbMultiple.Size = new System.Drawing.Size(81, 17);
+            this.rbMultiple.Size = new System.Drawing.Size(100, 21);
             this.rbMultiple.TabIndex = 0;
             this.rbMultiple.TabStop = true;
             this.rbMultiple.Text = " MULTIPLE";
@@ -960,7 +904,7 @@
             this.rbSingle.Location = new System.Drawing.Point(14, 26);
             this.rbSingle.Margin = new System.Windows.Forms.Padding(5);
             this.rbSingle.Name = "rbSingle";
-            this.rbSingle.Size = new System.Drawing.Size(64, 17);
+            this.rbSingle.Size = new System.Drawing.Size(79, 21);
             this.rbSingle.TabIndex = 0;
             this.rbSingle.TabStop = true;
             this.rbSingle.Text = "SINGLE";
@@ -1010,7 +954,7 @@
             this.lbRq4.Location = new System.Drawing.Point(8, 19);
             this.lbRq4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbRq4.Name = "lbRq4";
-            this.lbRq4.Size = new System.Drawing.Size(24, 25);
+            this.lbRq4.Size = new System.Drawing.Size(28, 29);
             this.lbRq4.TabIndex = 0;
             this.lbRq4.Text = "1";
             this.lbRq4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1032,7 +976,7 @@
             this.lbRq3.Location = new System.Drawing.Point(8, 19);
             this.lbRq3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbRq3.Name = "lbRq3";
-            this.lbRq3.Size = new System.Drawing.Size(24, 25);
+            this.lbRq3.Size = new System.Drawing.Size(28, 29);
             this.lbRq3.TabIndex = 0;
             this.lbRq3.Text = "1";
             this.lbRq3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1054,7 +998,7 @@
             this.lbRq2.Location = new System.Drawing.Point(8, 19);
             this.lbRq2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbRq2.Name = "lbRq2";
-            this.lbRq2.Size = new System.Drawing.Size(24, 25);
+            this.lbRq2.Size = new System.Drawing.Size(28, 29);
             this.lbRq2.TabIndex = 0;
             this.lbRq2.Text = "1";
             this.lbRq2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1076,7 +1020,7 @@
             this.lbRq1.Location = new System.Drawing.Point(8, 19);
             this.lbRq1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbRq1.Name = "lbRq1";
-            this.lbRq1.Size = new System.Drawing.Size(24, 25);
+            this.lbRq1.Size = new System.Drawing.Size(28, 29);
             this.lbRq1.TabIndex = 0;
             this.lbRq1.Text = "1";
             this.lbRq1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1084,6 +1028,71 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // colProcess
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colProcess.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colProcess.HeaderText = "PROCESS";
+            this.colProcess.MaxInputLength = 3;
+            this.colProcess.MinimumWidth = 6;
+            this.colProcess.Name = "colProcess";
+            this.colProcess.ReadOnly = true;
+            this.colProcess.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colProcess.Width = 87;
+            // 
+            // colAT
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.colAT.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colAT.HeaderText = "ARRIVAL TIME (AT)";
+            this.colAT.MaxInputLength = 3;
+            this.colAT.MinimumWidth = 6;
+            this.colAT.Name = "colAT";
+            this.colAT.ReadOnly = true;
+            this.colAT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // colBT
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colBT.DefaultCellStyle = dataGridViewCellStyle5;
+            this.colBT.HeaderText = "BURST TIME (BT)";
+            this.colBT.MaxInputLength = 3;
+            this.colBT.MinimumWidth = 6;
+            this.colBT.Name = "colBT";
+            this.colBT.ReadOnly = true;
+            // 
+            // colWT
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colWT.DefaultCellStyle = dataGridViewCellStyle6;
+            this.colWT.HeaderText = "WAITING TIME";
+            this.colWT.MaxInputLength = 3;
+            this.colWT.MinimumWidth = 6;
+            this.colWT.Name = "colWT";
+            this.colWT.ReadOnly = true;
+            // 
+            // colTAT
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colTAT.DefaultCellStyle = dataGridViewCellStyle7;
+            this.colTAT.HeaderText = "TURN-AROUND TIME";
+            this.colTAT.MaxInputLength = 3;
+            this.colTAT.MinimumWidth = 6;
+            this.colTAT.Name = "colTAT";
+            this.colTAT.ReadOnly = true;
+            this.colTAT.Width = 110;
+            // 
+            // colComp
+            // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colComp.DefaultCellStyle = dataGridViewCellStyle8;
+            this.colComp.HeaderText = "FINISHING TIME";
+            this.colComp.MaxInputLength = 3;
+            this.colComp.MinimumWidth = 6;
+            this.colComp.Name = "colComp";
+            this.colComp.ReadOnly = true;
+            this.colComp.Width = 102;
             // 
             // fcfsForm
             // 

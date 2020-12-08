@@ -122,7 +122,7 @@ namespace FCFS
 
             DataRow row = ss.NewRow();
 
-            //input validation
+            //input validation (lines 127 -197)
            
             string msg = "", btmsg="", atmsg="";
             selectRB();
@@ -167,7 +167,19 @@ namespace FCFS
                 count = 1;
                 msg = "• Invalid input for Process field.\n";
             }
-            
+           
+            //validation for same proccess name - not working
+            /*if(nRow > 1)
+            {
+                for (int r = 1; r < nRow; r++)
+                {
+                    if (inProcess.Text == dataGridView1.Rows[r].Cells[0].Value.ToString())
+                    {
+                        msg = "• Input in Process Field already exists.\n";
+                    }
+                }
+            }*/
+           
             if (rbcount == 2)
             {
                 if (!String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
@@ -397,7 +409,7 @@ namespace FCFS
                 UnsortedfinalAT[i] = atArr[i];
             }
 
-            //sorting by AT when Multiple Queueing
+            //sorting by AT when Multiple Queueing (Bubble Sort)
 
             if (rbMultiple.Checked)
             {
@@ -446,7 +458,7 @@ namespace FCFS
             
             findAvgTime(p1, p, bt1, at1);
 
-            // sorting by user input order
+            // sorting by user input order (Selection Sort)
             if (rbMultiple.Checked)
             {
                 int size = qOrder.Length;
@@ -485,7 +497,7 @@ namespace FCFS
             }
 
 
-            callValTable();
+            delayDisplay();
             btnSTART.Enabled = false;
         }
         
@@ -581,8 +593,8 @@ namespace FCFS
 
         }
 
-        // delayed display 
-        public async void callValTable()
+        // displaying rows, gantt chart, ready queue 
+        public async void delayDisplay()
         {
 
             panelCPU.BackColor = Color.FromArgb(46, 47, 51);
@@ -594,7 +606,7 @@ namespace FCFS
             {
                 timer1.Enabled = true;
                 timeSt = i;
-                secs = finalBT[i] * 250;
+                secs = finalBT[i] * 200;
                 timer1.Interval = 500;
                 if (timeSt == 0)
                 {
@@ -802,6 +814,10 @@ namespace FCFS
                 if (progressBar1.Value != finalBT[timeSt])
                 {
                     progressBar1.Value++;
+                    if (progressBar1.Value == finalBT[timeSt])
+                    {
+                        progressBar1.Value = finalBT[timeSt];
+                    }
                 }
                 else
                 {
@@ -815,6 +831,10 @@ namespace FCFS
                 if (progressBar2.Value != finalBT[timeSt])
                 {
                     progressBar2.Value++;
+                    if (progressBar2.Value == finalBT[timeSt])
+                    {
+                        progressBar2.Value = finalBT[timeSt];
+                    }
                 }
                 else
                 {
@@ -828,6 +848,10 @@ namespace FCFS
                 if (progressBar3.Value != finalBT[timeSt])
                 {
                     progressBar3.Value++;
+                    if (progressBar3.Value == finalBT[timeSt])
+                    {
+                        progressBar3.Value = finalBT[timeSt];
+                    }
                 }
                 else
                 {
@@ -847,6 +871,10 @@ namespace FCFS
                 if (progressBar4.Value != finalBT[timeSt])
                 {
                     progressBar4.Value++;
+                    if (progressBar4.Value == finalBT[timeSt])
+                    {
+                        progressBar4.Value = finalBT[timeSt];
+                    }
                 }
                 else
                 {
@@ -866,6 +894,10 @@ namespace FCFS
                 if (progressBar5.Value != finalBT[timeSt])
                 {
                     progressBar5.Value++;
+                    if (progressBar5.Value == finalBT[timeSt])
+                    {
+                        progressBar5.Value = finalBT[timeSt];
+                    }
                 }
                 else
                 {
@@ -880,7 +912,7 @@ namespace FCFS
 
         private void TimerMethod()
         {
-            if (secs == finalBT[timeSt] * 250)
+            if (secs == finalBT[timeSt] * 200)
             {
                 for (int i = timeSt; i < timeSt + 1; i++)
                 {
@@ -907,6 +939,7 @@ namespace FCFS
             }
             else if (rbMultiple.Checked)
             {
+                //obj.startingTime(st, n);
                 obj.compute(UnsortedfinalProcess, finalWT, finalTAT, n);
                 obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, UnsortedfinalST, n);
                 obj.final(finalAWT, finalATAT, n);

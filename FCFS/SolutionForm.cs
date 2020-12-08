@@ -52,18 +52,7 @@ namespace FCFS
 
             if (i < n)
             {
-                if (n == 1)
-                {
-                    wt1.Text = at[i].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    wt1.Text = at[i].ToString();
-                    wt2.Text = ct[i].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     wt1.Text = at[i].ToString();
                     wt2.Text = ct[i].ToString();
@@ -96,7 +85,7 @@ namespace FCFS
 
             arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                               " + b);
            //try lang hehe
-            wt6.Text = st.Select(x => x.ToString()).Aggregate((a, b) => "( " + a + " - " + "       " + " )" + "                          " + "( " + b);
+            //wt6.Text = st.Select(x => x.ToString()).Aggregate((a, b) => "( " + a + " - " + "       " + " )" + "                          " + "( " + b);
 
             //Start Time in Computation Table
 
@@ -104,19 +93,7 @@ namespace FCFS
 
             if (s < n)
             {
-                if (n == 1)
-                {
-                    st1.Text = st[s].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    st1.Text = st[s].ToString();
-                    s++;
-                    st2.Text = st[s].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     st1.Text = st[s].ToString();
                     s++;
@@ -151,25 +128,13 @@ namespace FCFS
 
             arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                               " + b);
             //try lang 
-            tat06.Text = ct.Select(x => x.ToString()).Aggregate((a, b) => a + " - " + "       " + " )" + "                          " + "( " + b );
+            //tat06.Text = ct.Select(x => x.ToString()).Aggregate((a, b) => a + " - " + "       " + " )" + "                          " + "( " + b );
 
             int t = 0;
 
             if (t < n)
             {
-                if (n == 1)
-                {
-                    tat01.Text = ct[t].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    tat01.Text = ct[t].ToString();
-                    t++;
-                    tat02.Text = ct[t].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     tat01.Text = ct[t].ToString();
                     t++;
@@ -208,19 +173,7 @@ namespace FCFS
 
             if (f < n)
             {
-                if (n == 1)
-                {
-                    ft1.Text = ct[f].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    ft1.Text = ct[f].ToString();
-                    f++;
-                    ft2.Text = ct[f].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     ft1.Text = ct[f].ToString();
                     f++;
@@ -261,19 +214,7 @@ namespace FCFS
 
             if (ar < n)
             {
-                if (n == 1)
-                {
-                    at1.Text = at[ar].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    at1.Text = at[ar].ToString();
-                    ar++;
-                    at2.Text = at[ar].ToString();
-                }
-
-                else if (n == 3)
+               if (n == 3)
                 {
                     at1.Text = at[ar].ToString();
                     ar++;
@@ -312,19 +253,7 @@ namespace FCFS
 
             if (arT < n)
             {
-                if (n == 1)
-                {
-                    arT1.Text = at[arT].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    arT1.Text = at[arT].ToString();
-                    arT++;
-                    arT2.Text = at[arT].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     arT1.Text = at[arT].ToString();
                     arT++;
@@ -378,19 +307,7 @@ namespace FCFS
 
             if (pr < n)
             {
-                if (n == 1)
-                {
-                    pr1.Text = process[pr].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    pr1.Text = process[pr].ToString();
-                    pr++;
-                    pr2.Text = process[pr].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     pr1.Text = process[pr].ToString();
                     pr++;
@@ -429,19 +346,7 @@ namespace FCFS
 
             if (p < n)
             {
-                if (n == 1)
-                {
-                    p1.Text = process[p].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    p1.Text = process[p].ToString();
-                    p++;
-                    p2.Text = process[p].ToString();
-                }
-
-                else if (n == 3)
+               if (n == 3)
                 {
                     p1.Text = process[p].ToString();
                     p++;
@@ -482,19 +387,7 @@ namespace FCFS
 
             if (w < n)
             {
-                if (n == 1)
-                {
-                    wait1.Text = wt[w].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    wait1.Text = wt[w].ToString();
-                    w++;
-                    wait2.Text = wt[w].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     wait1.Text = wt[w].ToString();
                     w++;
@@ -535,19 +428,7 @@ namespace FCFS
 
             if (ta < n)
             {
-                if (n == 1)
-                {
-                    ta1.Text = tat[ta].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    ta1.Text = tat[ta].ToString();
-                    ta++;
-                    ta2.Text = tat[ta].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     ta1.Text = tat[ta].ToString();
                     ta++;
@@ -588,19 +469,7 @@ namespace FCFS
 
             if (aWT < n)
             {
-                if (n == 1)
-                {
-                    tw1.Text = wt[aWT].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    tw1.Text = wt[aWT].ToString();
-                    aWT++;
-                    tw2.Text = wt[aWT].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     tw1.Text = wt[aWT].ToString();
                     aWT++;
@@ -641,19 +510,7 @@ namespace FCFS
 
             if (aTAT < n)
             {
-                if (n == 1)
-                {
-                    atat1.Text = tat[aTAT].ToString();
-                }
-
-                else if (n == 2)
-                {
-                    atat1.Text = tat[aTAT].ToString();
-                    aTAT++;
-                    atat2.Text = tat[aTAT].ToString();
-                }
-
-                else if (n == 3)
+                if (n == 3)
                 {
                     atat1.Text = tat[aTAT].ToString();
                     aTAT++;
@@ -685,7 +542,6 @@ namespace FCFS
                     aTAT++;
                     atat5.Text = tat[aTAT].ToString();
                 }
-                else { }
             }
         }
 
