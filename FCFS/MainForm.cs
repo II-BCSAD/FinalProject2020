@@ -48,6 +48,8 @@ namespace FCFS
             progressBar3.Hide();
             progressBar4.Hide();
             progressBar5.Hide();
+
+            //pictureBox1.Visible = false;
         }
 
         private void panel4_MouseDown(object sender, MouseEventArgs e)
@@ -72,6 +74,8 @@ namespace FCFS
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form1 frm1 = new Form1();
+            frm1.Close();
         }
         private void checkRB()
         {          
@@ -225,6 +229,7 @@ namespace FCFS
                 row["PROCESS"] = inProcess.Text;
                 row["BURST TIME (BT)"] = inBT.Text;
                 grpQueue.Enabled = false;
+
                 if (nRow == 1)
                 {
                     if(rbMultiple.Checked == true)
@@ -370,6 +375,14 @@ namespace FCFS
 
         public void btnSTART_Click(object sender, EventArgs e)
         {
+            pictureBox1.Visible = true;
+            pictureBox1.Enabled = true;
+            pictureBox2.Visible = true;
+            pictureBox2.Enabled = true;
+            pictureBox3.Visible = true;
+            pictureBox3.Enabled = true;
+            panel5.Visible = true;
+
             transferValuesToArray();
             inputPanel.Enabled = false;
             btnDELETE.Enabled = false;       
@@ -588,6 +601,48 @@ namespace FCFS
             btArr = burstTime.ToArray();
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lowPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 frm1 = new Form1();
+            frm1.Close();
+        }
+
+        private void rbSingle_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inProcess_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void fcfsForm_Load(object sender, EventArgs e)
         {
 
@@ -597,8 +652,9 @@ namespace FCFS
         public async void delayDisplay()
         {
 
-            panelCPU.BackColor = Color.FromArgb(46, 47, 51);
-            panelbar.BackColor = Color.LightGray;
+            panelCPU.BackColor = Color.FromArgb(189, 116, 172);
+            panel3.BackgroundImage = Image.FromFile(System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal) + @"\kay1.png");
+           
 
             if (timeSt == 0) await Task.Delay(500);
 
@@ -805,6 +861,13 @@ namespace FCFS
             }
             tbAWT.Text = finalAWT.ToString() + " ms";
             tbATAT.Text = finalATAT.ToString() + " ms";
+
+            
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = false;
+            panel5.Visible = false;
+            
         }
 
         void timer1_Tick(object sender, EventArgs e)
@@ -910,7 +973,7 @@ namespace FCFS
             }
         }
 
-        private void TimerMethod()
+        private void TimerMethod() 
         {
             if (secs == finalBT[timeSt] * 200)
             {
@@ -963,7 +1026,7 @@ namespace FCFS
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            //Application.Restart();
         }
 
         private void delete()
