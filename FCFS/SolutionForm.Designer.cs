@@ -666,6 +666,7 @@ namespace FCFS
             // tat3
             // 
             this.tat3.AutoSize = true;
+            this.tat3.BackColor = System.Drawing.Color.Transparent;
             this.tat3.Location = new System.Drawing.Point(73, 36);
             this.tat3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tat3.Name = "tat3";
@@ -676,6 +677,7 @@ namespace FCFS
             // arrival2
             // 
             this.arrival2.AutoSize = true;
+            this.arrival2.BackColor = System.Drawing.Color.Transparent;
             this.arrival2.Location = new System.Drawing.Point(125, 25);
             this.arrival2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arrival2.Name = "arrival2";
@@ -791,6 +793,7 @@ namespace FCFS
             // label39
             // 
             this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
             this.label39.Location = new System.Drawing.Point(69, 39);
             this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label39.Name = "label39";
@@ -1183,6 +1186,7 @@ namespace FCFS
             // arrival1
             // 
             this.arrival1.AutoSize = true;
+            this.arrival1.BackColor = System.Drawing.Color.Transparent;
             this.arrival1.Location = new System.Drawing.Point(125, 34);
             this.arrival1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arrival1.Name = "arrival1";
