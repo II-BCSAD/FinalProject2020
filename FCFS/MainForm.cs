@@ -1012,7 +1012,7 @@ namespace FCFS
                 obj.compute(UnsortedfinalProcess, finalWT, finalTAT, n);
                 obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, UnsortedfinalST, n);
                 obj.final(finalAWT, finalATAT, n);
-                obj.startingTime(UnsortedfinalST);
+                //obj.startingTime(UnsortedfinalST);
 
             }
 
