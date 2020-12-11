@@ -36,11 +36,6 @@ namespace FCFS
         {
             drag = false;
         }
-
-        public void startingTime(int[] st)
-        {
-
-        }
         //Solution Table
         public void solution(string[] processes, int[] at, int[] ct, int[] st, int n)
         {
@@ -54,38 +49,36 @@ namespace FCFS
             {
                 if (n == 3)
                 {
-                    wt1.Text = at[i].ToString();
-                    wt2.Text = ct[i].ToString();
+                    wt1.Text = st[i].ToString(); i++;
+                    wt2.Text = st[i].ToString();
                     i++;
-                    wt3.Text = ct[i].ToString();
+                    wt3.Text = st[i].ToString();
                 }
 
                 else if (n == 4)
                 {
-                    wt1.Text = at[i].ToString();
-                    wt2.Text = ct[i].ToString();
+                    wt1.Text = st[i].ToString(); i++;
+                    wt2.Text = st[i].ToString();
                     i++;
-                    wt3.Text = ct[i].ToString();
+                    wt3.Text = st[i].ToString();
                     i++;
-                    wt4.Text = ct[i].ToString();
+                    wt4.Text = st[i].ToString();
                 }
                 else if (n == 5)
                 {
-                    wt1.Text = at[i].ToString();
-                    wt2.Text = ct[i].ToString();
+                    wt1.Text = st[i].ToString(); i++;
+                    wt2.Text = st[i].ToString();
                     i++;
-                    wt3.Text = ct[i].ToString();
+                    wt3.Text = st[i].ToString();
                     i++;
-                    wt4.Text = ct[i].ToString();
+                    wt4.Text = st[i].ToString();
                     i++;
-                    wt5.Text = ct[i].ToString();
+                    wt5.Text = st[i].ToString();
                 }
                 else { }
             }
 
-            arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                             " + b);
-           //try lang hehe
-            //wt6.Text = st.Select(x => x.ToString()).Aggregate((a, b) => "( " + a + " - " + "       " + " )" + "                          " + "( " + b);
+            arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                            " + b);
 
             //Start Time in Computation Table
 
@@ -126,9 +119,7 @@ namespace FCFS
                 else { }
             }
 
-            arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                             " + b);
-            //try lang 
-            //tat06.Text = ct.Select(x => x.ToString()).Aggregate((a, b) => a + " - " + "       " + " )" + "                          " + "( " + b );
+            arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                            " + b);
 
             int t = 0;
 

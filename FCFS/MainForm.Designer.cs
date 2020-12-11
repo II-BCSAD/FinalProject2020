@@ -1136,7 +1136,7 @@
             this.colProcess.MinimumWidth = 6;
             this.colProcess.Name = "colProcess";
             this.colProcess.ReadOnly = true;
-            this.colProcess.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colProcess.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.colProcess.Width = 85;
             // 
             // colAT
@@ -1148,7 +1148,7 @@
             this.colAT.MinimumWidth = 6;
             this.colAT.Name = "colAT";
             this.colAT.ReadOnly = true;
-            this.colAT.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colAT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.colAT.Width = 105;
             // 
             // colBT
@@ -1160,6 +1160,7 @@
             this.colBT.MinimumWidth = 6;
             this.colBT.Name = "colBT";
             this.colBT.ReadOnly = true;
+            this.colBT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.colBT.Width = 102;
             // 
             // colWT
@@ -1171,6 +1172,7 @@
             this.colWT.MinimumWidth = 6;
             this.colWT.Name = "colWT";
             this.colWT.ReadOnly = true;
+            this.colWT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.colWT.Width = 102;
             // 
             // colTAT
@@ -1182,6 +1184,7 @@
             this.colTAT.MinimumWidth = 6;
             this.colTAT.Name = "colTAT";
             this.colTAT.ReadOnly = true;
+            this.colTAT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.colTAT.Width = 107;
             // 
             // colComp
@@ -1193,6 +1196,7 @@
             this.colComp.MinimumWidth = 6;
             this.colComp.Name = "colComp";
             this.colComp.ReadOnly = true;
+            this.colComp.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.colComp.Width = 105;
             // 
             // fcfsForm
