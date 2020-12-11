@@ -54,3 +54,15 @@ C:\Users\Angeli\Source\Repos\FinalProject2020.2\FCFS\obj\Debug\FCFS.csproj.CoreC
 C:\Users\Angeli\Source\Repos\FinalProject2020.2\FCFS\obj\Debug\FCFS.exe
 C:\Users\Angeli\Source\Repos\FinalProject2020.2\FCFS\obj\Debug\FCFS.pdb
 C:\Users\Angeli\Source\Repos\FinalProject2020.2\FCFS\obj\Debug\FCFS.Form1.resources
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\bin\Debug\FCFS.exe.config
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\bin\Debug\FCFS.exe
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\bin\Debug\FCFS.pdb
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.csprojAssemblyReference.cache
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.Form1.resources
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.fcfsForm.resources
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.Properties.Resources.resources
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.SolutionForm.resources
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.csproj.GenerateResource.cache
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.csproj.CoreCompileInputs.cache
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.exe
+C:\Users\Angeli\Source\Repos\FinalProject2020.3\FCFS\obj\Debug\FCFS.pdb

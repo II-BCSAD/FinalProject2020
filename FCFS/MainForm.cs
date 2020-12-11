@@ -653,7 +653,7 @@ namespace FCFS
         {
 
             panelCPU.BackColor = Color.FromArgb(189, 116, 172);
-            panel3.BackgroundImage = Image.FromFile(System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal) + @"\kay1.png");
+            panel3.Visible = true;
            
 
             if (timeSt == 0) await Task.Delay(500);
@@ -1026,7 +1026,7 @@ namespace FCFS
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
-            //Application.Restart();
+            Application.Restart();
         }
 
         private void delete()
