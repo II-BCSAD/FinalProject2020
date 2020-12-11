@@ -78,7 +78,7 @@ namespace FCFS
                 else { }
             }
 
-            arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                              " + b);
+            arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                            " + b);
 
             //Start Time in Computation Table
 
@@ -119,7 +119,7 @@ namespace FCFS
                 else { }
             }
 
-            arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                              " + b);
+            arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                            " + b);
 
             int t = 0;
 

@@ -344,7 +344,7 @@ namespace FCFS
             // label95
             // 
             this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(490, 25);
+            this.label95.Location = new System.Drawing.Point(488, 25);
             this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label95.MaximumSize = new System.Drawing.Size(13, 12);
             this.label95.MinimumSize = new System.Drawing.Size(13, 12);
@@ -416,7 +416,7 @@ namespace FCFS
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(295, 25);
+            this.label57.Location = new System.Drawing.Point(293, 25);
             this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label57.MaximumSize = new System.Drawing.Size(13, 12);
             this.label57.MinimumSize = new System.Drawing.Size(13, 12);
@@ -478,7 +478,7 @@ namespace FCFS
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(195, 25);
+            this.label40.Location = new System.Drawing.Point(194, 25);
             this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label40.MaximumSize = new System.Drawing.Size(13, 12);
             this.label40.MinimumSize = new System.Drawing.Size(13, 12);
@@ -564,7 +564,7 @@ namespace FCFS
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(395, 25);
+            this.label32.Location = new System.Drawing.Point(393, 25);
             this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label32.MaximumSize = new System.Drawing.Size(13, 12);
             this.label32.MinimumSize = new System.Drawing.Size(13, 12);
@@ -890,7 +890,7 @@ namespace FCFS
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(490, 34);
+            this.label36.Location = new System.Drawing.Point(488, 34);
             this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label36.MaximumSize = new System.Drawing.Size(13, 12);
             this.label36.MinimumSize = new System.Drawing.Size(13, 12);
@@ -1060,7 +1060,7 @@ namespace FCFS
             // label106
             // 
             this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(395, 34);
+            this.label106.Location = new System.Drawing.Point(393, 34);
             this.label106.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label106.MaximumSize = new System.Drawing.Size(13, 12);
             this.label106.MinimumSize = new System.Drawing.Size(13, 12);
