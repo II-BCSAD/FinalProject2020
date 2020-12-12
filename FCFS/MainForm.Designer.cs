@@ -52,6 +52,12 @@
             this.lb_awt = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colProcess = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colComp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -116,12 +122,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lowPanel = new System.Windows.Forms.Panel();
             this.btnExit2 = new System.Windows.Forms.Button();
-            this.colProcess = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colWT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTAT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colComp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.midPanel.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -353,6 +353,78 @@
             this.dataGridView1.Size = new System.Drawing.Size(600, 160);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // colProcess
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colProcess.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colProcess.HeaderText = "PROCESS";
+            this.colProcess.MaxInputLength = 3;
+            this.colProcess.MinimumWidth = 6;
+            this.colProcess.Name = "colProcess";
+            this.colProcess.ReadOnly = true;
+            this.colProcess.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colProcess.Width = 85;
+            // 
+            // colAT
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colAT.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colAT.HeaderText = "ARRIVAL TIME (AT)";
+            this.colAT.MaxInputLength = 3;
+            this.colAT.MinimumWidth = 6;
+            this.colAT.Name = "colAT";
+            this.colAT.ReadOnly = true;
+            this.colAT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colAT.Width = 105;
+            // 
+            // colBT
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colBT.DefaultCellStyle = dataGridViewCellStyle5;
+            this.colBT.HeaderText = "BURST TIME (BT)";
+            this.colBT.MaxInputLength = 3;
+            this.colBT.MinimumWidth = 6;
+            this.colBT.Name = "colBT";
+            this.colBT.ReadOnly = true;
+            this.colBT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colBT.Width = 102;
+            // 
+            // colWT
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colWT.DefaultCellStyle = dataGridViewCellStyle6;
+            this.colWT.HeaderText = "WAITING TIME";
+            this.colWT.MaxInputLength = 3;
+            this.colWT.MinimumWidth = 6;
+            this.colWT.Name = "colWT";
+            this.colWT.ReadOnly = true;
+            this.colWT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colWT.Width = 102;
+            // 
+            // colTAT
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colTAT.DefaultCellStyle = dataGridViewCellStyle7;
+            this.colTAT.HeaderText = "TURN-AROUND TIME";
+            this.colTAT.MaxInputLength = 3;
+            this.colTAT.MinimumWidth = 6;
+            this.colTAT.Name = "colTAT";
+            this.colTAT.ReadOnly = true;
+            this.colTAT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colTAT.Width = 107;
+            // 
+            // colComp
+            // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colComp.DefaultCellStyle = dataGridViewCellStyle8;
+            this.colComp.HeaderText = "FINISHING TIME";
+            this.colComp.MaxInputLength = 3;
+            this.colComp.MinimumWidth = 6;
+            this.colComp.Name = "colComp";
+            this.colComp.ReadOnly = true;
+            this.colComp.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.colComp.Width = 105;
             // 
             // panel4
             // 
@@ -1136,78 +1208,6 @@
             this.btnExit2.UseVisualStyleBackColor = false;
             this.btnExit2.Click += new System.EventHandler(this.btnExit2_Click);
             // 
-            // colProcess
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colProcess.DefaultCellStyle = dataGridViewCellStyle3;
-            this.colProcess.HeaderText = "PROCESS";
-            this.colProcess.MaxInputLength = 3;
-            this.colProcess.MinimumWidth = 6;
-            this.colProcess.Name = "colProcess";
-            this.colProcess.ReadOnly = true;
-            this.colProcess.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colProcess.Width = 85;
-            // 
-            // colAT
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colAT.DefaultCellStyle = dataGridViewCellStyle4;
-            this.colAT.HeaderText = "ARRIVAL TIME (AT)";
-            this.colAT.MaxInputLength = 3;
-            this.colAT.MinimumWidth = 6;
-            this.colAT.Name = "colAT";
-            this.colAT.ReadOnly = true;
-            this.colAT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colAT.Width = 105;
-            // 
-            // colBT
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colBT.DefaultCellStyle = dataGridViewCellStyle5;
-            this.colBT.HeaderText = "BURST TIME (BT)";
-            this.colBT.MaxInputLength = 3;
-            this.colBT.MinimumWidth = 6;
-            this.colBT.Name = "colBT";
-            this.colBT.ReadOnly = true;
-            this.colBT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colBT.Width = 102;
-            // 
-            // colWT
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colWT.DefaultCellStyle = dataGridViewCellStyle6;
-            this.colWT.HeaderText = "WAITING TIME";
-            this.colWT.MaxInputLength = 3;
-            this.colWT.MinimumWidth = 6;
-            this.colWT.Name = "colWT";
-            this.colWT.ReadOnly = true;
-            this.colWT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colWT.Width = 102;
-            // 
-            // colTAT
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colTAT.DefaultCellStyle = dataGridViewCellStyle7;
-            this.colTAT.HeaderText = "TURN-AROUND TIME";
-            this.colTAT.MaxInputLength = 3;
-            this.colTAT.MinimumWidth = 6;
-            this.colTAT.Name = "colTAT";
-            this.colTAT.ReadOnly = true;
-            this.colTAT.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colTAT.Width = 107;
-            // 
-            // colComp
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colComp.DefaultCellStyle = dataGridViewCellStyle8;
-            this.colComp.HeaderText = "FINISHING TIME";
-            this.colComp.MaxInputLength = 3;
-            this.colComp.MinimumWidth = 6;
-            this.colComp.Name = "colComp";
-            this.colComp.ReadOnly = true;
-            this.colComp.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.colComp.Width = 105;
-            // 
             // fcfsForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1221,6 +1221,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(802, 545);

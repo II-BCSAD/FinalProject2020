@@ -68,7 +68,7 @@ namespace FCFS
             this.label31 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.tat3 = new System.Windows.Forms.Label();
-            this.arrival2 = new System.Windows.Forms.Label();
+            this.ATATarriv1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -112,7 +112,7 @@ namespace FCFS
             this.wt5 = new System.Windows.Forms.Label();
             this.wt2 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.arrival1 = new System.Windows.Forms.Label();
+            this.arriv1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tw5 = new System.Windows.Forms.TextBox();
@@ -232,6 +232,14 @@ namespace FCFS
             this.label88 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBACK = new System.Windows.Forms.Button();
+            this.arriv2 = new System.Windows.Forms.Label();
+            this.arriv3 = new System.Windows.Forms.Label();
+            this.arriv4 = new System.Windows.Forms.Label();
+            this.arriv5 = new System.Windows.Forms.Label();
+            this.ATATarriv2 = new System.Windows.Forms.Label();
+            this.ATATarriv3 = new System.Windows.Forms.Label();
+            this.ATATarriv4 = new System.Windows.Forms.Label();
+            this.ATATarriv5 = new System.Windows.Forms.Label();
             this.solATAT.SuspendLayout();
             this.panel5.SuspendLayout();
             this.solAWT.SuspendLayout();
@@ -323,7 +331,11 @@ namespace FCFS
             this.solATAT.Controls.Add(this.label31);
             this.solATAT.Controls.Add(this.label22);
             this.solATAT.Controls.Add(this.tat3);
-            this.solATAT.Controls.Add(this.arrival2);
+            this.solATAT.Controls.Add(this.ATATarriv5);
+            this.solATAT.Controls.Add(this.ATATarriv4);
+            this.solATAT.Controls.Add(this.ATATarriv3);
+            this.solATAT.Controls.Add(this.ATATarriv2);
+            this.solATAT.Controls.Add(this.ATATarriv1);
             this.solATAT.ForeColor = System.Drawing.SystemColors.ControlText;
             this.solATAT.Location = new System.Drawing.Point(772, 427);
             this.solATAT.Margin = new System.Windows.Forms.Padding(4);
@@ -674,16 +686,16 @@ namespace FCFS
             this.tat3.TabIndex = 75;
             this.tat3.Text = "_____________________________________________________________________________";
             // 
-            // arrival2
+            // ATATarriv1
             // 
-            this.arrival2.AutoSize = true;
-            this.arrival2.BackColor = System.Drawing.Color.Transparent;
-            this.arrival2.Location = new System.Drawing.Point(125, 25);
-            this.arrival2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.arrival2.Name = "arrival2";
-            this.arrival2.Size = new System.Drawing.Size(16, 17);
-            this.arrival2.TabIndex = 107;
-            this.arrival2.Text = "0";
+            this.ATATarriv1.AutoSize = true;
+            this.ATATarriv1.BackColor = System.Drawing.Color.Transparent;
+            this.ATATarriv1.Location = new System.Drawing.Point(125, 25);
+            this.ATATarriv1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ATATarriv1.Name = "ATATarriv1";
+            this.ATATarriv1.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv1.TabIndex = 107;
+            this.ATATarriv1.Text = "0";
             // 
             // btnExit
             // 
@@ -872,7 +884,11 @@ namespace FCFS
             this.solAWT.Controls.Add(this.label30);
             this.solAWT.Controls.Add(this.label29);
             this.solAWT.Controls.Add(this.label21);
-            this.solAWT.Controls.Add(this.arrival1);
+            this.solAWT.Controls.Add(this.arriv5);
+            this.solAWT.Controls.Add(this.arriv4);
+            this.solAWT.Controls.Add(this.arriv3);
+            this.solAWT.Controls.Add(this.arriv2);
+            this.solAWT.Controls.Add(this.arriv1);
             this.solAWT.Controls.Add(this.label39);
             this.solAWT.Location = new System.Drawing.Point(772, 106);
             this.solAWT.Margin = new System.Windows.Forms.Padding(4);
@@ -1183,16 +1199,16 @@ namespace FCFS
             this.label21.TabIndex = 51;
             this.label21.Text = "AWT";
             // 
-            // arrival1
+            // arriv1
             // 
-            this.arrival1.AutoSize = true;
-            this.arrival1.BackColor = System.Drawing.Color.Transparent;
-            this.arrival1.Location = new System.Drawing.Point(125, 34);
-            this.arrival1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.arrival1.Name = "arrival1";
-            this.arrival1.Size = new System.Drawing.Size(16, 17);
-            this.arrival1.TabIndex = 128;
-            this.arrival1.Text = "0";
+            this.arriv1.AutoSize = true;
+            this.arriv1.BackColor = System.Drawing.Color.Transparent;
+            this.arriv1.Location = new System.Drawing.Point(125, 34);
+            this.arriv1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arriv1.Name = "arriv1";
+            this.arriv1.Size = new System.Drawing.Size(16, 17);
+            this.arriv1.TabIndex = 128;
+            this.arriv1.Text = "0";
             // 
             // panel1
             // 
@@ -2572,6 +2588,94 @@ namespace FCFS
             this.btnBACK.UseVisualStyleBackColor = false;
             this.btnBACK.Click += new System.EventHandler(this.btnBACK_Click_2);
             // 
+            // arriv2
+            // 
+            this.arriv2.AutoSize = true;
+            this.arriv2.BackColor = System.Drawing.Color.Transparent;
+            this.arriv2.Location = new System.Drawing.Point(216, 34);
+            this.arriv2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arriv2.Name = "arriv2";
+            this.arriv2.Size = new System.Drawing.Size(16, 17);
+            this.arriv2.TabIndex = 128;
+            this.arriv2.Text = "0";
+            // 
+            // arriv3
+            // 
+            this.arriv3.AutoSize = true;
+            this.arriv3.BackColor = System.Drawing.Color.Transparent;
+            this.arriv3.Location = new System.Drawing.Point(316, 34);
+            this.arriv3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arriv3.Name = "arriv3";
+            this.arriv3.Size = new System.Drawing.Size(16, 17);
+            this.arriv3.TabIndex = 128;
+            this.arriv3.Text = "0";
+            // 
+            // arriv4
+            // 
+            this.arriv4.AutoSize = true;
+            this.arriv4.BackColor = System.Drawing.Color.Transparent;
+            this.arriv4.Location = new System.Drawing.Point(421, 34);
+            this.arriv4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arriv4.Name = "arriv4";
+            this.arriv4.Size = new System.Drawing.Size(16, 17);
+            this.arriv4.TabIndex = 128;
+            this.arriv4.Text = "0";
+            // 
+            // arriv5
+            // 
+            this.arriv5.AutoSize = true;
+            this.arriv5.BackColor = System.Drawing.Color.Transparent;
+            this.arriv5.Location = new System.Drawing.Point(509, 34);
+            this.arriv5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.arriv5.Name = "arriv5";
+            this.arriv5.Size = new System.Drawing.Size(16, 17);
+            this.arriv5.TabIndex = 128;
+            this.arriv5.Text = "0";
+            // 
+            // ATATarriv2
+            // 
+            this.ATATarriv2.AutoSize = true;
+            this.ATATarriv2.BackColor = System.Drawing.Color.Transparent;
+            this.ATATarriv2.Location = new System.Drawing.Point(216, 25);
+            this.ATATarriv2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ATATarriv2.Name = "ATATarriv2";
+            this.ATATarriv2.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv2.TabIndex = 107;
+            this.ATATarriv2.Text = "0";
+            // 
+            // ATATarriv3
+            // 
+            this.ATATarriv3.AutoSize = true;
+            this.ATATarriv3.BackColor = System.Drawing.Color.Transparent;
+            this.ATATarriv3.Location = new System.Drawing.Point(316, 25);
+            this.ATATarriv3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ATATarriv3.Name = "ATATarriv3";
+            this.ATATarriv3.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv3.TabIndex = 107;
+            this.ATATarriv3.Text = "0";
+            // 
+            // ATATarriv4
+            // 
+            this.ATATarriv4.AutoSize = true;
+            this.ATATarriv4.BackColor = System.Drawing.Color.Transparent;
+            this.ATATarriv4.Location = new System.Drawing.Point(414, 25);
+            this.ATATarriv4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ATATarriv4.Name = "ATATarriv4";
+            this.ATATarriv4.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv4.TabIndex = 107;
+            this.ATATarriv4.Text = "0";
+            // 
+            // ATATarriv5
+            // 
+            this.ATATarriv5.AutoSize = true;
+            this.ATATarriv5.BackColor = System.Drawing.Color.Transparent;
+            this.ATATarriv5.Location = new System.Drawing.Point(507, 25);
+            this.ATATarriv5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ATATarriv5.Name = "ATATarriv5";
+            this.ATATarriv5.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv5.TabIndex = 107;
+            this.ATATarriv5.Text = "0";
+            // 
             // SolutionForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2586,6 +2690,7 @@ namespace FCFS
             this.Controls.Add(this.groupBox_SF1);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(1360, 750);
             this.MinimumSize = new System.Drawing.Size(1360, 726);
@@ -2811,10 +2916,18 @@ namespace FCFS
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.Button btnBACK;
-        private System.Windows.Forms.Label arrival2;
-        private System.Windows.Forms.Label arrival1;
+        private System.Windows.Forms.Label ATATarriv1;
+        private System.Windows.Forms.Label arriv1;
         private System.Windows.Forms.Label wt6;
         private System.Windows.Forms.Label tat06;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label arriv5;
+        private System.Windows.Forms.Label arriv4;
+        private System.Windows.Forms.Label arriv3;
+        private System.Windows.Forms.Label arriv2;
+        private System.Windows.Forms.Label ATATarriv5;
+        private System.Windows.Forms.Label ATATarriv4;
+        private System.Windows.Forms.Label ATATarriv3;
+        private System.Windows.Forms.Label ATATarriv2;
     }
 }

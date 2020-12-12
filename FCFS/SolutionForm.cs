@@ -49,36 +49,41 @@ namespace FCFS
             {
                 if (n == 3)
                 {
-                    wt1.Text = st[i].ToString(); i++;
+                    wt1.Text = st[i].ToString();
+                    arriv1.Text = at[i].ToString(); i++;
                     wt2.Text = st[i].ToString();
-                    i++;
+                    arriv2.Text = at[i].ToString();i++;
                     wt3.Text = st[i].ToString();
+                    arriv3.Text = at[i].ToString();
+
                 }
 
                 else if (n == 4)
                 {
-                    wt1.Text = st[i].ToString(); i++;
+                    wt1.Text = st[i].ToString();
+                    arriv1.Text = at[i].ToString(); i++;
                     wt2.Text = st[i].ToString();
-                    i++;
+                    arriv2.Text = at[i].ToString(); i++;
                     wt3.Text = st[i].ToString();
-                    i++;
+                    arriv3.Text = at[i].ToString(); i++;
                     wt4.Text = st[i].ToString();
+                    arriv4.Text = at[i].ToString();
                 }
                 else if (n == 5)
                 {
-                    wt1.Text = st[i].ToString(); i++;
+                    wt1.Text = st[i].ToString();
+                    arriv1.Text = at[i].ToString(); i++;
                     wt2.Text = st[i].ToString();
-                    i++;
+                    arriv2.Text = at[i].ToString(); i++;
                     wt3.Text = st[i].ToString();
-                    i++;
+                    arriv3.Text = at[i].ToString(); i++;
                     wt4.Text = st[i].ToString();
-                    i++;
+                    arriv4.Text = at[i].ToString(); i++;
                     wt5.Text = st[i].ToString();
+                    arriv5.Text = at[i].ToString();
                 }
                 else { }
             }
-
-            arrival1.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                              " + b);
 
             //Start Time in Computation Table
 
@@ -89,37 +94,38 @@ namespace FCFS
                 if (n == 3)
                 {
                     st1.Text = st[s].ToString();
-                    s++;
+                    ATATarriv1.Text = at[s].ToString(); s++;
                     st2.Text = st[s].ToString();
-                    s++;
+                    ATATarriv2.Text = at[s].ToString(); s++;
                     st3.Text = st[s].ToString();
+                    ATATarriv3.Text = at[s].ToString();
                 }
                 else if (n == 4)
                 {
                     st1.Text = st[s].ToString();
-                    s++;
+                    ATATarriv1.Text = at[s].ToString(); s++;
                     st2.Text = st[s].ToString();
-                    s++;
+                    ATATarriv2.Text = at[s].ToString(); s++;
                     st3.Text = st[s].ToString();
-                    s++;
+                    ATATarriv3.Text = at[s].ToString(); s++;
                     st4.Text = st[s].ToString();
+                    ATATarriv4.Text = at[s].ToString();
                 }
                 else if (n == 5)
                 {
                     st1.Text = st[s].ToString();
-                    s++;
+                    ATATarriv1.Text = at[s].ToString(); s++;
                     st2.Text = st[s].ToString();
-                    s++;
+                    ATATarriv2.Text = at[s].ToString(); s++;
                     st3.Text = st[s].ToString();
-                    s++;
+                    ATATarriv3.Text = at[s].ToString(); s++;
                     st4.Text = st[s].ToString();
-                    s++;
+                    ATATarriv4.Text = at[s].ToString(); s++;
                     st5.Text = st[s].ToString();
+                    ATATarriv5.Text = at[s].ToString();
                 }
                 else { }
             }
-
-            arrival2.Text = at.Select(x => x.ToString()).Aggregate((a, b) => a + "                              " + b);
 
             int t = 0;
 
