@@ -2595,9 +2595,8 @@ namespace FCFS
             this.arriv2.Location = new System.Drawing.Point(216, 34);
             this.arriv2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arriv2.Name = "arriv2";
-            this.arriv2.Size = new System.Drawing.Size(16, 17);
+            this.arriv2.Size = new System.Drawing.Size(0, 17);
             this.arriv2.TabIndex = 128;
-            this.arriv2.Text = "0";
             // 
             // arriv3
             // 
@@ -2606,9 +2605,8 @@ namespace FCFS
             this.arriv3.Location = new System.Drawing.Point(316, 34);
             this.arriv3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arriv3.Name = "arriv3";
-            this.arriv3.Size = new System.Drawing.Size(16, 17);
+            this.arriv3.Size = new System.Drawing.Size(0, 17);
             this.arriv3.TabIndex = 128;
-            this.arriv3.Text = "0";
             // 
             // arriv4
             // 
@@ -2617,9 +2615,8 @@ namespace FCFS
             this.arriv4.Location = new System.Drawing.Point(421, 34);
             this.arriv4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arriv4.Name = "arriv4";
-            this.arriv4.Size = new System.Drawing.Size(16, 17);
+            this.arriv4.Size = new System.Drawing.Size(0, 17);
             this.arriv4.TabIndex = 128;
-            this.arriv4.Text = "0";
             // 
             // arriv5
             // 
@@ -2628,9 +2625,8 @@ namespace FCFS
             this.arriv5.Location = new System.Drawing.Point(509, 34);
             this.arriv5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.arriv5.Name = "arriv5";
-            this.arriv5.Size = new System.Drawing.Size(16, 17);
+            this.arriv5.Size = new System.Drawing.Size(0, 17);
             this.arriv5.TabIndex = 128;
-            this.arriv5.Text = "0";
             // 
             // ATATarriv2
             // 
@@ -2639,9 +2635,8 @@ namespace FCFS
             this.ATATarriv2.Location = new System.Drawing.Point(216, 25);
             this.ATATarriv2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ATATarriv2.Name = "ATATarriv2";
-            this.ATATarriv2.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv2.Size = new System.Drawing.Size(0, 17);
             this.ATATarriv2.TabIndex = 107;
-            this.ATATarriv2.Text = "0";
             // 
             // ATATarriv3
             // 
@@ -2650,9 +2645,8 @@ namespace FCFS
             this.ATATarriv3.Location = new System.Drawing.Point(316, 25);
             this.ATATarriv3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ATATarriv3.Name = "ATATarriv3";
-            this.ATATarriv3.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv3.Size = new System.Drawing.Size(0, 17);
             this.ATATarriv3.TabIndex = 107;
-            this.ATATarriv3.Text = "0";
             // 
             // ATATarriv4
             // 
@@ -2661,9 +2655,8 @@ namespace FCFS
             this.ATATarriv4.Location = new System.Drawing.Point(414, 25);
             this.ATATarriv4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ATATarriv4.Name = "ATATarriv4";
-            this.ATATarriv4.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv4.Size = new System.Drawing.Size(0, 17);
             this.ATATarriv4.TabIndex = 107;
-            this.ATATarriv4.Text = "0";
             // 
             // ATATarriv5
             // 
@@ -2672,9 +2665,8 @@ namespace FCFS
             this.ATATarriv5.Location = new System.Drawing.Point(507, 25);
             this.ATATarriv5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ATATarriv5.Name = "ATATarriv5";
-            this.ATATarriv5.Size = new System.Drawing.Size(16, 17);
+            this.ATATarriv5.Size = new System.Drawing.Size(0, 17);
             this.ATATarriv5.TabIndex = 107;
-            this.ATATarriv5.Text = "0";
             // 
             // SolutionForm
             // 
