@@ -450,7 +450,7 @@ namespace FCFS
                 qOrder[i] = multiQueueOrder[i];
              }
 
-            findAvgTime(p1, p, bt1, at1);
+            getAvgTime(p1, p, bt1, at1);
 
             // sorting by user input order (Selection Sort)
             if (rbMultiple.Checked)
@@ -489,22 +489,20 @@ namespace FCFS
                     UnsortedfinalST[i] = tempST;
                 }
             }
-
-
             delayDisplay();
             btnSTART.Enabled = false;
         }
         
         //calculate avg WT and TAT
-        public static void findAvgTime(string []process, int n, int []bt, int []at)
+        public static void getAvgTime(string []process, int n, int []bt, int []at)
         {
             //ct is completion time/finishing time
             int[] wt = new int[n];
             int[] tat = new int[n];
             int[] ct = new int[n];
 
-            findWT(process, n, bt, wt, at);
-            findTAT(process, n, bt, wt, tat);
+            getWT(process, n, bt, wt, at);
+            getTAT(process, n, bt, wt, tat);
 
             Double totalWT = 0d;
             Double totalTAT = 0d;
@@ -533,25 +531,23 @@ namespace FCFS
             finalATAT = Math.Round(ATAT,2);
         }
 
-        static void findWT(string[] process, int n, int[] bt, int[] wt, int[] at)
+        static void getWT(string[] process, int n, int[] bt, int[] wt, int[] at)
         {
-            int[] service_time = new int[n];
-            service_time[0] = bt[0] + at[0];
+            int[] serv_time = new int[n];
+            serv_time[0] = bt[0] + at[0];
             wt[0] = at[0] - at[0];
 
             // calculating waiting time 
             for (int i = 1; i < n; i++)
             {
-                service_time[i] = service_time[i-1] + bt[i ];
-                
-
-                wt[i] = service_time[i-1] - at[i ];
+                serv_time[i] = serv_time[i-1] + bt[i ];
+                wt[i] = serv_time[i-1] - at[i ];
 
                 if (wt[i] < 0)
                     wt[i] = 0;
             }
         }
-        static void findTAT(string[] process, int n, int[] bt,
+        static void getTAT(string[] process, int n, int[] bt,
                                     int[] wt, int[] tat)
         {
             // Calculating turnaround time by adding bt[i] + wt[i] 
@@ -594,7 +590,6 @@ namespace FCFS
 
         private void btnExit2_Click(object sender, EventArgs e)
         {
-            //this.Close();
             Form1 frm1 = new Form1();
             frm1.exit();
             this.Close();
@@ -602,7 +597,6 @@ namespace FCFS
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            //this.Close();
             Form1 frm1 = new Form1();
             frm1.exit();
             this.Close();
@@ -618,7 +612,6 @@ namespace FCFS
         {
 
             panelCPU.BackColor = Color.FromArgb(189, 116, 172);
-            //panel3.BackgroundImage = Image.FromFile(System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal) + @"\kay1.png");
             panel3.Visible = true;
 
             if (timeSt == 0) await Task.Delay(500);
@@ -956,7 +949,6 @@ namespace FCFS
             SolutionForm obj = new SolutionForm();
 
             int n = pArr.Length;
-            //pass value to compute() in SolutionForm.cs
             if (rbSingle.Checked)
             {
                 obj.solution(pArr, atArr, finalCT, UnsortedfinalST, n);
@@ -965,12 +957,9 @@ namespace FCFS
             }
             else if (rbMultiple.Checked)
             {
-                //obj.startingTime(st, n);
                 obj.compute(UnsortedfinalProcess, finalWT, finalTAT, n);
                 obj.solution(UnsortedfinalProcess, UnsortedfinalAT, finalCT, UnsortedfinalST, n);
                 obj.final(finalAWT, finalATAT, n);
-                //obj.startingTime(UnsortedfinalST);
-
             }
 
             obj.Show();
@@ -985,17 +974,9 @@ namespace FCFS
 
         private void btnRestart_Click(object sender, EventArgs e)
         {
-            /* fcfsForm NewForm = new fcfsForm();
-             NewForm.Show();
-             this.Dispose(false); */
-
             fcfsForm r = new fcfsForm();
             r.Show();
             this.Dispose(false);
-            //this.Controls.Clear();
-            //this.InitializeComponent();
-            //this.Close();
-            //r.Show();
             nRow = 0;
         }
 
