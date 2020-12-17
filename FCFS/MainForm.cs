@@ -51,8 +51,6 @@ namespace FCFS
 
             btnSTART.Enabled = false;
             btnSolution.Enabled = false;
-
-            //pictureBox1.Visible = false;
         }
 
         private void panel4_MouseDown(object sender, MouseEventArgs e)
