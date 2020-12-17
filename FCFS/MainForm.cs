@@ -168,18 +168,6 @@ namespace FCFS
                 msg = "• Invalid input for Process field.\n";
             }
            
-            //validation for same proccess name - not working
-            /*if(nRow > 1)
-            {
-                for (int r = 1; r < nRow; r++)
-                {
-                    if (inProcess.Text == dataGridView1.Rows[r].Cells[0].Value.ToString())
-                    {
-                        msg = "• Input in Process Field already exists.\n";
-                    }
-                }
-            }*/
-           
             if (rbcount == 2)
             {
                 if (!String.IsNullOrEmpty(inProcess.Text) && !String.IsNullOrEmpty(inAT.Text) && !String.IsNullOrEmpty(inBT.Text))
@@ -209,7 +197,6 @@ namespace FCFS
                 }
                 else if (rbSelect == 2)
                 {
-                    //checkRows();
                     if (nRow == 0)
                     {
                         if (rbSingle.Checked)
@@ -344,14 +331,12 @@ namespace FCFS
                     }
                     count = 0;
                 }
-
                 else
                 {
                     inProcess.Text = "";
                     inAT.Text = "";
                     inBT.Text = "";
                 }
-                
             }
             else if (rbSelect == 1)
             {
@@ -465,7 +450,6 @@ namespace FCFS
                 qOrder[i] = multiQueueOrder[i];
              }
 
-            
             findAvgTime(p1, p, bt1, at1);
 
             // sorting by user input order (Selection Sort)
@@ -598,37 +582,12 @@ namespace FCFS
             btArr = burstTime.ToArray();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void panel13_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inputPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lowPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void rbSingle_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void inProcess_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -873,7 +832,6 @@ namespace FCFS
             pictureBox2.Visible = false;
             pictureBox3.Visible = false;
             panel5.Visible = false;
-            
         }
 
         void timer1_Tick(object sender, EventArgs e)
@@ -993,7 +951,6 @@ namespace FCFS
                 }
             }
         }
-
         private void btnSolution_Click(object sender, EventArgs e)
         {
             SolutionForm obj = new SolutionForm();
@@ -1018,16 +975,12 @@ namespace FCFS
 
             obj.Show();
             
-            
-
             int[] st = new int [atArr.Length];
 
             for(int i = 0; i < atArr.Length; i++)
             {
                 st[i] = UnsortedfinalST[i];
             }
-             
-            
         }
 
         private void btnRestart_Click(object sender, EventArgs e)

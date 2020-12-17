@@ -40,9 +40,6 @@ namespace FCFS
         public void solution(string[] processes, int[] at, int[] ct, int[] st, int n)
         {
             //Display Waiting Time: as Dividend
-
-            //getStartTime();
-
             int i = 0;
 
             if (i < n)
@@ -557,7 +554,6 @@ namespace FCFS
                 tot1.Text = AWT.ToString();
                 tot2.Text = ATAT.ToString();
             }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -566,13 +562,10 @@ namespace FCFS
         {
             this.Hide();
         }
-
-
         private void btnBACK_Click_2(object sender, EventArgs e)
         {
             this.Hide();
         }
-
         private void label29_Click(object sender, EventArgs e)
         {
 
